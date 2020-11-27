@@ -1,0 +1,2092 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00189BB3DE21771BB1428DB8C5FE918A /* PluginListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC174C31EB907BDE836C5FC2CD3E7499 /* PluginListViewController.m */; };
+		0019ED83C83B365E47706217CBC57821 /* HYPOverlayDebuggingWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A200ECDE319A3D9E9CB5769AFD312D2 /* HYPOverlayDebuggingWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00C6795E08B7D4CE0AC3A9F0D0448F07 /* developer_clean_icon@2x.png in Sources */ = {isa = PBXBuildFile; fileRef = 0863AB7E82D39425EE7FC577F8E4C8F4 /* developer_clean_icon@2x.png */; };
+		021607C2401B1BF12A97ED36D226F486 /* EnvironmentPluginMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1841F043DC85C8CCBDACBCDC16E211D7 /* EnvironmentPluginMenuItem.swift */; };
+		04E962999375C827246EDDEA3F01642B /* HYPListenerContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = FB01F24A50769004B35F40BDD9A461D7 /* HYPListenerContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07BA967A405E28F6C4B459C41FC3CE22 /* RequestDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F849EEC4A9F5C3C96CFD99887A547DB /* RequestDetailViewController.swift */; };
+		0FDBF1B27359A3541D577CFB36DADF64 /* AppInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A27588B88601FA59E8B3C77E9D5A79 /* AppInfoController.swift */; };
+		1047F8B6DE7FA198A11543FAB83A6505 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A95F20D16CF4FDB1FB748A4F08CE7CB /* Protocols.swift */; };
+		107F3540DCBE839827A3BFEDFBD4E7B9 /* DeveloperKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C08A43D7BCC30AD79898A3377409DE3 /* DeveloperKit.swift */; };
+		1230DF9A3440EA6F621B20BC59BA79A9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70CA167BE26E5936A2B56359E21A35D7 /* QuartzCore.framework */; };
+		125DC9C9B71B86C0776AC122F4E9F53B /* WHTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C350194C24E322BEC3CD8A011843EAC /* WHTableView.swift */; };
+		180C21EE0B83E0ACF18DE25FCECA4FE7 /* GDPerformanceView_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2677067EFDE95569C2E88FC402E10B88 /* GDPerformanceView_Swift.framework */; };
+		1EAD67F3C568F9142F3F7C330A2AB808 /* GDPerformanceView-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C6E459519EBEB01B4CD22D112C7D8D /* GDPerformanceView-Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1EB5EAB8C1ACCA01B7971ADFFECFCA66 /* EnvironmentPluginModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CECEBBAAA83A56D52AA811EC6D11386 /* EnvironmentPluginModule.swift */; };
+		1F2A540F455D10C7613800677CB8B679 /* RequestTitleSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6E13262CB2B2FAC0BF39D3DB5238DEF /* RequestTitleSectionView.xib */; };
+		1F3C004353703ABF6F28A589ECD1B60D /* UIApplication+Swizzling.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C9F394E644B8E7FAA10BC52783F84D4 /* UIApplication+Swizzling.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F671C3C79C896949633F8911ED6101D /* FileHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492BAC864BD107BB02F46E2D9986DD37 /* FileHandler.swift */; };
+		201E704DFB20B8D7A465A409CD0BBA41 /* PluginListViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A5DBA42E1E0425669CFE2B6E6A43C52 /* PluginListViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2295686B897E197DADD8CD3BEC24B310 /* developer_network_icon@2x.png in Sources */ = {isa = PBXBuildFile; fileRef = B54F73F5CD01DE714B3FF852EF708103 /* developer_network_icon@2x.png */; };
+		23A6306C4C05BD5B969801342F252CE8 /* RequestTitleSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DE8D4B75F3F337789F2E3A9CE7FC60 /* RequestTitleSectionView.swift */; };
+		26ED536CADF34F5C87604FA541B82824 /* HYPPluginContainerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A2DC5285D5B966192423C5D61730E5 /* HYPPluginContainerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		277BBCFAC9D63E8D25850278CA42691B /* MarginLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B514B322C668B0111522687BC911E4EE /* MarginLabel.swift */; };
+		285C38F7FF19B5863304D6D16104372F /* WHView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B106A905F533E03EBC596DFA6FCDE9 /* WHView.swift */; };
+		28AE5B4F411D6EBE904599379564C609 /* HYPConfigurationConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = EC61B8D05EC2F6D3D3E3B116A9BA7E81 /* HYPConfigurationConstants.m */; };
+		28D3B31300942AD3AF91C3099500607F /* x@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E76800C904DFA0DE9875BB8652721C9B /* x@3x.png */; };
+		29F3FF231735BF3D40C7055023086C2B /* HYPPluginModule.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A10F71AC4195C3D2FB284B114E326D /* HYPPluginModule.m */; };
+		2A9A2E44C4A1DF9FB4F227604E54362C /* HYPOverlayContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 37CC5D6F8947EC96C77BFBA274FBA636 /* HYPOverlayContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BA13FC6BA6037A118B2B8687F989DB6 /* RequestModelBeautifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF2B27B5021CB60A522E4061053389B /* RequestModelBeautifier.swift */; };
+		2BB8D68DC4C778B7B74DA7E23DF6CE6E /* RequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDD11294733AAEC08B0AD05EF277FF0 /* RequestModel.swift */; };
+		2D246843E51525A7D95EBB6B04119DF8 /* HYPOverlayDebuggingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E5547BB683F6CF71B6737DD8BF8D7FE /* HYPOverlayDebuggingViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		326A1F25DB5638D51683CC988E86BA35 /* HYPListenerContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DCA0854DDC428187C83C82D8A57ECD6 /* HYPListenerContainer.m */; };
+		3348D6F946F3CB16B40CE5848364631D /* HYPOverlayDebuggingWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3D7429CB6B719A5BB8BF835B9F11AD /* HYPOverlayDebuggingWindow.m */; };
+		3525B6921471EA0E8A86F6F2E18AF731 /* HYPInAppOverlayContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C6EE6F9AA356E1864F2399449635C89 /* HYPInAppOverlayContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35AE0F975663E637C0C38AAD7BED62DC /* HYPOverlayPluginModule.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C7F4777644A805C44AE9973D6F9B35 /* HYPOverlayPluginModule.m */; };
+		35BB120E7DF016EE8E6EF77AF85FFAA1 /* UIApplication+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E353D268C021D437AA119A22504B341 /* UIApplication+Swizzling.m */; };
+		372900F08F2B066D407B569B4B7ED36D /* RequestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B9E2B580775F9184765689309E0540 /* RequestCell.swift */; };
+		375EC86040B53662D0D0EC43E6D5CCAD /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311AD8A1D596A3D00D49CBDA8F5EABF3 /* UIApplicationExtension.swift */; };
+		3863D8E729CC5F96950A3ED20E9275B8 /* DeveloperKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9E38B461F33B3D4537BF84436976F9 /* DeveloperKit-dummy.m */; };
+		3B5E3242709E3182BEA83E4A9D741156 /* WHTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C77C2DB5350A5BC23C089085AACCFDA /* WHTextView.swift */; };
+		3D566E34FBA4846A74A814816DCB730A /* UIViewController+Top.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920E2749B847700DD33EAA96CDC1E2FD /* UIViewController+Top.swift */; };
+		3D94A3577321E40ED7EFA0B6459BA17E /* HYPOverlayViewProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = C48531A80CF771DFCEEE327A21B996DA /* HYPOverlayViewProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DB4A538832343766EA8EE7495F31BF4 /* HYPViewSelectionDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 48D8D1D0CF8BD6C013AC5BAC4759BBBA /* HYPViewSelectionDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40D7052BD97293AE23393ABBBE0204AE /* BodyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2E29096D0E4E7EFE98CDB461F9E6E0 /* BodyDetailViewController.swift */; };
+		425CF96FE20D3C66FF429788698A5FF6 /* HyperioniOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD1CE9813AC6B1D074D86C35087E511 /* HyperioniOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42EB472487317ABAE7C9AEF04A1F1540 /* developer_performance_icon@2x.png in Sources */ = {isa = PBXBuildFile; fileRef = 5609BABD5D625B8ADE6AB04E48C16FC5 /* developer_performance_icon@2x.png */; };
+		47B368DA7A05CCB9B8B255459F1A5FB1 /* HYPViewSelectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5201821B928566DDC5689DFB777085 /* HYPViewSelectionTableViewController.m */; };
+		47C54FD6A37C683832CA6C78A0ED8B7A /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE51F4CE320BBC8124F07A29ACC186B /* Section.swift */; };
+		4F98D380FE52BE36E748EE39A0CDF601 /* WormholyStarterEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 44157B17AD863004C9E317782F20D83C /* WormholyStarterEngine.m */; };
+		50A10434A4FC11AB973FE2D6A02CB34A /* WHLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC26E2DEE05292B21962717F6A53CBD0 /* WHLabel.swift */; };
+		52D3090FC10929A1494236F81E8E0099 /* CleanPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75142A6353F86A2FC4BF250C3CBFF34 /* CleanPlugin.swift */; };
+		53BE890EEBB9626299D7D25269845A08 /* RequestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBEFF98DC6B4D22F958D79203ECA819 /* RequestsViewController.swift */; };
+		54ED66B35A4A2A9FD87F89A53F44475F /* HYPSnapshotPluginModule.m in Sources */ = {isa = PBXBuildFile; fileRef = C20B23287B5164AD3EB13206544C28BB /* HYPSnapshotPluginModule.m */; };
+		554BFCC10D8C57244C3496E0F84A2B42 /* WHDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7497B29E93D832CC32E0219F0028AD15 /* WHDate.swift */; };
+		56BCCA72F72EE5E9E2CCE7D471CB9C2E /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDDC94BDCD3239AA1961743B050DCA2 /* Storage.swift */; };
+		577CFF78B00F25145CC2B00C97D29A7A /* HYPSnapshotViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C15DF72DEBD1D02A44450BE9A3207E8 /* HYPSnapshotViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		59048DAAD582D62B6589E82ED77692F5 /* ActionableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C1648FC229A852C61D83EA01E9A1CE /* ActionableTableViewCell.swift */; };
+		5B447136EC0866E0CC7C2056C19D9700 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C6330537A38DDA2F4EC7D81CB255A50 /* Foundation.framework */; };
+		5BD5268F986B4DC4329D34F163833084 /* linkButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FA439C91E34C1C69E64F0521E794F66 /* linkButton.png */; };
+		5D8B31EF5F5265449AF3AC9464150705 /* HyperionWindowManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B4478D31F80691C5DFB0503119D5CA67 /* HyperionWindowManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5DC0432A572354AC4E6594F8894A3C5A /* WHBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B14A395ABE6335772231A6010B86E6 /* WHBaseViewController.swift */; };
+		5F513A6C51F223FC0AE94791256C768D /* HyperionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD8880AC5C6A95F2BDB5F3F6D15BD64 /* HyperionManager.m */; };
+		614EEF49A334D4ADA23FFDCBA2FA3B0C /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EBE22082A748C122BB02924E94A266 /* Config.swift */; };
+		645CED3C5E573E08A05AF509904BEB6A /* WHString.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0296B71BC7D06FDC08DBC4F828824F1 /* WHString.swift */; };
+		646B1F4A83D922BA7DDF108081704483 /* HYPConfigurationConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 56F470FAF0717C738144AB16195CAFE6 /* HYPConfigurationConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69E56BFA526521C1FBEAB229CF1F8D53 /* HYPInAppOverlayContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = A4869C137A5350B960D5DA27694F17D4 /* HYPInAppOverlayContainer.m */; };
+		6A220724C2037AFBC004DD16743F9705 /* developer_info_icon@3x.png in Sources */ = {isa = PBXBuildFile; fileRef = F64D4EFBC36E2AD51781086E3A2A9205 /* developer_info_icon@3x.png */; };
+		6C3A6D4B364434C6C65E578E9B9EEEB4 /* HyperionWindowManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC88DB410BF92406D7F655C28E2140C /* HyperionWindowManager.m */; };
+		6D371DAE1DE99D4B4F20933B42E8DBE4 /* developer_env_icon@2x.png in Sources */ = {isa = PBXBuildFile; fileRef = 58F47706AA2AA000FFE4197DECCEA17D /* developer_env_icon@2x.png */; };
+		6EF7D3247F99F9AEA7C92BE7BD90A291 /* EnvironmentPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C62B6C24C0A1D106FABFFA6024226AE /* EnvironmentPlugin.swift */; };
+		72A2B2E37073C55CFF5862624D73E410 /* HYPSnapshotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9815DD9041DF67F05420392A59E471E7 /* HYPSnapshotViewController.m */; };
+		7473E609B3F0BD9FB04F977B8800E531 /* Pods-DeveloperKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B54936869244BB67516D42CA724535A /* Pods-DeveloperKit_Tests-dummy.m */; };
+		773BAB2C49AD2345EA7D07D946E3DCEC /* HYPPluginExtensionImp.h in Headers */ = {isa = PBXBuildFile; fileRef = A617601D2574F677D48F6742638D618B /* HYPPluginExtensionImp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78C2E2725C05EB0867275D7648406E04 /* WHNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF95724504AC24D45BE56629242EBD0E /* WHNavigationController.swift */; };
+		7A1771FBF2E65F19A9887C89C047C93B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1EB10E3919E954C687EE2013248636 /* Colors.swift */; };
+		7C6241DD8DE97091B4CEB1A97613EF87 /* LinkedFramesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83387F00B34B7418A38C6838A347BAF /* LinkedFramesList.swift */; };
+		7CA17BD889AA8F2532C53A5361B7A6AB /* x.png in Resources */ = {isa = PBXBuildFile; fileRef = 748C6EB6398F7D5F76FE0C53DED3C2CA /* x.png */; };
+		81F9FF0438DCC1F05FEAC897FF249D9D /* HYPSnapshotDebuggingWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 568556AD43C8FB8F24AE6563885964B2 /* HYPSnapshotDebuggingWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84B9482A6537D7BC546873FB6B298E15 /* Wormholy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885ACE595A801E77B7718C797716BD2B /* Wormholy.swift */; };
+		8599DFB68D7E23557AEEDF0CDD9FB476 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C6330537A38DDA2F4EC7D81CB255A50 /* Foundation.framework */; };
+		8792DF4BDA99A7A6574AED94D7D1DAB0 /* NSURLSessionConfiguration+Wormholy.h in Headers */ = {isa = PBXBuildFile; fileRef = B941D362D1C59470B472C2C517003F69 /* NSURLSessionConfiguration+Wormholy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8836C5E779CC031470FBDD1552773DBF /* Wormholy.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AA92ED38E716E03D3FC758C810953B95 /* Wormholy.bundle */; };
+		89870939C27FB9AB375E578492707785 /* HYPSnapshotPluginModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 248A5F2F66FBD7E5614B02595DA63F9F /* HYPSnapshotPluginModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A2E53192D1969AC3578A21385310E6F /* UIWindow+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = C076F1CDB504F6024C230CFBFA5CCDC0 /* UIWindow+Swizzling.m */; };
+		8DA38119E5CA37C2BC348E7B81146E34 /* HYPPluginHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 574040230FEE238155174E3295D36758 /* HYPPluginHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EFF0EDB85F6E328B50F1E44487E5183 /* HYPPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = CE8C83815BDA0B975706F5586ED19A04 /* HYPPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94150834C7AC2DEF149182A49F934F4C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C6330537A38DDA2F4EC7D81CB255A50 /* Foundation.framework */; };
+		947D4F452DDB9D4B487540125DBE7F96 /* HYPPluginContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB06A7427F9FE796B0E2DAF6F84290E /* HYPPluginContainerView.m */; };
+		95208C160997A2E2C046CC754959710D /* WormholyMethodSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = F85D87F5EB12556F5D67AFC362129586 /* WormholyMethodSwizzling.m */; };
+		96DA6EACAB024E5264A1056124B9FB2A /* Flow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38F70FFF846AA0133CB62E073BD74901 /* Flow.storyboard */; };
+		97D0E01A3BDDA912849275D7145E3744 /* HYPSnapshotDebuggingWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 597A7AA237ABEE4B92E4FDE3E17A25F3 /* HYPSnapshotDebuggingWindow.m */; };
+		984853856CCC3A8BF45A2DBAE1DCDAC4 /* GDPerformanceView-Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 38EDA925E066D436DC02CD9A4B94AC13 /* GDPerformanceView-Swift-dummy.m */; };
+		9C9F6F4CD6CC7D3A61615F72DCBB0212 /* Wormholy.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D3B04A465960F83B12CF245DCA44506 /* Wormholy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9CFB9EB9B6F4219CF05E7D51D3093FE2 /* SwiftySelfAwareHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C5A061506EA069461CC9FFEA1DC019 /* SwiftySelfAwareHelper.swift */; };
+		9D62B28C31A19D94218DF2F4A28C1809 /* HYPSnapshotInteractionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 61CC0B4173D45BF32B939CEA62312490 /* HYPSnapshotInteractionView.m */; };
+		9E587BECBECD01AC1626A8148896470F /* HYPPluginExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 37479356CDD90B8A350280053EC95E5D /* HYPPluginExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F158FC9B6739EF0B65ADBE4596307CB /* HYPPluginHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7FFAC597F5D96FDC1E3FBC412CD583 /* HYPPluginHelper.m */; };
+		9F7C957EB48BE76BA9DF948DC72F42BB /* TextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5089FE2244A6C0CA8A10A1F37A159E29 /* TextTableViewCell.swift */; };
+		A179100CF95930D389EC09182CF0BAEB /* PerformancePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02542A1FDAEC63EDC3B16964BF83541 /* PerformancePlugin.swift */; };
+		A2EFAC6BA332ABEF15C01AA1535DD96A /* HyperionCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0D30822AB0B262185B0D5AABD32B97E /* HyperionCore.framework */; };
+		A5830BFF0322F95EEDBB912F9E38BC82 /* PerformanceСalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A976DCFB3305AC0D5E2828EFE1AB552 /* PerformanceСalculator.swift */; };
+		A64866D22CD0AE1582EE447A60FB604A /* Postman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8E4BFF35B816E68ACBC51F693F9E7F /* Postman.swift */; };
+		A6CEE9E7C3AC372AFAB763384F6549F0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B04C406B8A88FC9B5DD912BE101A3A /* UIKit.framework */; };
+		A72A8F98F507EC16218CD5721741242F /* WindowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E030A798123252258229B3FB53DD2 /* WindowViewController.swift */; };
+		A7C28464882A904F36C2D466C131E45C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C6330537A38DDA2F4EC7D81CB255A50 /* Foundation.framework */; };
+		A7FE6534E09ED22AE8BBCEBAD98A68CA /* CustomActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B407F22DF6E8AA15B277477275E43BD /* CustomActivity.swift */; };
+		A8A24B4D609572252EB95457E6D8A7D1 /* CustomHTTPProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A330FB80C604B531E1696E17393DD02 /* CustomHTTPProtocol.swift */; };
+		A94377C66837F8A61E67E2FBD2912B70 /* TextTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 736875E30224F714DA3B472BA5F34385 /* TextTableViewCell.xib */; };
+		AB0746560789907C9C782B269224BA29 /* HyperionCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B86350DF9061C31537F575FBB6E3C48 /* HyperionCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB1B0FB48C7C8489FFC9881AD85ACBF5 /* DeveloperKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B7E0691F87D90BC3BBD5F0FECE7B5AC6 /* DeveloperKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFC82119896E0C64F70CD12798813657 /* HYPPopoverViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5169C6D7FBD03A3CB167850C7F69B162 /* HYPPopoverViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B557B37548EB9E4D53A0F5D668A691E0 /* Pods-DeveloperKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 830D00D1619E4180B0AB5AD894393AD8 /* Pods-DeveloperKit_Example-dummy.m */; };
+		B5A7BFA32C023F67A8ABABC0BAF622B8 /* ShareUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602FCB3768BCF7EC9E47D5854A590A3E /* ShareUtils.swift */; };
+		B643CF8E95B88E8187A0E32F177B800C /* HYPViewSelectionTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F17A67E6CC62AD319ADB5412040F06EB /* HYPViewSelectionTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B767284F55DE73F6A533F030F9783C30 /* HYPActivationGestureOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = A0EA2E1CE74891A38F455867650A9006 /* HYPActivationGestureOptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB82FAA845C041B6100A3A9524D9DE54 /* developer_info_icon@2x.png in Sources */ = {isa = PBXBuildFile; fileRef = 4C5E2C5A007316559911034631B4E781 /* developer_info_icon@2x.png */; };
+		BB87914105DD1F9587028A5F21FBB6E2 /* developer_clean_icon@3x.png in Sources */ = {isa = PBXBuildFile; fileRef = 366CC4ECA5AE04EAEFB774630558E2C0 /* developer_clean_icon@3x.png */; };
+		BCD95148F372F3D47E93474F6ACB6950 /* PerformanceMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B5066342C60848D12662F6285D2088 /* PerformanceMonitor.swift */; };
+		BD7136DFC14EF319D0F51FEE6EFF9FA8 /* HyperionDefaultConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 872748EF9D59DF97DAB2E8CC8B14E575 /* HyperionDefaultConfiguration.plist */; };
+		BE3F74C4FCB41D7907CEC6FB675A8DD3 /* HYPSnapshotContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 640225F4656FE91CAAE822499A423E53 /* HYPSnapshotContainer.m */; };
+		BE63C8D5D7B65E939D277759626FF343 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B04C406B8A88FC9B5DD912BE101A3A /* UIKit.framework */; };
+		C1484FF6FECE9420603E52EC987107ED /* UIWindow+Swizzling.h in Headers */ = {isa = PBXBuildFile; fileRef = F5D45856D3608644B97BF4DE5ED62878 /* UIWindow+Swizzling.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2D45D0EB0837E1A2062A64DA3E58061 /* HYPPluginExtensionImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BCB84022C23B7F29C6E4C1C08B1F9E /* HYPPluginExtensionImp.m */; };
+		C4100BD4E408009C3AEF2F303A43260D /* ActionableTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBAC24A26ADAE7C41A549CBB57FE06AC /* ActionableTableViewCell.xib */; };
+		C55099E7D3DAD8A47189E1AE0DDE5189 /* developer_performance_icon@3x.png in Sources */ = {isa = PBXBuildFile; fileRef = 984CBF46EBB705D570E25C048ADDAE02 /* developer_performance_icon@3x.png */; };
+		C57F46EA65F3C8953E988D4DC4D31CB5 /* Pods-DeveloperKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 76AAF88C81CBAAD31198D4CC3ED3E3C3 /* Pods-DeveloperKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8A7E588D199390313E73DAC05465908 /* linkButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B96A65DBD9FE89BB6B05EA1825463123 /* linkButton@2x.png */; };
+		CAD2053E7D3A47C498F6B2C36E112A5C /* Wormholy-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CE59CEAC135D339C13EE8817460F995 /* Wormholy-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB2A2D0E6F8CA923217A32C710AF3988 /* HyperioniOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9EB0D62171639793227F33068A33E /* HyperioniOS-dummy.m */; };
+		CCB9A3C6D5DD416F8EEB0759C6975405 /* HyperionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E59DEEFDFD6E855AEA373220E75D3131 /* HyperionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CDA7A37B5578F1D05B965F300C3C796C /* HYPPopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A13C20F54AFD20AA415A9DB006007AFD /* HYPPopoverViewController.m */; };
+		CE37D24D4C95B38994DBF9A388D999F6 /* HYPSnapshotContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E2CB185D61480B3CA945E212D40D1C4 /* HYPSnapshotContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CECFF1064F9C686F2F59EBB77D7F79A0 /* WHCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3175D80E562B824514756B6BE39FF479 /* WHCollectionView.swift */; };
+		CED4F6ED70825D446AE7EA5988E204B7 /* HYPOverlayPluginModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 762BD7CF691926BE7B90F02E0C490236 /* HYPOverlayPluginModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D43D6A2F8140B13F3B99313A1EC0CF99 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C6330537A38DDA2F4EC7D81CB255A50 /* Foundation.framework */; };
+		D7CBA2800362B5EA785B7ABB3E85D96E /* NetworkPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793F671A406E5B68037A03764CE40FC8 /* NetworkPlugin.swift */; };
+		D7F1DEC45EE1E3ABE46BC4FDCD1882FC /* PerformanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8608E28BFBE50547D83537136FBD68 /* PerformanceView.swift */; };
+		D992B8A66976953E1292EED90F8974C7 /* HYPOverlayDebuggingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABC19E7BAA52D22ED9A178972F1FCFB /* HYPOverlayDebuggingViewController.m */; };
+		DAC9732D9D85711BD17F230EAEDB5978 /* Wormholy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000FC8FA0E6E5FDEB9039727F0DCA83C /* Wormholy.framework */; };
+		DCD5633DA418F10FAC02C0605FB93F68 /* HYPPluginMenuItem.h in Headers */ = {isa = PBXBuildFile; fileRef = E8E4D6207ABE0EB499B8ACDBF88CB4C4 /* HYPPluginMenuItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DCF666290FED74BF08ACC79FB2A3F425 /* RequestResponseExportOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5280AEFD0958A3C90D0D4E87952CBE4 /* RequestResponseExportOption.swift */; };
+		DD2860F10AB0B84F34CEA38A5385EC7F /* WormholyMethodSwizzling.h in Headers */ = {isa = PBXBuildFile; fileRef = D8A86BCA8AAEF8D79061EDDEB0EB4EDD /* WormholyMethodSwizzling.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD5CF2D024EA21B5B52BD5E31B3C5455 /* developer_env_icon@3x.png in Sources */ = {isa = PBXBuildFile; fileRef = 5C2617D4CB71FC0FF6EFA344FC2AA21F /* developer_env_icon@3x.png */; };
+		E87F14D4718ECDB2258633FBC3474969 /* HYPPluginModule.h in Headers */ = {isa = PBXBuildFile; fileRef = C5C62758E238EF5D23056CDE1937817F /* HYPPluginModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E972CEF79F704179158F8985680BA57D /* HYPSnapshotInteractionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7668ECB34954FA1156A2DFDE651ED6B5 /* HYPSnapshotInteractionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9800D1BDDB5B041E9E5B8A291ABA7EE /* AppInfoPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB3715A86987DD781E5F9027886462A /* AppInfoPlugin.swift */; };
+		EA16A56807AC302C0DB124127B1E1EDC /* NSURLSessionConfiguration+Wormholy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D09E22CE23F2DFE9D16DDF80A0651A6 /* NSURLSessionConfiguration+Wormholy.m */; };
+		EA8810E751F2DE4D5F01BE987181C488 /* x@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C557138014C4FA883094E1F4A62FEAF5 /* x@2x.png */; };
+		EC22CDC89BFD6CA61B6026ED839D50D8 /* WHBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA2CB97AC736C59DED877573E3BF5E1 /* WHBundle.swift */; };
+		ED10E25793F10C5A909EE1F791C4CC54 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B04C406B8A88FC9B5DD912BE101A3A /* UIKit.framework */; };
+		F146896128DAEE20E7518A13489F5ECD /* HYPPluginMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F0725BF712A7CB2A95D42FE37C9FEC3 /* HYPPluginMenuItem.m */; };
+		F2D75010DCFDD5F3DE62CD9167A72CE3 /* Pods-DeveloperKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B1C003A5C211DBC939A5DD5DB2358AD /* Pods-DeveloperKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4C8EE2ED5A7EB2C16E851C9E8D3DCE1 /* RequestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E22762F8AB8FA78EB2A2330F1761AFB /* RequestCell.xib */; };
+		FCFD5E6216EB18F39FFCD2A6EBC8E3BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C6330537A38DDA2F4EC7D81CB255A50 /* Foundation.framework */; };
+		FD6A29F3E313CC05ED06CAB3A23A6B56 /* developer_network_icon@3x.png in Sources */ = {isa = PBXBuildFile; fileRef = E5BCF0B0650E47FEC894D8B5A6C924FB /* developer_network_icon@3x.png */; };
+		FDDCF609529DDC428B7A3C730A36A29B /* Wormholy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 112C425195642E2A0B7D0414424F64CF /* Wormholy-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0178B9F1FC49D0DF61F5A169B15CB964 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93CEC7FFB57A497DE49471C5D9517C13;
+			remoteInfo = "Wormholy-Wormholy";
+		};
+		4175C4984A8F710E9C86EC90DD3B7563 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E73ED39761329414C06DD4486C5058E;
+			remoteInfo = Wormholy;
+		};
+		54907BA6EF9B774E7B7188F565F43F30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCB90DD8163C6B771932BD93C8F29103;
+			remoteInfo = "Pods-DeveloperKit_Example";
+		};
+		6F5E7824A5F34494BF44A276E4BB0485 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 62A0281C85BDAAD2DA859FF4D0CAEE49;
+			remoteInfo = HyperioniOS;
+		};
+		837B537974AE4C001CA2FEEEC76B811E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8674A6F604977FE90C1CE085F3BCDDB7;
+			remoteInfo = "GDPerformanceView-Swift";
+		};
+		99E891C0BB33DAFDDB6308B96C860D71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 62A0281C85BDAAD2DA859FF4D0CAEE49;
+			remoteInfo = HyperioniOS;
+		};
+		B19E4A58509E38230050455BA0B002A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8674A6F604977FE90C1CE085F3BCDDB7;
+			remoteInfo = "GDPerformanceView-Swift";
+		};
+		E629E3F4A271E4794924CBA9C579C1FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E73ED39761329414C06DD4486C5058E;
+			remoteInfo = Wormholy;
+		};
+		EC1F25BACAAD5241C1705DADF079E26B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D99DE4FC471588C44EAE3C272DB2CC12;
+			remoteInfo = DeveloperKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		000FC8FA0E6E5FDEB9039727F0DCA83C /* Wormholy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Wormholy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		03A2DC5285D5B966192423C5D61730E5 /* HYPPluginContainerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HYPPluginContainerView.h; path = Core/HYPPluginContainerView.h; sourceTree = "<group>"; };
+		03D1DF9A8025B5AF708C8A1DAAB51EB9 /* GDPerformanceView-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "GDPerformanceView-Swift.release.xcconfig"; sourceTree = "<group>"; };
+		07B5066342C60848D12662F6285D2088 /* PerformanceMonitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PerformanceMonitor.swift; path = "GDPerformanceView-Swift/GDPerformanceMonitoring/PerformanceMonitor.swift"; sourceTree = "<group>"; };
+		0863AB7E82D39425EE7FC577F8E4C8F4 /* developer_clean_icon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "developer_clean_icon@2x.png"; sourceTree = "<group>"; };
+		0B407F22DF6E8AA15B277477275E43BD /* CustomActivity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomActivity.swift; path = Sources/Subclasses/CustomActivity.swift; sourceTree = "<group>"; };
+		0C350194C24E322BEC3CD8A011843EAC /* WHTableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WHTableView.swift; path = Sources/Subclasses/WHTableView.swift; sourceTree = "<group>"; };
+		0C5D84ABBD7132F5199D231519A23F2E /* HyperioniOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HyperioniOS-Info.plist"; sourceTree = "<group>"; };
+		0C9F394E644B8E7FAA10BC52783F84D4 /* UIApplication+Swizzling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+Swizzling.h"; path = "Core/Swizzling/UIApplication+Swizzling.h"; sourceTree = "<group>"; };
+		0CE7020DCFF94CEF5CED75B8163D0B9A /* GDPerformanceView-Swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GDPerformanceView-Swift-Info.plist"; sourceTree = "<group>"; };
+		0E810DAC3EBCC1A2BEE1A726625EFCDB /* GDPerformanceView-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "GDPerformanceView-Swift.modulemap"; sourceTree = "<group>"; };
+		112C425195642E2A0B7D0414424F64CF /* Wormholy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Wormholy-dummy.m"; sourceTree = "<group>"; };
+		1841F043DC85C8CCBDACBCDC16E211D7 /* EnvironmentPluginMenuItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EnvironmentPluginMenuItem.swift; sourceTree = "<group>"; };
+		193F6772B39BE6F9A0012F39683F86B0 /* Wormholy.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Wormholy.modulemap; sourceTree = "<group>"; };
+		1A14EFC53B3E711B4C5F37DBC6EA61FF /* DeveloperKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DeveloperKit-Info.plist"; sourceTree = "<group>"; };
+		1A330FB80C604B531E1696E17393DD02 /* CustomHTTPProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomHTTPProtocol.swift; path = Sources/CustomHTTPProtocol.swift; sourceTree = "<group>"; };
+		1C77C2DB5350A5BC23C089085AACCFDA /* WHTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WHTextView.swift; path = Sources/Subclasses/WHTextView.swift; sourceTree = "<group>"; };
+		1DDD11294733AAEC08B0AD05EF277FF0 /* RequestModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestModel.swift; path = Sources/Models/RequestModel.swift; sourceTree = "<group>"; };
+		1F7829CDE16C77285CAA979F15D71E3A /* Pods-DeveloperKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DeveloperKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		248A5F2F66FBD7E5614B02595DA63F9F /* HYPSnapshotPluginModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HYPSnapshotPluginModule.h; path = Core/Public/Plugin/SnapShotPlugin/HYPSnapshotPluginModule.h; sourceTree = "<group>"; };
+		2530BC414137FF7A53A0368B476547B9 /* Wormholy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Wormholy.framework; path = Wormholy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2677067EFDE95569C2E88FC402E10B88 /* GDPerformanceView_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GDPerformanceView_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26C1648FC229A852C61D83EA01E9A1CE /* ActionableTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActionableTableViewCell.swift; path = Sources/UI/Cells/ActionableTableViewCell.swift; sourceTree = "<group>"; };
+		2BF9EB0D62171639793227F33068A33E /* HyperioniOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HyperioniOS-dummy.m"; sourceTree = "<group>"; };
+		2C08A43D7BCC30AD79898A3377409DE3 /* DeveloperKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DeveloperKit.swift; sourceTree = "<group>"; };
+		2CA2CB97AC736C59DED877573E3BF5E1 /* WHBundle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WHBundle.swift; path = Sources/Subclasses/WHBundle.swift; sourceTree = "<group>"; };
+		311AD8A1D596A3D00D49CBDA8F5EABF3 /* UIApplicationExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIApplicationExtension.swift; sourceTree = "<group>"; };
+		3175D80E562B824514756B6BE39FF479 /* WHCollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WHCollectionView.swift; path = Sources/Subclasses/WHCollectionView.swift; sourceTree = "<group>"; };
+		366CC4ECA5AE04EAEFB774630558E2C0 /* developer_clean_icon@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "developer_clean_icon@3x.png"; sourceTree = "<group>"; };
+		37479356CDD90B8A350280053EC95E5D /* HYPPluginExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HYPPluginExtension.h; path = Core/Public/Plugin/HYPPluginExtension.h; sourceTree = "<group>"; };
+		37CC5D6F8947EC96C77BFBA274FBA636 /* HYPOverlayContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HYPOverlayContainer.h; path = Core/Public/Plugin/HYPOverlayContainer.h; sourceTree = "<group>"; };
+		38EDA925E066D436DC02CD9A4B94AC13 /* GDPerformanceView-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GDPerformanceView-Swift-dummy.m"; sourceTree = "<group>"; };
+		38F70FFF846AA0133CB62E073BD74901 /* Flow.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Flow.storyboard; path = Sources/UI/Flow.storyboard; sourceTree = "<group>"; };
+		3A95F20D16CF4FDB1FB748A4F08CE7CB /* Protocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protocols.swift; path = "GDPerformanceView-Swift/GDPerformanceMonitoring/Protocols.swift"; sourceTree = "<group>"; };
+		3B2E030A798123252258229B3FB53DD2 /* WindowViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WindowViewController.swift; path = "GDPerformanceView-Swift/GDPerformanceMonitoring/WindowViewController.swift"; sourceTree = "<group>"; };
+		3B86350DF9061C31537F575FBB6E3C48 /* HyperionCore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HyperionCore.h; path = Core/HyperionCore.h; sourceTree = "<group>"; };
+		3C6EE6F9AA356E1864F2399449635C89 /* HYPInAppOverlayContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HYPInAppOverlayContainer.h; path = Core/OverlayDebuggingWindow/HYPInAppOverlayContainer.h; sourceTree = "<group>"; };
+		3E353D268C021D437AA119A22504B341 /* UIApplication+Swizzling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+Swizzling.m"; path = "Core/Swizzling/UIApplication+Swizzling.m"; sourceTree = "<group>"; };
+		3E3D7429CB6B719A5BB8BF835B9F11AD /* HYPOverlayDebuggingWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HYPOverlayDebuggingWindow.m; path = Core/OverlayDebuggingWindow/HYPOverlayDebuggingWindow.m; sourceTree = "<group>"; };
+		3E5547BB683F6CF71B6737DD8BF8D7FE /* HYPOverlayDebuggingViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HYPOverlayDebuggingViewController.h; path = Core/OverlayDebuggingWindow/HYPOverlayDebuggingViewController.h; sourceTree = "<group>"; };
+		44157B17AD863004C9E317782F20D83C /* WormholyStarterEngine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WormholyStarterEngine.m; path = Sources/Objc/WormholyStarterEngine.m; sourceTree = "<group>"; };
+		48D8D1D0CF8BD6C013AC5BAC4759BBBA /* HYPViewSelectionDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HYPViewSelectionDelegate.h; path = Core/SnapShotDebuggingWindow/HYPViewSelectionDelegate.h; sourceTree = "<group>"; };
+		48DE8D4B75F3F337789F2E3A9CE7FC60 /* RequestTitleSectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestTitleSectionView.swift; path = Sources/UI/Sections/RequestTitleSectionView.swift; sourceTree = "<group>"; };
+		492BAC864BD107BB02F46E2D9986DD37 /* FileHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileHandler.swift; path = Sources/Utils/FileHandler.swift; sourceTree = "<group>"; };
+		4A5DBA42E1E0425669CFE2B6E6A43C52 /* PluginListViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PluginListViewController.h; path = Core/SnapShotDebuggingWindow/PluginListViewController.h; sourceTree = "<group>"; };
+		4B54936869244BB67516D42CA724535A /* Pods-DeveloperKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DeveloperKit_Tests-dummy.m"; sourceTree = "<group>"; };
+		4B865B353046D0E76322F09951C83DD5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		4C5E2C5A007316559911034631B4E781 /* developer_info_icon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "developer_info_icon@2x.png"; sourceTree = "<group>"; };
+		4FE51F4CE320BBC8124F07A29ACC186B /* Section.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Section.swift; path = Sources/Models/Section.swift; sourceTree = "<group>"; };
+		5089FE2244A6C0CA8A10A1F37A159E29 /* TextTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextTableViewCell.swift; path = Sources/UI/Cells/TextTableViewCell.swift; sourceTree = "<group>"; };
+		50CAD4449A34398F144759EA4E71C920 /* DeveloperKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DeveloperKit-prefix.pch"; sourceTree = "<group>"; };
+		5169C6D7FBD03A3CB167850C7F69B162 /* HYPPopoverViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HYPPopoverViewController.h; path = Core/SnapShotDebuggingWindow/HYPPopoverViewController.h; sourceTree = "<group>"; };
+		54353E590429EC345D33C506EE36416B /* Pods-DeveloperKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DeveloperKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		5609BABD5D625B8ADE6AB04E48C16FC5 /* developer_performance_icon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "developer_performance_icon@2x.png"; sourceTree = "<group>"; };
+		568556AD43C8FB8F24AE6563885964B2 /* HYPSnapshotDebuggingWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HYPSnapshotDebuggingWindow.h; path = Core/SnapShotDebuggingWindow/HYPSnapshotDebuggingWindow.h; sourceTree = "<group>"; };
+		56F470FAF0717C738144AB16195CAFE6 /* HYPConfigurationConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HYPConfigurationConstants.h; path = Core/OverlayDebuggingWindow/HYPConfigurationConstants.h; sourceTree = "<group>"; };
+		574040230FEE238155174E3295D36758 /* HYPPluginHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HYPPluginHelper.h; path = Core/Public/Plugin/HYPPluginHelper.h; sourceTree = "<group>"; };
+		58F47706AA2AA000FFE4197DECCEA17D /* developer_env_icon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "developer_env_icon@2x.png"; sourceTree = "<group>"; };
+		597A7AA237ABEE4B92E4FDE3E17A25F3 /* HYPSnapshotDebuggingWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HYPSnapshotDebuggingWindow.m; path = Core/SnapShotDebuggingWindow/HYPSnapshotDebuggingWindow.m; sourceTree = "<group>"; };
+		5A200ECDE319A3D9E9CB5769AFD312D2 /* HYPOverlayDebuggingWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HYPOverlayDebuggingWindow.h; path = Core/OverlayDebuggingWindow/HYPOverlayDebuggingWindow.h; sourceTree = "<group>"; };
+		5A976DCFB3305AC0D5E2828EFE1AB552 /* PerformanceСalculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PerformanceСalculator.swift"; path = "GDPerformanceView-Swift/GDPerformanceMonitoring/PerformanceСalculator.swift"; sourceTree = "<group>"; };
+		5B8608E28BFBE50547D83537136FBD68 /* PerformanceView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PerformanceView.swift; path = "GDPerformanceView-Swift/GDPerformanceMonitoring/PerformanceView.swift"; sourceTree = "<group>"; };
+		5C15DF72DEBD1D02A44450BE9A3207E8 /* HYPSnapshotViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HYPSnapshotViewController.h; path = Core/SnapShotDebuggingWindow/HYPSnapshotViewController.h; sourceTree = "<group>"; };
+		5C2617D4CB71FC0FF6EFA344FC2AA21F /* developer_env_icon@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "developer_env_icon@3x.png"; sourceTree = "<group>"; };
+		5CE59CEAC135D339C13EE8817460F995 /* Wormholy-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Wormholy-umbrella.h"; sourceTree = "<group>"; };
+		5D09E22CE23F2DFE9D16DDF80A0651A6 /* NSURLSessionConfiguration+Wormholy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURLSessionConfiguration+Wormholy.m"; path = "Sources/Objc/NSURLSessionConfiguration+Wormholy.m"; sourceTree = "<group>"; };
+		5EBEFF98DC6B4D22F958D79203ECA819 /* RequestsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestsViewController.swift; path = Sources/UI/RequestsViewController.swift; sourceTree = "<group>"; };
+		5EC88DB410BF92406D7F655C28E2140C /* HyperionWindowManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HyperionWindowManager.m; path = Core/HyperionWindowManager.m; sourceTree = "<group>"; };
+		602FCB3768BCF7EC9E47D5854A590A3E /* ShareUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShareUtils.swift; path = Sources/Utils/ShareUtils.swift; sourceTree = "<group>"; };
+		61CC0B4173D45BF32B939CEA62312490 /* HYPSnapshotInteractionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HYPSnapshotInteractionView.m; path = Core/Public/Plugin/SnapShotPlugin/HYPSnapshotInteractionView.m; sourceTree = "<group>"; };
+		62C6E459519EBEB01B4CD22D112C7D8D /* GDPerformanceView-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GDPerformanceView-Swift-umbrella.h"; sourceTree = "<group>"; };
+		640225F4656FE91CAAE822499A423E53 /* HYPSnapshotContainer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HYPSnapshotContainer.m; path = Core/SnapShotDebuggingWindow/HYPSnapshotContainer.m; sourceTree = "<group>"; };
+		68FD2B0125925E6CDE9A85D115FA2D4E /* Pods-DeveloperKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DeveloperKit_Example-frameworks.sh"; sourceTree = "<group>"; };
+		68FE0626D06DE6A4558CE0AB607EAF6C /* HyperioniOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HyperioniOS.debug.xcconfig; sourceTree = "<group>"; };
+		69EBE22082A748C122BB02924E94A266 /* Config.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Config.swift; path = "Sources/Support Files/Config.swift"; sourceTree = "<group>"; };
+		6ABC19E7BAA52D22ED9A178972F1FCFB /* HYPOverlayDebuggingViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HYPOverlayDebuggingViewController.m; path = Core/OverlayDebuggingWindow/HYPOverlayDebuggingViewController.m; sourceTree = "<group>"; };
+		6D3B04A465960F83B12CF245DCA44506 /* Wormholy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Wormholy.h; path = Sources/Wormholy.h; sourceTree = "<group>"; };
+		6F7FFAC597F5D96FDC1E3FBC412CD583 /* HYPPluginHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HYPPluginHelper.m; path = Core/Public/Plugin/HYPPluginHelper.m; sourceTree = "<group>"; };
+		6F849EEC4A9F5C3C96CFD99887A547DB /* RequestDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestDetailViewController.swift; path = Sources/UI/RequestDetailViewController.swift; sourceTree = "<group>"; };
+		6FA439C91E34C1C69E64F0521E794F66 /* linkButton.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = linkButton.png; path = Core/Resources/linkButton.png; sourceTree = "<group>"; };
+		6FBB6C70DB3AB182A58C37F18A100404 /* Pods-DeveloperKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DeveloperKit_Example.modulemap"; sourceTree = "<group>"; };
+		6FD1CE9813AC6B1D074D86C35087E511 /* HyperioniOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HyperioniOS-umbrella.h"; sourceTree = "<group>"; };
+		70CA167BE26E5936A2B56359E21A35D7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		736875E30224F714DA3B472BA5F34385 /* TextTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = TextTableViewCell.xib; path = Sources/UI/Cells/TextTableViewCell.xib; sourceTree = "<group>"; };
+		748C6EB6398F7D5F76FE0C53DED3C2CA /* x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = x.png; path = Core/Resources/x.png; sourceTree = "<group>"; };
+		7497B29E93D832CC32E0219F0028AD15 /* WHDate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WHDate.swift; path = Sources/Subclasses/WHDate.swift; sourceTree = "<group>"; };
+		7565B959FC99E9829684B617CE751838 /* HyperioniOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HyperioniOS-prefix.pch"; sourceTree = "<group>"; };
+		762BD7CF691926BE7B90F02E0C490236 /* HYPOverlayPluginModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HYPOverlayPluginModule.h; path = Core/Public/Plugin/OverlayPlugin/HYPOverlayPluginModule.h; sourceTree = "<group>"; };
+		7668ECB34954FA1156A2DFDE651ED6B5 /* HYPSnapshotInteractionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HYPSnapshotInteractionView.h; path = Core/Public/Plugin/SnapShotPlugin/HYPSnapshotInteractionView.h; sourceTree = "<group>"; };
+		76AAF88C81CBAAD31198D4CC3ED3E3C3 /* Pods-DeveloperKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DeveloperKit_Tests-umbrella.h"; sourceTree = "<group>"; };
+		78D948243FAD1E78B55ED10153257550 /* ResourceBundle-Wormholy-Wormholy-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Wormholy-Wormholy-Info.plist"; sourceTree = "<group>"; };
+		793F671A406E5B68037A03764CE40FC8 /* NetworkPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NetworkPlugin.swift; sourceTree = "<group>"; };
+		795FD6A91D652B3002062E9260F04A31 /* HyperioniOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HyperioniOS.modulemap; sourceTree = "<group>"; };
+		7B1C003A5C211DBC939A5DD5DB2358AD /* Pods-DeveloperKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DeveloperKit_Example-umbrella.h"; sourceTree = "<group>"; };
+		7B1EB10E3919E954C687EE2013248636 /* Colors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Colors.swift; path = "Sources/Support Files/Colors.swift"; sourceTree = "<group>"; };
+		7E2CB185D61480B3CA945E212D40D1C4 /* HYPSnapshotContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HYPSnapshotContainer.h; path = Core/SnapShotDebuggingWindow/HYPSnapshotContainer.h; sourceTree = "<group>"; };
+		82513FB5274E6F4C3B1BC2B961B0761D /* Wormholy-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Wormholy-prefix.pch"; sourceTree = "<group>"; };
+		830D00D1619E4180B0AB5AD894393AD8 /* Pods-DeveloperKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DeveloperKit_Example-dummy.m"; sourceTree = "<group>"; };
+		85EE825019846AE2ACBF88549979E160 /* Wormholy-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Wormholy-Info.plist"; sourceTree = "<group>"; };
+		872748EF9D59DF97DAB2E8CC8B14E575 /* HyperionDefaultConfiguration.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = HyperionDefaultConfiguration.plist; path = Core/HyperionDefaultConfiguration.plist; sourceTree = "<group>"; };
+		885ACE595A801E77B7718C797716BD2B /* Wormholy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Wormholy.swift; path = Sources/Wormholy.swift; sourceTree = "<group>"; };
+		89CB1B08AA225F310180F3ED8D3C67B9 /* Wormholy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Wormholy.debug.xcconfig; sourceTree = "<group>"; };
+		8C6330537A38DDA2F4EC7D81CB255A50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		8DCA0854DDC428187C83C82D8A57ECD6 /* HYPListenerContainer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HYPListenerContainer.m; path = Core/HYPListenerContainer.m; sourceTree = "<group>"; };
+		8E22762F8AB8FA78EB2A2330F1761AFB /* RequestCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = RequestCell.xib; path = Sources/UI/Cells/RequestCell.xib; sourceTree = "<group>"; };
+		8E5201821B928566DDC5689DFB777085 /* HYPViewSelectionTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HYPViewSelectionTableViewController.m; path = Core/SnapShotDebuggingWindow/HYPViewSelectionTableViewController.m; sourceTree = "<group>"; };
+		8F0725BF712A7CB2A95D42FE37C9FEC3 /* HYPPluginMenuItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HYPPluginMenuItem.m; path = Core/Public/Plugin/HYPPluginMenuItem.m; sourceTree = "<group>"; };
+		8F2F88F6941F9DE47195E4B6812CF777 /* Pods-DeveloperKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DeveloperKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		91BCB84022C23B7F29C6E4C1C08B1F9E /* HYPPluginExtensionImp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HYPPluginExtensionImp.m; path = Core/HYPPluginExtensionImp.m; sourceTree = "<group>"; };
+		920E2749B847700DD33EAA96CDC1E2FD /* UIViewController+Top.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIViewController+Top.swift"; sourceTree = "<group>"; };
+		93B9E2B580775F9184765689309E0540 /* RequestCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestCell.swift; path = Sources/UI/Cells/RequestCell.swift; sourceTree = "<group>"; };
+		964F3A7E285B5AF5EE4695917F392E79 /* Pods_DeveloperKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DeveloperKit_Example.framework; path = "Pods-DeveloperKit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9815DD9041DF67F05420392A59E471E7 /* HYPSnapshotViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HYPSnapshotViewController.m; path = Core/SnapShotDebuggingWindow/HYPSnapshotViewController.m; sourceTree = "<group>"; };
+		984CBF46EBB705D570E25C048ADDAE02 /* developer_performance_icon@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "developer_performance_icon@3x.png"; sourceTree = "<group>"; };
+		99F5C7A2FD7506B1AE4BF2E70DB257D2 /* HyperionCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HyperionCore.framework; path = HyperioniOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B8E4BFF35B816E68ACBC51F693F9E7F /* Postman.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Postman.swift; path = Sources/Models/Postman/Postman.swift; sourceTree = "<group>"; };
+		9BD8880AC5C6A95F2BDB5F3F6D15BD64 /* HyperionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HyperionManager.m; path = Core/Public/HyperionManager.m; sourceTree = "<group>"; };
+		9C62B6C24C0A1D106FABFFA6024226AE /* EnvironmentPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EnvironmentPlugin.swift; sourceTree = "<group>"; };
+		9CECEBBAAA83A56D52AA811EC6D11386 /* EnvironmentPluginModule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EnvironmentPluginModule.swift; sourceTree = "<group>"; };
+		9CF2B27B5021CB60A522E4061053389B /* RequestModelBeautifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestModelBeautifier.swift; path = Sources/Utils/RequestModelBeautifier.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9EB3715A86987DD781E5F9027886462A /* AppInfoPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppInfoPlugin.swift; sourceTree = "<group>"; };
+		9FB06A7427F9FE796B0E2DAF6F84290E /* HYPPluginContainerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HYPPluginContainerView.m; path = Core/HYPPluginContainerView.m; sourceTree = "<group>"; };
+		A0D30822AB0B262185B0D5AABD32B97E /* HyperionCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HyperionCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0EA2E1CE74891A38F455867650A9006 /* HYPActivationGestureOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HYPActivationGestureOptions.h; path = Core/Public/HYPActivationGestureOptions.h; sourceTree = "<group>"; };
+		A13C20F54AFD20AA415A9DB006007AFD /* HYPPopoverViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HYPPopoverViewController.m; path = Core/SnapShotDebuggingWindow/HYPPopoverViewController.m; sourceTree = "<group>"; };
+		A18572569E8FDE11E7E2402DAE9A8D17 /* DeveloperKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DeveloperKit.framework; path = DeveloperKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4869C137A5350B960D5DA27694F17D4 /* HYPInAppOverlayContainer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HYPInAppOverlayContainer.m; path = Core/OverlayDebuggingWindow/HYPInAppOverlayContainer.m; sourceTree = "<group>"; };
+		A5B14A395ABE6335772231A6010B86E6 /* WHBaseViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WHBaseViewController.swift; path = Sources/Subclasses/WHBaseViewController.swift; sourceTree = "<group>"; };
+		A617601D2574F677D48F6742638D618B /* HYPPluginExtensionImp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HYPPluginExtensionImp.h; path = Core/HYPPluginExtensionImp.h; sourceTree = "<group>"; };
+		A7967A4514D9E05FC05BED8E5CC17C6A /* Pods-DeveloperKit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DeveloperKit_Example-Info.plist"; sourceTree = "<group>"; };
+		A8BF3762D83B9C40A3135258EE11651D /* GDPerformanceView-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "GDPerformanceView-Swift.debug.xcconfig"; sourceTree = "<group>"; };
+		AA92ED38E716E03D3FC758C810953B95 /* Wormholy.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Wormholy.bundle; path = "Wormholy-Wormholy.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC174C31EB907BDE836C5FC2CD3E7499 /* PluginListViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PluginListViewController.m; path = Core/SnapShotDebuggingWindow/PluginListViewController.m; sourceTree = "<group>"; };
+		B0C1C15D1021A8379C6CC2BADD3314FC /* DeveloperKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DeveloperKit.release.xcconfig; sourceTree = "<group>"; };
+		B3C7F4777644A805C44AE9973D6F9B35 /* HYPOverlayPluginModule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HYPOverlayPluginModule.m; path = Core/Public/Plugin/OverlayPlugin/HYPOverlayPluginModule.m; sourceTree = "<group>"; };
+		B4478D31F80691C5DFB0503119D5CA67 /* HyperionWindowManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HyperionWindowManager.h; path = Core/HyperionWindowManager.h; sourceTree = "<group>"; };
+		B4A10F71AC4195C3D2FB284B114E326D /* HYPPluginModule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HYPPluginModule.m; path = Core/Public/Plugin/HYPPluginModule.m; sourceTree = "<group>"; };
+		B514B322C668B0111522687BC911E4EE /* MarginLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MarginLabel.swift; path = "GDPerformanceView-Swift/GDPerformanceMonitoring/MarginLabel.swift"; sourceTree = "<group>"; };
+		B54F73F5CD01DE714B3FF852EF708103 /* developer_network_icon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "developer_network_icon@2x.png"; sourceTree = "<group>"; };
+		B75142A6353F86A2FC4BF250C3CBFF34 /* CleanPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CleanPlugin.swift; sourceTree = "<group>"; };
+		B7E0691F87D90BC3BBD5F0FECE7B5AC6 /* DeveloperKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DeveloperKit-umbrella.h"; sourceTree = "<group>"; };
+		B941D362D1C59470B472C2C517003F69 /* NSURLSessionConfiguration+Wormholy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURLSessionConfiguration+Wormholy.h"; path = "Sources/Objc/NSURLSessionConfiguration+Wormholy.h"; sourceTree = "<group>"; };
+		B96A65DBD9FE89BB6B05EA1825463123 /* linkButton@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "linkButton@2x.png"; path = "Core/Resources/linkButton@2x.png"; sourceTree = "<group>"; };
+		B9AC981E99123E643813370ACB4704C4 /* Pods-DeveloperKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DeveloperKit_Example.release.xcconfig"; sourceTree = "<group>"; };
+		BDDDC94BDCD3239AA1961743B050DCA2 /* Storage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Storage.swift; path = Sources/Storage.swift; sourceTree = "<group>"; };
+		C076F1CDB504F6024C230CFBFA5CCDC0 /* UIWindow+Swizzling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWindow+Swizzling.m"; path = "Core/Swizzling/UIWindow+Swizzling.m"; sourceTree = "<group>"; };
+		C0C5A061506EA069461CC9FFEA1DC019 /* SwiftySelfAwareHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftySelfAwareHelper.swift; path = Sources/Utils/SwiftySelfAwareHelper.swift; sourceTree = "<group>"; };
+		C20B23287B5164AD3EB13206544C28BB /* HYPSnapshotPluginModule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HYPSnapshotPluginModule.m; path = Core/Public/Plugin/SnapShotPlugin/HYPSnapshotPluginModule.m; sourceTree = "<group>"; };
+		C48531A80CF771DFCEEE327A21B996DA /* HYPOverlayViewProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HYPOverlayViewProvider.h; path = Core/Public/Plugin/HYPOverlayViewProvider.h; sourceTree = "<group>"; };
+		C557138014C4FA883094E1F4A62FEAF5 /* x@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "x@2x.png"; path = "Core/Resources/x@2x.png"; sourceTree = "<group>"; };
+		C5C62758E238EF5D23056CDE1937817F /* HYPPluginModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HYPPluginModule.h; path = Core/Public/Plugin/HYPPluginModule.h; sourceTree = "<group>"; };
+		C6AC4DE8640023F33133FC5B0CC00925 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		C6E13262CB2B2FAC0BF39D3DB5238DEF /* RequestTitleSectionView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = RequestTitleSectionView.xib; path = Sources/UI/Sections/RequestTitleSectionView.xib; sourceTree = "<group>"; };
+		C72EDB0E415064FA6D4B9A4C5BD515C0 /* Wormholy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Wormholy.release.xcconfig; sourceTree = "<group>"; };
+		C9B04C406B8A88FC9B5DD912BE101A3A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		CAF206100C582562F38C33302E0A92A3 /* DeveloperKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DeveloperKit.modulemap; sourceTree = "<group>"; };
+		CB2E29096D0E4E7EFE98CDB461F9E6E0 /* BodyDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BodyDetailViewController.swift; path = Sources/UI/BodyDetailViewController.swift; sourceTree = "<group>"; };
+		CE8C83815BDA0B975706F5586ED19A04 /* HYPPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HYPPlugin.h; path = Core/Public/Plugin/HYPPlugin.h; sourceTree = "<group>"; };
+		CF95724504AC24D45BE56629242EBD0E /* WHNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WHNavigationController.swift; path = Sources/Subclasses/WHNavigationController.swift; sourceTree = "<group>"; };
+		D232AA3AA97A2AEA843FB30132E7610D /* Pods-DeveloperKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DeveloperKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		D2A4FD1C25F47012478A9D44EEF431D7 /* GDPerformanceView-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GDPerformanceView-Swift-prefix.pch"; sourceTree = "<group>"; };
+		D5280AEFD0958A3C90D0D4E87952CBE4 /* RequestResponseExportOption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestResponseExportOption.swift; path = Sources/Utils/RequestResponseExportOption.swift; sourceTree = "<group>"; };
+		D8A86BCA8AAEF8D79061EDDEB0EB4EDD /* WormholyMethodSwizzling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WormholyMethodSwizzling.h; path = Sources/Objc/WormholyMethodSwizzling.h; sourceTree = "<group>"; };
+		D9B106A905F533E03EBC596DFA6FCDE9 /* WHView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WHView.swift; path = Sources/Subclasses/WHView.swift; sourceTree = "<group>"; };
+		DB648F3AE40E745E7128EEEBC362EEEF /* Pods-DeveloperKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DeveloperKit_Tests.modulemap"; sourceTree = "<group>"; };
+		DC26E2DEE05292B21962717F6A53CBD0 /* WHLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WHLabel.swift; path = Sources/Subclasses/WHLabel.swift; sourceTree = "<group>"; };
+		E0296B71BC7D06FDC08DBC4F828824F1 /* WHString.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WHString.swift; path = Sources/Subclasses/WHString.swift; sourceTree = "<group>"; };
+		E1AD9A1B0DED66DE443A4BCBD43EB6F4 /* Pods_DeveloperKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DeveloperKit_Tests.framework; path = "Pods-DeveloperKit_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1D632F5DBC873EC91001AEEFB13B26A /* HyperioniOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HyperioniOS.release.xcconfig; sourceTree = "<group>"; };
+		E5659480162D741C9D387B6C52BA31C9 /* Pods-DeveloperKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DeveloperKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		E59DEEFDFD6E855AEA373220E75D3131 /* HyperionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HyperionManager.h; path = Core/Public/HyperionManager.h; sourceTree = "<group>"; };
+		E5BCF0B0650E47FEC894D8B5A6C924FB /* developer_network_icon@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "developer_network_icon@3x.png"; sourceTree = "<group>"; };
+		E76471699F98BA57BE38BA97D399128B /* Pods-DeveloperKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DeveloperKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E76800C904DFA0DE9875BB8652721C9B /* x@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "x@3x.png"; path = "Core/Resources/x@3x.png"; sourceTree = "<group>"; };
+		E8E4D6207ABE0EB499B8ACDBF88CB4C4 /* HYPPluginMenuItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HYPPluginMenuItem.h; path = Core/Public/Plugin/HYPPluginMenuItem.h; sourceTree = "<group>"; };
+		EABD6A8038267A9B94C388048D07249C /* DeveloperKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DeveloperKit.debug.xcconfig; sourceTree = "<group>"; };
+		EBAC24A26ADAE7C41A549CBB57FE06AC /* ActionableTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ActionableTableViewCell.xib; path = Sources/UI/Cells/ActionableTableViewCell.xib; sourceTree = "<group>"; };
+		EC61B8D05EC2F6D3D3E3B116A9BA7E81 /* HYPConfigurationConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HYPConfigurationConstants.m; path = Core/OverlayDebuggingWindow/HYPConfigurationConstants.m; sourceTree = "<group>"; };
+		F02542A1FDAEC63EDC3B16964BF83541 /* PerformancePlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PerformancePlugin.swift; sourceTree = "<group>"; };
+		F17A67E6CC62AD319ADB5412040F06EB /* HYPViewSelectionTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HYPViewSelectionTableViewController.h; path = Core/SnapShotDebuggingWindow/HYPViewSelectionTableViewController.h; sourceTree = "<group>"; };
+		F3A27588B88601FA59E8B3C77E9D5A79 /* AppInfoController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppInfoController.swift; sourceTree = "<group>"; };
+		F51CA2B064883D076D49B7256F9D4F8E /* Pods-DeveloperKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DeveloperKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		F5D45856D3608644B97BF4DE5ED62878 /* UIWindow+Swizzling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWindow+Swizzling.h"; path = "Core/Swizzling/UIWindow+Swizzling.h"; sourceTree = "<group>"; };
+		F64D4EFBC36E2AD51781086E3A2A9205 /* developer_info_icon@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "developer_info_icon@3x.png"; sourceTree = "<group>"; };
+		F7969ED2FF777D7BE41D9311D3FA0890 /* Pods-DeveloperKit_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DeveloperKit_Tests-Info.plist"; sourceTree = "<group>"; };
+		F83387F00B34B7418A38C6838A347BAF /* LinkedFramesList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LinkedFramesList.swift; path = "GDPerformanceView-Swift/GDPerformanceMonitoring/LinkedFramesList.swift"; sourceTree = "<group>"; };
+		F85D87F5EB12556F5D67AFC362129586 /* WormholyMethodSwizzling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WormholyMethodSwizzling.m; path = Sources/Objc/WormholyMethodSwizzling.m; sourceTree = "<group>"; };
+		F9DD3FF7DB082148EA9466DB125E726B /* DeveloperKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = DeveloperKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		FA9E38B461F33B3D4537BF84436976F9 /* DeveloperKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DeveloperKit-dummy.m"; sourceTree = "<group>"; };
+		FB01F24A50769004B35F40BDD9A461D7 /* HYPListenerContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HYPListenerContainer.h; path = Core/HYPListenerContainer.h; sourceTree = "<group>"; };
+		FCD4D12752A60C0926DB2C8C2BE5CF1F /* GDPerformanceView_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GDPerformanceView_Swift.framework; path = "GDPerformanceView-Swift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B4DA396BEF969E5CFDE697EDC6C3EAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D43D6A2F8140B13F3B99313A1EC0CF99 /* Foundation.framework in Frameworks */,
+				1230DF9A3440EA6F621B20BC59BA79A9 /* QuartzCore.framework in Frameworks */,
+				A6CEE9E7C3AC372AFAB763384F6549F0 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		431509C9C2AA1F2725C2BFDAC5286439 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8599DFB68D7E23557AEEDF0CDD9FB476 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65AC9BE0B87ED9BE5AF629533218DE04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B447136EC0866E0CC7C2056C19D9700 /* Foundation.framework in Frameworks */,
+				180C21EE0B83E0ACF18DE25FCECA4FE7 /* GDPerformanceView_Swift.framework in Frameworks */,
+				A2EFAC6BA332ABEF15C01AA1535DD96A /* HyperionCore.framework in Frameworks */,
+				BE63C8D5D7B65E939D277759626FF343 /* UIKit.framework in Frameworks */,
+				DAC9732D9D85711BD17F230EAEDB5978 /* Wormholy.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EDDB81B15B17E094E763DE623974FAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94150834C7AC2DEF149182A49F934F4C /* Foundation.framework in Frameworks */,
+				ED10E25793F10C5A909EE1F791C4CC54 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B10071850D981AF0CDE408C179B5669A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAFCB17A0880341102AB4010AC5BFA9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCFD5E6216EB18F39FFCD2A6EBC8E3BE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0602C89045A22D6CCA3329D75913F76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7C28464882A904F36C2D466C131E45C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07B2E275AAAF5824843CC65CACEAD269 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				795FD6A91D652B3002062E9260F04A31 /* HyperioniOS.modulemap */,
+				2BF9EB0D62171639793227F33068A33E /* HyperioniOS-dummy.m */,
+				0C5D84ABBD7132F5199D231519A23F2E /* HyperioniOS-Info.plist */,
+				7565B959FC99E9829684B617CE751838 /* HyperioniOS-prefix.pch */,
+				6FD1CE9813AC6B1D074D86C35087E511 /* HyperioniOS-umbrella.h */,
+				68FE0626D06DE6A4558CE0AB607EAF6C /* HyperioniOS.debug.xcconfig */,
+				E1D632F5DBC873EC91001AEEFB13B26A /* HyperioniOS.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/HyperioniOS";
+			sourceTree = "<group>";
+		};
+		09BA695D6759AC38458783997916DF33 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A18572569E8FDE11E7E2402DAE9A8D17 /* DeveloperKit.framework */,
+				FCD4D12752A60C0926DB2C8C2BE5CF1F /* GDPerformanceView_Swift.framework */,
+				99F5C7A2FD7506B1AE4BF2E70DB257D2 /* HyperionCore.framework */,
+				964F3A7E285B5AF5EE4695917F392E79 /* Pods_DeveloperKit_Example.framework */,
+				E1AD9A1B0DED66DE443A4BCBD43EB6F4 /* Pods_DeveloperKit_Tests.framework */,
+				AA92ED38E716E03D3FC758C810953B95 /* Wormholy.bundle */,
+				2530BC414137FF7A53A0368B476547B9 /* Wormholy.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1ADBE466627537B2CA303F47BEB7304A /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				F9DD3FF7DB082148EA9466DB125E726B /* DeveloperKit.podspec */,
+				C6AC4DE8640023F33133FC5B0CC00925 /* LICENSE */,
+				4B865B353046D0E76322F09951C83DD5 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		27349CFBDB0ACABE16AD32147A955D91 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				58F47706AA2AA000FFE4197DECCEA17D /* developer_env_icon@2x.png */,
+				5C2617D4CB71FC0FF6EFA344FC2AA21F /* developer_env_icon@3x.png */,
+			);
+			name = Resources;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		28806610113CB1A1A371D45E3AD3306C /* Wormholy */ = {
+			isa = PBXGroup;
+			children = (
+				26C1648FC229A852C61D83EA01E9A1CE /* ActionableTableViewCell.swift */,
+				CB2E29096D0E4E7EFE98CDB461F9E6E0 /* BodyDetailViewController.swift */,
+				7B1EB10E3919E954C687EE2013248636 /* Colors.swift */,
+				69EBE22082A748C122BB02924E94A266 /* Config.swift */,
+				0B407F22DF6E8AA15B277477275E43BD /* CustomActivity.swift */,
+				1A330FB80C604B531E1696E17393DD02 /* CustomHTTPProtocol.swift */,
+				492BAC864BD107BB02F46E2D9986DD37 /* FileHandler.swift */,
+				B941D362D1C59470B472C2C517003F69 /* NSURLSessionConfiguration+Wormholy.h */,
+				5D09E22CE23F2DFE9D16DDF80A0651A6 /* NSURLSessionConfiguration+Wormholy.m */,
+				9B8E4BFF35B816E68ACBC51F693F9E7F /* Postman.swift */,
+				93B9E2B580775F9184765689309E0540 /* RequestCell.swift */,
+				6F849EEC4A9F5C3C96CFD99887A547DB /* RequestDetailViewController.swift */,
+				1DDD11294733AAEC08B0AD05EF277FF0 /* RequestModel.swift */,
+				9CF2B27B5021CB60A522E4061053389B /* RequestModelBeautifier.swift */,
+				D5280AEFD0958A3C90D0D4E87952CBE4 /* RequestResponseExportOption.swift */,
+				5EBEFF98DC6B4D22F958D79203ECA819 /* RequestsViewController.swift */,
+				48DE8D4B75F3F337789F2E3A9CE7FC60 /* RequestTitleSectionView.swift */,
+				4FE51F4CE320BBC8124F07A29ACC186B /* Section.swift */,
+				602FCB3768BCF7EC9E47D5854A590A3E /* ShareUtils.swift */,
+				BDDDC94BDCD3239AA1961743B050DCA2 /* Storage.swift */,
+				C0C5A061506EA069461CC9FFEA1DC019 /* SwiftySelfAwareHelper.swift */,
+				5089FE2244A6C0CA8A10A1F37A159E29 /* TextTableViewCell.swift */,
+				A5B14A395ABE6335772231A6010B86E6 /* WHBaseViewController.swift */,
+				2CA2CB97AC736C59DED877573E3BF5E1 /* WHBundle.swift */,
+				3175D80E562B824514756B6BE39FF479 /* WHCollectionView.swift */,
+				7497B29E93D832CC32E0219F0028AD15 /* WHDate.swift */,
+				DC26E2DEE05292B21962717F6A53CBD0 /* WHLabel.swift */,
+				CF95724504AC24D45BE56629242EBD0E /* WHNavigationController.swift */,
+				E0296B71BC7D06FDC08DBC4F828824F1 /* WHString.swift */,
+				0C350194C24E322BEC3CD8A011843EAC /* WHTableView.swift */,
+				1C77C2DB5350A5BC23C089085AACCFDA /* WHTextView.swift */,
+				D9B106A905F533E03EBC596DFA6FCDE9 /* WHView.swift */,
+				6D3B04A465960F83B12CF245DCA44506 /* Wormholy.h */,
+				885ACE595A801E77B7718C797716BD2B /* Wormholy.swift */,
+				D8A86BCA8AAEF8D79061EDDEB0EB4EDD /* WormholyMethodSwizzling.h */,
+				F85D87F5EB12556F5D67AFC362129586 /* WormholyMethodSwizzling.m */,
+				44157B17AD863004C9E317782F20D83C /* WormholyStarterEngine.m */,
+				AE36B5C99873FF2934C399A4348B1E44 /* Resources */,
+				DEA4A79B195A808ACE2BF75E10B578AB /* Support Files */,
+			);
+			name = Wormholy;
+			path = Wormholy;
+			sourceTree = "<group>";
+		};
+		323C011D3B50DBA445337CEBC2786175 /* Pods-DeveloperKit_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				DB648F3AE40E745E7128EEEBC362EEEF /* Pods-DeveloperKit_Tests.modulemap */,
+				8F2F88F6941F9DE47195E4B6812CF777 /* Pods-DeveloperKit_Tests-acknowledgements.markdown */,
+				54353E590429EC345D33C506EE36416B /* Pods-DeveloperKit_Tests-acknowledgements.plist */,
+				4B54936869244BB67516D42CA724535A /* Pods-DeveloperKit_Tests-dummy.m */,
+				F7969ED2FF777D7BE41D9311D3FA0890 /* Pods-DeveloperKit_Tests-Info.plist */,
+				76AAF88C81CBAAD31198D4CC3ED3E3C3 /* Pods-DeveloperKit_Tests-umbrella.h */,
+				D232AA3AA97A2AEA843FB30132E7610D /* Pods-DeveloperKit_Tests.debug.xcconfig */,
+				E5659480162D741C9D387B6C52BA31C9 /* Pods-DeveloperKit_Tests.release.xcconfig */,
+			);
+			name = "Pods-DeveloperKit_Tests";
+			path = "Target Support Files/Pods-DeveloperKit_Tests";
+			sourceTree = "<group>";
+		};
+		5934F13BEFA52137B5ABF265A02B60AC /* HyperioniOS */ = {
+			isa = PBXGroup;
+			children = (
+				64B4AB6DC1C17A8B34DAC03EF2DCBCDE /* Core */,
+				07B2E275AAAF5824843CC65CACEAD269 /* Support Files */,
+			);
+			name = HyperioniOS;
+			path = HyperioniOS;
+			sourceTree = "<group>";
+		};
+		648953ACF41C9E0739BB7CAF86D3B055 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2677067EFDE95569C2E88FC402E10B88 /* GDPerformanceView_Swift.framework */,
+				A0D30822AB0B262185B0D5AABD32B97E /* HyperionCore.framework */,
+				000FC8FA0E6E5FDEB9039727F0DCA83C /* Wormholy.framework */,
+				668E9EBDDEEDADA822E36594A52CF5F5 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		64B4AB6DC1C17A8B34DAC03EF2DCBCDE /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A0EA2E1CE74891A38F455867650A9006 /* HYPActivationGestureOptions.h */,
+				56F470FAF0717C738144AB16195CAFE6 /* HYPConfigurationConstants.h */,
+				EC61B8D05EC2F6D3D3E3B116A9BA7E81 /* HYPConfigurationConstants.m */,
+				3B86350DF9061C31537F575FBB6E3C48 /* HyperionCore.h */,
+				E59DEEFDFD6E855AEA373220E75D3131 /* HyperionManager.h */,
+				9BD8880AC5C6A95F2BDB5F3F6D15BD64 /* HyperionManager.m */,
+				B4478D31F80691C5DFB0503119D5CA67 /* HyperionWindowManager.h */,
+				5EC88DB410BF92406D7F655C28E2140C /* HyperionWindowManager.m */,
+				3C6EE6F9AA356E1864F2399449635C89 /* HYPInAppOverlayContainer.h */,
+				A4869C137A5350B960D5DA27694F17D4 /* HYPInAppOverlayContainer.m */,
+				FB01F24A50769004B35F40BDD9A461D7 /* HYPListenerContainer.h */,
+				8DCA0854DDC428187C83C82D8A57ECD6 /* HYPListenerContainer.m */,
+				37CC5D6F8947EC96C77BFBA274FBA636 /* HYPOverlayContainer.h */,
+				3E5547BB683F6CF71B6737DD8BF8D7FE /* HYPOverlayDebuggingViewController.h */,
+				6ABC19E7BAA52D22ED9A178972F1FCFB /* HYPOverlayDebuggingViewController.m */,
+				5A200ECDE319A3D9E9CB5769AFD312D2 /* HYPOverlayDebuggingWindow.h */,
+				3E3D7429CB6B719A5BB8BF835B9F11AD /* HYPOverlayDebuggingWindow.m */,
+				762BD7CF691926BE7B90F02E0C490236 /* HYPOverlayPluginModule.h */,
+				B3C7F4777644A805C44AE9973D6F9B35 /* HYPOverlayPluginModule.m */,
+				C48531A80CF771DFCEEE327A21B996DA /* HYPOverlayViewProvider.h */,
+				CE8C83815BDA0B975706F5586ED19A04 /* HYPPlugin.h */,
+				03A2DC5285D5B966192423C5D61730E5 /* HYPPluginContainerView.h */,
+				9FB06A7427F9FE796B0E2DAF6F84290E /* HYPPluginContainerView.m */,
+				37479356CDD90B8A350280053EC95E5D /* HYPPluginExtension.h */,
+				A617601D2574F677D48F6742638D618B /* HYPPluginExtensionImp.h */,
+				91BCB84022C23B7F29C6E4C1C08B1F9E /* HYPPluginExtensionImp.m */,
+				574040230FEE238155174E3295D36758 /* HYPPluginHelper.h */,
+				6F7FFAC597F5D96FDC1E3FBC412CD583 /* HYPPluginHelper.m */,
+				E8E4D6207ABE0EB499B8ACDBF88CB4C4 /* HYPPluginMenuItem.h */,
+				8F0725BF712A7CB2A95D42FE37C9FEC3 /* HYPPluginMenuItem.m */,
+				C5C62758E238EF5D23056CDE1937817F /* HYPPluginModule.h */,
+				B4A10F71AC4195C3D2FB284B114E326D /* HYPPluginModule.m */,
+				5169C6D7FBD03A3CB167850C7F69B162 /* HYPPopoverViewController.h */,
+				A13C20F54AFD20AA415A9DB006007AFD /* HYPPopoverViewController.m */,
+				7E2CB185D61480B3CA945E212D40D1C4 /* HYPSnapshotContainer.h */,
+				640225F4656FE91CAAE822499A423E53 /* HYPSnapshotContainer.m */,
+				568556AD43C8FB8F24AE6563885964B2 /* HYPSnapshotDebuggingWindow.h */,
+				597A7AA237ABEE4B92E4FDE3E17A25F3 /* HYPSnapshotDebuggingWindow.m */,
+				7668ECB34954FA1156A2DFDE651ED6B5 /* HYPSnapshotInteractionView.h */,
+				61CC0B4173D45BF32B939CEA62312490 /* HYPSnapshotInteractionView.m */,
+				248A5F2F66FBD7E5614B02595DA63F9F /* HYPSnapshotPluginModule.h */,
+				C20B23287B5164AD3EB13206544C28BB /* HYPSnapshotPluginModule.m */,
+				5C15DF72DEBD1D02A44450BE9A3207E8 /* HYPSnapshotViewController.h */,
+				9815DD9041DF67F05420392A59E471E7 /* HYPSnapshotViewController.m */,
+				48D8D1D0CF8BD6C013AC5BAC4759BBBA /* HYPViewSelectionDelegate.h */,
+				F17A67E6CC62AD319ADB5412040F06EB /* HYPViewSelectionTableViewController.h */,
+				8E5201821B928566DDC5689DFB777085 /* HYPViewSelectionTableViewController.m */,
+				4A5DBA42E1E0425669CFE2B6E6A43C52 /* PluginListViewController.h */,
+				AC174C31EB907BDE836C5FC2CD3E7499 /* PluginListViewController.m */,
+				0C9F394E644B8E7FAA10BC52783F84D4 /* UIApplication+Swizzling.h */,
+				3E353D268C021D437AA119A22504B341 /* UIApplication+Swizzling.m */,
+				F5D45856D3608644B97BF4DE5ED62878 /* UIWindow+Swizzling.h */,
+				C076F1CDB504F6024C230CFBFA5CCDC0 /* UIWindow+Swizzling.m */,
+				E898B3C851E0F0C71740FFF3B110F208 /* Resources */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		668E9EBDDEEDADA822E36594A52CF5F5 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				8C6330537A38DDA2F4EC7D81CB255A50 /* Foundation.framework */,
+				70CA167BE26E5936A2B56359E21A35D7 /* QuartzCore.framework */,
+				C9B04C406B8A88FC9B5DD912BE101A3A /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		8C0FB8522C3A2F5AA262DA204A156677 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B54F73F5CD01DE714B3FF852EF708103 /* developer_network_icon@2x.png */,
+				E5BCF0B0650E47FEC894D8B5A6C924FB /* developer_network_icon@3x.png */,
+			);
+			name = Resources;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9104C4BFA919ABC3B50774A216B76528 /* GDPerformanceView-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				F83387F00B34B7418A38C6838A347BAF /* LinkedFramesList.swift */,
+				B514B322C668B0111522687BC911E4EE /* MarginLabel.swift */,
+				07B5066342C60848D12662F6285D2088 /* PerformanceMonitor.swift */,
+				5B8608E28BFBE50547D83537136FBD68 /* PerformanceView.swift */,
+				5A976DCFB3305AC0D5E2828EFE1AB552 /* PerformanceСalculator.swift */,
+				3A95F20D16CF4FDB1FB748A4F08CE7CB /* Protocols.swift */,
+				3B2E030A798123252258229B3FB53DD2 /* WindowViewController.swift */,
+				EC635F4AD99D34EF7562C12278AC5531 /* Support Files */,
+			);
+			name = "GDPerformanceView-Swift";
+			path = "GDPerformanceView-Swift";
+			sourceTree = "<group>";
+		};
+		9CBE5B73A1FCC5945E97D871D22A9CD6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0863AB7E82D39425EE7FC577F8E4C8F4 /* developer_clean_icon@2x.png */,
+				366CC4ECA5AE04EAEFB774630558E2C0 /* developer_clean_icon@3x.png */,
+			);
+			name = Resources;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9F5CDFF432B6372127529592201F21C8 /* Performance */ = {
+			isa = PBXGroup;
+			children = (
+				F02542A1FDAEC63EDC3B16964BF83541 /* PerformancePlugin.swift */,
+				F8B5F19FC1353CE2C98D00A042108E59 /* Resources */,
+			);
+			name = Performance;
+			path = DeveloperKit/Classes/Performance;
+			sourceTree = "<group>";
+		};
+		A47665467F5346197925DA8FC59003F4 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2C08A43D7BCC30AD79898A3377409DE3 /* DeveloperKit.swift */,
+				920E2749B847700DD33EAA96CDC1E2FD /* UIViewController+Top.swift */,
+			);
+			name = Core;
+			path = DeveloperKit/Classes/Core;
+			sourceTree = "<group>";
+		};
+		A4BA1A43C577266BA580604F0C9A7F83 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4C5E2C5A007316559911034631B4E781 /* developer_info_icon@2x.png */,
+				F64D4EFBC36E2AD51781086E3A2A9205 /* developer_info_icon@3x.png */,
+			);
+			name = Resources;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AE36B5C99873FF2934C399A4348B1E44 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EBAC24A26ADAE7C41A549CBB57FE06AC /* ActionableTableViewCell.xib */,
+				38F70FFF846AA0133CB62E073BD74901 /* Flow.storyboard */,
+				8E22762F8AB8FA78EB2A2330F1761AFB /* RequestCell.xib */,
+				C6E13262CB2B2FAC0BF39D3DB5238DEF /* RequestTitleSectionView.xib */,
+				736875E30224F714DA3B472BA5F34385 /* TextTableViewCell.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B1FD51465BE190CFC5D581B5161C1DF9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CAF206100C582562F38C33302E0A92A3 /* DeveloperKit.modulemap */,
+				FA9E38B461F33B3D4537BF84436976F9 /* DeveloperKit-dummy.m */,
+				1A14EFC53B3E711B4C5F37DBC6EA61FF /* DeveloperKit-Info.plist */,
+				50CAD4449A34398F144759EA4E71C920 /* DeveloperKit-prefix.pch */,
+				B7E0691F87D90BC3BBD5F0FECE7B5AC6 /* DeveloperKit-umbrella.h */,
+				EABD6A8038267A9B94C388048D07249C /* DeveloperKit.debug.xcconfig */,
+				B0C1C15D1021A8379C6CC2BADD3314FC /* DeveloperKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/DeveloperKit";
+			sourceTree = "<group>";
+		};
+		B6D9F33E55E5116DC525ADB6B4E66E8B /* Pods-DeveloperKit_Example */ = {
+			isa = PBXGroup;
+			children = (
+				6FBB6C70DB3AB182A58C37F18A100404 /* Pods-DeveloperKit_Example.modulemap */,
+				E76471699F98BA57BE38BA97D399128B /* Pods-DeveloperKit_Example-acknowledgements.markdown */,
+				1F7829CDE16C77285CAA979F15D71E3A /* Pods-DeveloperKit_Example-acknowledgements.plist */,
+				830D00D1619E4180B0AB5AD894393AD8 /* Pods-DeveloperKit_Example-dummy.m */,
+				68FD2B0125925E6CDE9A85D115FA2D4E /* Pods-DeveloperKit_Example-frameworks.sh */,
+				A7967A4514D9E05FC05BED8E5CC17C6A /* Pods-DeveloperKit_Example-Info.plist */,
+				7B1C003A5C211DBC939A5DD5DB2358AD /* Pods-DeveloperKit_Example-umbrella.h */,
+				F51CA2B064883D076D49B7256F9D4F8E /* Pods-DeveloperKit_Example.debug.xcconfig */,
+				B9AC981E99123E643813370ACB4704C4 /* Pods-DeveloperKit_Example.release.xcconfig */,
+			);
+			name = "Pods-DeveloperKit_Example";
+			path = "Target Support Files/Pods-DeveloperKit_Example";
+			sourceTree = "<group>";
+		};
+		BA1BB3147A87B30C98FE076A42A3541E /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				9C62B6C24C0A1D106FABFFA6024226AE /* EnvironmentPlugin.swift */,
+				1841F043DC85C8CCBDACBCDC16E211D7 /* EnvironmentPluginMenuItem.swift */,
+				9CECEBBAAA83A56D52AA811EC6D11386 /* EnvironmentPluginModule.swift */,
+				27349CFBDB0ACABE16AD32147A955D91 /* Resources */,
+			);
+			name = Environment;
+			path = DeveloperKit/Classes/Environment;
+			sourceTree = "<group>";
+		};
+		C8CBF9B04A31EAE0BC8E7B8F7785DF93 /* DeveloperKit */ = {
+			isa = PBXGroup;
+			children = (
+				E587C58A9B80EE27EB6A240706CBAEEE /* AppInfo */,
+				F37A91FCF784BBDBC4E07B361F9528F5 /* Clean */,
+				A47665467F5346197925DA8FC59003F4 /* Core */,
+				BA1BB3147A87B30C98FE076A42A3541E /* Environment */,
+				E8893A540BCBEDFC7D48E211909C1F79 /* Network */,
+				9F5CDFF432B6372127529592201F21C8 /* Performance */,
+				1ADBE466627537B2CA303F47BEB7304A /* Pod */,
+				B1FD51465BE190CFC5D581B5161C1DF9 /* Support Files */,
+			);
+			name = DeveloperKit;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		CC5987FFD071A3A065E79B0A83103FBD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9104C4BFA919ABC3B50774A216B76528 /* GDPerformanceView-Swift */,
+				5934F13BEFA52137B5ABF265A02B60AC /* HyperioniOS */,
+				28806610113CB1A1A371D45E3AD3306C /* Wormholy */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				ED35CBE66DD893D660F900657DB2BCF7 /* Development Pods */,
+				648953ACF41C9E0739BB7CAF86D3B055 /* Frameworks */,
+				CC5987FFD071A3A065E79B0A83103FBD /* Pods */,
+				09BA695D6759AC38458783997916DF33 /* Products */,
+				DF40FF94BB110BD4E304039FF0366E3F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		DEA4A79B195A808ACE2BF75E10B578AB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				78D948243FAD1E78B55ED10153257550 /* ResourceBundle-Wormholy-Wormholy-Info.plist */,
+				193F6772B39BE6F9A0012F39683F86B0 /* Wormholy.modulemap */,
+				112C425195642E2A0B7D0414424F64CF /* Wormholy-dummy.m */,
+				85EE825019846AE2ACBF88549979E160 /* Wormholy-Info.plist */,
+				82513FB5274E6F4C3B1BC2B961B0761D /* Wormholy-prefix.pch */,
+				5CE59CEAC135D339C13EE8817460F995 /* Wormholy-umbrella.h */,
+				89CB1B08AA225F310180F3ED8D3C67B9 /* Wormholy.debug.xcconfig */,
+				C72EDB0E415064FA6D4B9A4C5BD515C0 /* Wormholy.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Wormholy";
+			sourceTree = "<group>";
+		};
+		DF40FF94BB110BD4E304039FF0366E3F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6D9F33E55E5116DC525ADB6B4E66E8B /* Pods-DeveloperKit_Example */,
+				323C011D3B50DBA445337CEBC2786175 /* Pods-DeveloperKit_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		E587C58A9B80EE27EB6A240706CBAEEE /* AppInfo */ = {
+			isa = PBXGroup;
+			children = (
+				F3A27588B88601FA59E8B3C77E9D5A79 /* AppInfoController.swift */,
+				9EB3715A86987DD781E5F9027886462A /* AppInfoPlugin.swift */,
+				311AD8A1D596A3D00D49CBDA8F5EABF3 /* UIApplicationExtension.swift */,
+				A4BA1A43C577266BA580604F0C9A7F83 /* Resources */,
+			);
+			name = AppInfo;
+			path = DeveloperKit/Classes/AppInfo;
+			sourceTree = "<group>";
+		};
+		E8893A540BCBEDFC7D48E211909C1F79 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				793F671A406E5B68037A03764CE40FC8 /* NetworkPlugin.swift */,
+				8C0FB8522C3A2F5AA262DA204A156677 /* Resources */,
+			);
+			name = Network;
+			path = DeveloperKit/Classes/Network;
+			sourceTree = "<group>";
+		};
+		E898B3C851E0F0C71740FFF3B110F208 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				872748EF9D59DF97DAB2E8CC8B14E575 /* HyperionDefaultConfiguration.plist */,
+				6FA439C91E34C1C69E64F0521E794F66 /* linkButton.png */,
+				B96A65DBD9FE89BB6B05EA1825463123 /* linkButton@2x.png */,
+				748C6EB6398F7D5F76FE0C53DED3C2CA /* x.png */,
+				C557138014C4FA883094E1F4A62FEAF5 /* x@2x.png */,
+				E76800C904DFA0DE9875BB8652721C9B /* x@3x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		EC635F4AD99D34EF7562C12278AC5531 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0E810DAC3EBCC1A2BEE1A726625EFCDB /* GDPerformanceView-Swift.modulemap */,
+				38EDA925E066D436DC02CD9A4B94AC13 /* GDPerformanceView-Swift-dummy.m */,
+				0CE7020DCFF94CEF5CED75B8163D0B9A /* GDPerformanceView-Swift-Info.plist */,
+				D2A4FD1C25F47012478A9D44EEF431D7 /* GDPerformanceView-Swift-prefix.pch */,
+				62C6E459519EBEB01B4CD22D112C7D8D /* GDPerformanceView-Swift-umbrella.h */,
+				A8BF3762D83B9C40A3135258EE11651D /* GDPerformanceView-Swift.debug.xcconfig */,
+				03D1DF9A8025B5AF708C8A1DAAB51EB9 /* GDPerformanceView-Swift.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GDPerformanceView-Swift";
+			sourceTree = "<group>";
+		};
+		ED35CBE66DD893D660F900657DB2BCF7 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C8CBF9B04A31EAE0BC8E7B8F7785DF93 /* DeveloperKit */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		F37A91FCF784BBDBC4E07B361F9528F5 /* Clean */ = {
+			isa = PBXGroup;
+			children = (
+				B75142A6353F86A2FC4BF250C3CBFF34 /* CleanPlugin.swift */,
+				9CBE5B73A1FCC5945E97D871D22A9CD6 /* Resources */,
+			);
+			name = Clean;
+			path = DeveloperKit/Classes/Clean;
+			sourceTree = "<group>";
+		};
+		F8B5F19FC1353CE2C98D00A042108E59 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5609BABD5D625B8ADE6AB04E48C16FC5 /* developer_performance_icon@2x.png */,
+				984CBF46EBB705D570E25C048ADDAE02 /* developer_performance_icon@3x.png */,
+			);
+			name = Resources;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1CEFDDBFFFFB427E2FC776416BE1B74C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8792DF4BDA99A7A6574AED94D7D1DAB0 /* NSURLSessionConfiguration+Wormholy.h in Headers */,
+				CAD2053E7D3A47C498F6B2C36E112A5C /* Wormholy-umbrella.h in Headers */,
+				9C9F6F4CD6CC7D3A61615F72DCBB0212 /* Wormholy.h in Headers */,
+				DD2860F10AB0B84F34CEA38A5385EC7F /* WormholyMethodSwizzling.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4481FBEE6389EFD86F0BA13F85E6B2F6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C57F46EA65F3C8953E988D4DC4D31CB5 /* Pods-DeveloperKit_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3B0D670A3EA8BC0A504F55D7295EDCB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2D75010DCFDD5F3DE62CD9167A72CE3 /* Pods-DeveloperKit_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B49A3C1A24341194631B611C5E2301B6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB1B0FB48C7C8489FFC9881AD85ACBF5 /* DeveloperKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA8383F5A224FACAAAC1CA3DF27178AE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B767284F55DE73F6A533F030F9783C30 /* HYPActivationGestureOptions.h in Headers */,
+				646B1F4A83D922BA7DDF108081704483 /* HYPConfigurationConstants.h in Headers */,
+				AB0746560789907C9C782B269224BA29 /* HyperionCore.h in Headers */,
+				425CF96FE20D3C66FF429788698A5FF6 /* HyperioniOS-umbrella.h in Headers */,
+				CCB9A3C6D5DD416F8EEB0759C6975405 /* HyperionManager.h in Headers */,
+				5D8B31EF5F5265449AF3AC9464150705 /* HyperionWindowManager.h in Headers */,
+				3525B6921471EA0E8A86F6F2E18AF731 /* HYPInAppOverlayContainer.h in Headers */,
+				04E962999375C827246EDDEA3F01642B /* HYPListenerContainer.h in Headers */,
+				2A9A2E44C4A1DF9FB4F227604E54362C /* HYPOverlayContainer.h in Headers */,
+				2D246843E51525A7D95EBB6B04119DF8 /* HYPOverlayDebuggingViewController.h in Headers */,
+				0019ED83C83B365E47706217CBC57821 /* HYPOverlayDebuggingWindow.h in Headers */,
+				CED4F6ED70825D446AE7EA5988E204B7 /* HYPOverlayPluginModule.h in Headers */,
+				3D94A3577321E40ED7EFA0B6459BA17E /* HYPOverlayViewProvider.h in Headers */,
+				8EFF0EDB85F6E328B50F1E44487E5183 /* HYPPlugin.h in Headers */,
+				26ED536CADF34F5C87604FA541B82824 /* HYPPluginContainerView.h in Headers */,
+				9E587BECBECD01AC1626A8148896470F /* HYPPluginExtension.h in Headers */,
+				773BAB2C49AD2345EA7D07D946E3DCEC /* HYPPluginExtensionImp.h in Headers */,
+				8DA38119E5CA37C2BC348E7B81146E34 /* HYPPluginHelper.h in Headers */,
+				DCD5633DA418F10FAC02C0605FB93F68 /* HYPPluginMenuItem.h in Headers */,
+				E87F14D4718ECDB2258633FBC3474969 /* HYPPluginModule.h in Headers */,
+				AFC82119896E0C64F70CD12798813657 /* HYPPopoverViewController.h in Headers */,
+				CE37D24D4C95B38994DBF9A388D999F6 /* HYPSnapshotContainer.h in Headers */,
+				81F9FF0438DCC1F05FEAC897FF249D9D /* HYPSnapshotDebuggingWindow.h in Headers */,
+				E972CEF79F704179158F8985680BA57D /* HYPSnapshotInteractionView.h in Headers */,
+				89870939C27FB9AB375E578492707785 /* HYPSnapshotPluginModule.h in Headers */,
+				577CFF78B00F25145CC2B00C97D29A7A /* HYPSnapshotViewController.h in Headers */,
+				3DB4A538832343766EA8EE7495F31BF4 /* HYPViewSelectionDelegate.h in Headers */,
+				B643CF8E95B88E8187A0E32F177B800C /* HYPViewSelectionTableViewController.h in Headers */,
+				201E704DFB20B8D7A465A409CD0BBA41 /* PluginListViewController.h in Headers */,
+				1F3C004353703ABF6F28A589ECD1B60D /* UIApplication+Swizzling.h in Headers */,
+				C1484FF6FECE9420603E52EC987107ED /* UIWindow+Swizzling.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB2CED73E7161472FEB82CE220D110C6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EAD67F3C568F9142F3F7C330A2AB808 /* GDPerformanceView-Swift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3E73ED39761329414C06DD4486C5058E /* Wormholy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0464877A5A134E25377F643916452C0F /* Build configuration list for PBXNativeTarget "Wormholy" */;
+			buildPhases = (
+				1CEFDDBFFFFB427E2FC776416BE1B74C /* Headers */,
+				DC96D1078BD90441D77742949CAD405A /* Sources */,
+				431509C9C2AA1F2725C2BFDAC5286439 /* Frameworks */,
+				C4E9F8F8BCDF6BDD6D4C47DD73344C52 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A85C021984FF6CEB6A6CCC66C1258AFA /* PBXTargetDependency */,
+			);
+			name = Wormholy;
+			productName = Wormholy;
+			productReference = 2530BC414137FF7A53A0368B476547B9 /* Wormholy.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4D49F4BA57B33350CC121CC889F7C17D /* Pods-DeveloperKit_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BB1E6137C88677DCC3DA6C8AD9834FF /* Build configuration list for PBXNativeTarget "Pods-DeveloperKit_Tests" */;
+			buildPhases = (
+				4481FBEE6389EFD86F0BA13F85E6B2F6 /* Headers */,
+				E85106150057874235BC2F0B075FC5C6 /* Sources */,
+				F0602C89045A22D6CCA3329D75913F76 /* Frameworks */,
+				9AC911D3BB7ACD48F0DCD74CBF4976EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C2D46CA2F29DAAA119990F14CCB9904D /* PBXTargetDependency */,
+			);
+			name = "Pods-DeveloperKit_Tests";
+			productName = "Pods-DeveloperKit_Tests";
+			productReference = E1AD9A1B0DED66DE443A4BCBD43EB6F4 /* Pods_DeveloperKit_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		62A0281C85BDAAD2DA859FF4D0CAEE49 /* HyperioniOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DF7B8A80B00460BC8405AAE3B12DBF2 /* Build configuration list for PBXNativeTarget "HyperioniOS" */;
+			buildPhases = (
+				BA8383F5A224FACAAAC1CA3DF27178AE /* Headers */,
+				23BC901E10C94BAF8A62D48CA2162E04 /* Sources */,
+				7EDDB81B15B17E094E763DE623974FAE /* Frameworks */,
+				6547872438135DBCE3BD29020CE4A05B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HyperioniOS;
+			productName = HyperioniOS;
+			productReference = 99F5C7A2FD7506B1AE4BF2E70DB257D2 /* HyperionCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8674A6F604977FE90C1CE085F3BCDDB7 /* GDPerformanceView-Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDA9C65E78B615EF13080F12AF4CEDE8 /* Build configuration list for PBXNativeTarget "GDPerformanceView-Swift" */;
+			buildPhases = (
+				DB2CED73E7161472FEB82CE220D110C6 /* Headers */,
+				D0BC330D532EDA860229BD6FCB54BFD8 /* Sources */,
+				2B4DA396BEF969E5CFDE697EDC6C3EAA /* Frameworks */,
+				BD42DB2FA21938FEF4A4ABFE3F79D5BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GDPerformanceView-Swift";
+			productName = "GDPerformanceView-Swift";
+			productReference = FCD4D12752A60C0926DB2C8C2BE5CF1F /* GDPerformanceView_Swift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		93CEC7FFB57A497DE49471C5D9517C13 /* Wormholy-Wormholy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05754972633FA917F9E112CE2B88A72D /* Build configuration list for PBXNativeTarget "Wormholy-Wormholy" */;
+			buildPhases = (
+				0D67BDF8ACE22EC2AF8F69DE01031E07 /* Sources */,
+				B10071850D981AF0CDE408C179B5669A /* Frameworks */,
+				FD7F29F73D135DBB175D9341F764EEB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Wormholy-Wormholy";
+			productName = "Wormholy-Wormholy";
+			productReference = AA92ED38E716E03D3FC758C810953B95 /* Wormholy.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		D99DE4FC471588C44EAE3C272DB2CC12 /* DeveloperKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3978CC64567C4AE998A15500B2DA5C3 /* Build configuration list for PBXNativeTarget "DeveloperKit" */;
+			buildPhases = (
+				B49A3C1A24341194631B611C5E2301B6 /* Headers */,
+				56681A35347A959C6ECD3514A579B7B7 /* Sources */,
+				65AC9BE0B87ED9BE5AF629533218DE04 /* Frameworks */,
+				74FC78BD527CB3E83E95AE89DAEBC18E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				871F6BACF3B7E5F576B94C87E917057C /* PBXTargetDependency */,
+				7376114EB3E44FB6578CB4CFD938C31D /* PBXTargetDependency */,
+				590E33ED6D57F6748C20550188E9AD7B /* PBXTargetDependency */,
+			);
+			name = DeveloperKit;
+			productName = DeveloperKit;
+			productReference = A18572569E8FDE11E7E2402DAE9A8D17 /* DeveloperKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DCB90DD8163C6B771932BD93C8F29103 /* Pods-DeveloperKit_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89478CDD4946A98A5FEB7030989D92FC /* Build configuration list for PBXNativeTarget "Pods-DeveloperKit_Example" */;
+			buildPhases = (
+				B3B0D670A3EA8BC0A504F55D7295EDCB /* Headers */,
+				329AA86E2D0E4D5C5CC3CCC6427152E2 /* Sources */,
+				EAFCB17A0880341102AB4010AC5BFA9B /* Frameworks */,
+				1462FE75EB86E1CA297EBF4972D9073B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92FB736CCDB4818DA6444750DFA86105 /* PBXTargetDependency */,
+				4FFEF369B6E28F3E1D991879C970DA8E /* PBXTargetDependency */,
+				5178F1501D6CA1F7409D7A0244E516DE /* PBXTargetDependency */,
+				5ED1592D60134DA6828958F8C2542074 /* PBXTargetDependency */,
+			);
+			name = "Pods-DeveloperKit_Example";
+			productName = "Pods-DeveloperKit_Example";
+			productReference = 964F3A7E285B5AF5EE4695917F392E79 /* Pods_DeveloperKit_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 09BA695D6759AC38458783997916DF33 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D99DE4FC471588C44EAE3C272DB2CC12 /* DeveloperKit */,
+				8674A6F604977FE90C1CE085F3BCDDB7 /* GDPerformanceView-Swift */,
+				62A0281C85BDAAD2DA859FF4D0CAEE49 /* HyperioniOS */,
+				DCB90DD8163C6B771932BD93C8F29103 /* Pods-DeveloperKit_Example */,
+				4D49F4BA57B33350CC121CC889F7C17D /* Pods-DeveloperKit_Tests */,
+				3E73ED39761329414C06DD4486C5058E /* Wormholy */,
+				93CEC7FFB57A497DE49471C5D9517C13 /* Wormholy-Wormholy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1462FE75EB86E1CA297EBF4972D9073B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6547872438135DBCE3BD29020CE4A05B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD7136DFC14EF319D0F51FEE6EFF9FA8 /* HyperionDefaultConfiguration.plist in Resources */,
+				5BD5268F986B4DC4329D34F163833084 /* linkButton.png in Resources */,
+				C8A7E588D199390313E73DAC05465908 /* linkButton@2x.png in Resources */,
+				7CA17BD889AA8F2532C53A5361B7A6AB /* x.png in Resources */,
+				EA8810E751F2DE4D5F01BE987181C488 /* x@2x.png in Resources */,
+				28D3B31300942AD3AF91C3099500607F /* x@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74FC78BD527CB3E83E95AE89DAEBC18E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AC911D3BB7ACD48F0DCD74CBF4976EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD42DB2FA21938FEF4A4ABFE3F79D5BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4E9F8F8BCDF6BDD6D4C47DD73344C52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8836C5E779CC031470FBDD1552773DBF /* Wormholy.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD7F29F73D135DBB175D9341F764EEB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4100BD4E408009C3AEF2F303A43260D /* ActionableTableViewCell.xib in Resources */,
+				96DA6EACAB024E5264A1056124B9FB2A /* Flow.storyboard in Resources */,
+				F4C8EE2ED5A7EB2C16E851C9E8D3DCE1 /* RequestCell.xib in Resources */,
+				1F2A540F455D10C7613800677CB8B679 /* RequestTitleSectionView.xib in Resources */,
+				A94377C66837F8A61E67E2FBD2912B70 /* TextTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D67BDF8ACE22EC2AF8F69DE01031E07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23BC901E10C94BAF8A62D48CA2162E04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AE5B4F411D6EBE904599379564C609 /* HYPConfigurationConstants.m in Sources */,
+				CB2A2D0E6F8CA923217A32C710AF3988 /* HyperioniOS-dummy.m in Sources */,
+				5F513A6C51F223FC0AE94791256C768D /* HyperionManager.m in Sources */,
+				6C3A6D4B364434C6C65E578E9B9EEEB4 /* HyperionWindowManager.m in Sources */,
+				69E56BFA526521C1FBEAB229CF1F8D53 /* HYPInAppOverlayContainer.m in Sources */,
+				326A1F25DB5638D51683CC988E86BA35 /* HYPListenerContainer.m in Sources */,
+				D992B8A66976953E1292EED90F8974C7 /* HYPOverlayDebuggingViewController.m in Sources */,
+				3348D6F946F3CB16B40CE5848364631D /* HYPOverlayDebuggingWindow.m in Sources */,
+				35AE0F975663E637C0C38AAD7BED62DC /* HYPOverlayPluginModule.m in Sources */,
+				947D4F452DDB9D4B487540125DBE7F96 /* HYPPluginContainerView.m in Sources */,
+				C2D45D0EB0837E1A2062A64DA3E58061 /* HYPPluginExtensionImp.m in Sources */,
+				9F158FC9B6739EF0B65ADBE4596307CB /* HYPPluginHelper.m in Sources */,
+				F146896128DAEE20E7518A13489F5ECD /* HYPPluginMenuItem.m in Sources */,
+				29F3FF231735BF3D40C7055023086C2B /* HYPPluginModule.m in Sources */,
+				CDA7A37B5578F1D05B965F300C3C796C /* HYPPopoverViewController.m in Sources */,
+				BE3F74C4FCB41D7907CEC6FB675A8DD3 /* HYPSnapshotContainer.m in Sources */,
+				97D0E01A3BDDA912849275D7145E3744 /* HYPSnapshotDebuggingWindow.m in Sources */,
+				9D62B28C31A19D94218DF2F4A28C1809 /* HYPSnapshotInteractionView.m in Sources */,
+				54ED66B35A4A2A9FD87F89A53F44475F /* HYPSnapshotPluginModule.m in Sources */,
+				72A2B2E37073C55CFF5862624D73E410 /* HYPSnapshotViewController.m in Sources */,
+				47B368DA7A05CCB9B8B255459F1A5FB1 /* HYPViewSelectionTableViewController.m in Sources */,
+				00189BB3DE21771BB1428DB8C5FE918A /* PluginListViewController.m in Sources */,
+				35BB120E7DF016EE8E6EF77AF85FFAA1 /* UIApplication+Swizzling.m in Sources */,
+				8A2E53192D1969AC3578A21385310E6F /* UIWindow+Swizzling.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		329AA86E2D0E4D5C5CC3CCC6427152E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B557B37548EB9E4D53A0F5D668A691E0 /* Pods-DeveloperKit_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56681A35347A959C6ECD3514A579B7B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FDBF1B27359A3541D577CFB36DADF64 /* AppInfoController.swift in Sources */,
+				E9800D1BDDB5B041E9E5B8A291ABA7EE /* AppInfoPlugin.swift in Sources */,
+				52D3090FC10929A1494236F81E8E0099 /* CleanPlugin.swift in Sources */,
+				00C6795E08B7D4CE0AC3A9F0D0448F07 /* developer_clean_icon@2x.png in Sources */,
+				BB87914105DD1F9587028A5F21FBB6E2 /* developer_clean_icon@3x.png in Sources */,
+				6D371DAE1DE99D4B4F20933B42E8DBE4 /* developer_env_icon@2x.png in Sources */,
+				DD5CF2D024EA21B5B52BD5E31B3C5455 /* developer_env_icon@3x.png in Sources */,
+				BB82FAA845C041B6100A3A9524D9DE54 /* developer_info_icon@2x.png in Sources */,
+				6A220724C2037AFBC004DD16743F9705 /* developer_info_icon@3x.png in Sources */,
+				2295686B897E197DADD8CD3BEC24B310 /* developer_network_icon@2x.png in Sources */,
+				FD6A29F3E313CC05ED06CAB3A23A6B56 /* developer_network_icon@3x.png in Sources */,
+				42EB472487317ABAE7C9AEF04A1F1540 /* developer_performance_icon@2x.png in Sources */,
+				C55099E7D3DAD8A47189E1AE0DDE5189 /* developer_performance_icon@3x.png in Sources */,
+				3863D8E729CC5F96950A3ED20E9275B8 /* DeveloperKit-dummy.m in Sources */,
+				107F3540DCBE839827A3BFEDFBD4E7B9 /* DeveloperKit.swift in Sources */,
+				6EF7D3247F99F9AEA7C92BE7BD90A291 /* EnvironmentPlugin.swift in Sources */,
+				021607C2401B1BF12A97ED36D226F486 /* EnvironmentPluginMenuItem.swift in Sources */,
+				1EB5EAB8C1ACCA01B7971ADFFECFCA66 /* EnvironmentPluginModule.swift in Sources */,
+				D7CBA2800362B5EA785B7ABB3E85D96E /* NetworkPlugin.swift in Sources */,
+				A179100CF95930D389EC09182CF0BAEB /* PerformancePlugin.swift in Sources */,
+				375EC86040B53662D0D0EC43E6D5CCAD /* UIApplicationExtension.swift in Sources */,
+				3D566E34FBA4846A74A814816DCB730A /* UIViewController+Top.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0BC330D532EDA860229BD6FCB54BFD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				984853856CCC3A8BF45A2DBAE1DCDAC4 /* GDPerformanceView-Swift-dummy.m in Sources */,
+				7C6241DD8DE97091B4CEB1A97613EF87 /* LinkedFramesList.swift in Sources */,
+				277BBCFAC9D63E8D25850278CA42691B /* MarginLabel.swift in Sources */,
+				BCD95148F372F3D47E93474F6ACB6950 /* PerformanceMonitor.swift in Sources */,
+				D7F1DEC45EE1E3ABE46BC4FDCD1882FC /* PerformanceView.swift in Sources */,
+				A5830BFF0322F95EEDBB912F9E38BC82 /* PerformanceСalculator.swift in Sources */,
+				1047F8B6DE7FA198A11543FAB83A6505 /* Protocols.swift in Sources */,
+				A72A8F98F507EC16218CD5721741242F /* WindowViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC96D1078BD90441D77742949CAD405A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59048DAAD582D62B6589E82ED77692F5 /* ActionableTableViewCell.swift in Sources */,
+				40D7052BD97293AE23393ABBBE0204AE /* BodyDetailViewController.swift in Sources */,
+				7A1771FBF2E65F19A9887C89C047C93B /* Colors.swift in Sources */,
+				614EEF49A334D4ADA23FFDCBA2FA3B0C /* Config.swift in Sources */,
+				A7FE6534E09ED22AE8BBCEBAD98A68CA /* CustomActivity.swift in Sources */,
+				A8A24B4D609572252EB95457E6D8A7D1 /* CustomHTTPProtocol.swift in Sources */,
+				1F671C3C79C896949633F8911ED6101D /* FileHandler.swift in Sources */,
+				EA16A56807AC302C0DB124127B1E1EDC /* NSURLSessionConfiguration+Wormholy.m in Sources */,
+				A64866D22CD0AE1582EE447A60FB604A /* Postman.swift in Sources */,
+				372900F08F2B066D407B569B4B7ED36D /* RequestCell.swift in Sources */,
+				07BA967A405E28F6C4B459C41FC3CE22 /* RequestDetailViewController.swift in Sources */,
+				2BB8D68DC4C778B7B74DA7E23DF6CE6E /* RequestModel.swift in Sources */,
+				2BA13FC6BA6037A118B2B8687F989DB6 /* RequestModelBeautifier.swift in Sources */,
+				DCF666290FED74BF08ACC79FB2A3F425 /* RequestResponseExportOption.swift in Sources */,
+				53BE890EEBB9626299D7D25269845A08 /* RequestsViewController.swift in Sources */,
+				23A6306C4C05BD5B969801342F252CE8 /* RequestTitleSectionView.swift in Sources */,
+				47C54FD6A37C683832CA6C78A0ED8B7A /* Section.swift in Sources */,
+				B5A7BFA32C023F67A8ABABC0BAF622B8 /* ShareUtils.swift in Sources */,
+				56BCCA72F72EE5E9E2CCE7D471CB9C2E /* Storage.swift in Sources */,
+				9CFB9EB9B6F4219CF05E7D51D3093FE2 /* SwiftySelfAwareHelper.swift in Sources */,
+				9F7C957EB48BE76BA9DF948DC72F42BB /* TextTableViewCell.swift in Sources */,
+				5DC0432A572354AC4E6594F8894A3C5A /* WHBaseViewController.swift in Sources */,
+				EC22CDC89BFD6CA61B6026ED839D50D8 /* WHBundle.swift in Sources */,
+				CECFF1064F9C686F2F59EBB77D7F79A0 /* WHCollectionView.swift in Sources */,
+				554BFCC10D8C57244C3496E0F84A2B42 /* WHDate.swift in Sources */,
+				50A10434A4FC11AB973FE2D6A02CB34A /* WHLabel.swift in Sources */,
+				78C2E2725C05EB0867275D7648406E04 /* WHNavigationController.swift in Sources */,
+				645CED3C5E573E08A05AF509904BEB6A /* WHString.swift in Sources */,
+				125DC9C9B71B86C0776AC122F4E9F53B /* WHTableView.swift in Sources */,
+				3B5E3242709E3182BEA83E4A9D741156 /* WHTextView.swift in Sources */,
+				285C38F7FF19B5863304D6D16104372F /* WHView.swift in Sources */,
+				FDDCF609529DDC428B7A3C730A36A29B /* Wormholy-dummy.m in Sources */,
+				84B9482A6537D7BC546873FB6B298E15 /* Wormholy.swift in Sources */,
+				95208C160997A2E2C046CC754959710D /* WormholyMethodSwizzling.m in Sources */,
+				4F98D380FE52BE36E748EE39A0CDF601 /* WormholyStarterEngine.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E85106150057874235BC2F0B075FC5C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7473E609B3F0BD9FB04F977B8800E531 /* Pods-DeveloperKit_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4FFEF369B6E28F3E1D991879C970DA8E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "GDPerformanceView-Swift";
+			target = 8674A6F604977FE90C1CE085F3BCDDB7 /* GDPerformanceView-Swift */;
+			targetProxy = B19E4A58509E38230050455BA0B002A9 /* PBXContainerItemProxy */;
+		};
+		5178F1501D6CA1F7409D7A0244E516DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HyperioniOS;
+			target = 62A0281C85BDAAD2DA859FF4D0CAEE49 /* HyperioniOS */;
+			targetProxy = 6F5E7824A5F34494BF44A276E4BB0485 /* PBXContainerItemProxy */;
+		};
+		590E33ED6D57F6748C20550188E9AD7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Wormholy;
+			target = 3E73ED39761329414C06DD4486C5058E /* Wormholy */;
+			targetProxy = 4175C4984A8F710E9C86EC90DD3B7563 /* PBXContainerItemProxy */;
+		};
+		5ED1592D60134DA6828958F8C2542074 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Wormholy;
+			target = 3E73ED39761329414C06DD4486C5058E /* Wormholy */;
+			targetProxy = E629E3F4A271E4794924CBA9C579C1FE /* PBXContainerItemProxy */;
+		};
+		7376114EB3E44FB6578CB4CFD938C31D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HyperioniOS;
+			target = 62A0281C85BDAAD2DA859FF4D0CAEE49 /* HyperioniOS */;
+			targetProxy = 99E891C0BB33DAFDDB6308B96C860D71 /* PBXContainerItemProxy */;
+		};
+		871F6BACF3B7E5F576B94C87E917057C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "GDPerformanceView-Swift";
+			target = 8674A6F604977FE90C1CE085F3BCDDB7 /* GDPerformanceView-Swift */;
+			targetProxy = 837B537974AE4C001CA2FEEEC76B811E /* PBXContainerItemProxy */;
+		};
+		92FB736CCDB4818DA6444750DFA86105 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DeveloperKit;
+			target = D99DE4FC471588C44EAE3C272DB2CC12 /* DeveloperKit */;
+			targetProxy = EC1F25BACAAD5241C1705DADF079E26B /* PBXContainerItemProxy */;
+		};
+		A85C021984FF6CEB6A6CCC66C1258AFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Wormholy-Wormholy";
+			target = 93CEC7FFB57A497DE49471C5D9517C13 /* Wormholy-Wormholy */;
+			targetProxy = 0178B9F1FC49D0DF61F5A169B15CB964 /* PBXContainerItemProxy */;
+		};
+		C2D46CA2F29DAAA119990F14CCB9904D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-DeveloperKit_Example";
+			target = DCB90DD8163C6B771932BD93C8F29103 /* Pods-DeveloperKit_Example */;
+			targetProxy = 54907BA6EF9B774E7B7188F565F43F30 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		03F5EE895649E15FC8993083D8D4D454 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C72EDB0E415064FA6D4B9A4C5BD515C0 /* Wormholy.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Wormholy";
+				IBSC_MODULE = Wormholy;
+				INFOPLIST_FILE = "Target Support Files/Wormholy/ResourceBundle-Wormholy-Wormholy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = Wormholy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		431BA2B8298F0EE71735B9E0114E1955 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		66787BE84A55B23AD49361020527324C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9AC981E99123E643813370ACB4704C4 /* Pods-DeveloperKit_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DeveloperKit_Example/Pods-DeveloperKit_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DeveloperKit_Example/Pods-DeveloperKit_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		69AE9D281ECFDC3748694DF54B70C06E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1D632F5DBC873EC91001AEEFB13B26A /* HyperioniOS.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HyperioniOS/HyperioniOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HyperioniOS/HyperioniOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HyperioniOS/HyperioniOS.modulemap";
+				PRODUCT_MODULE_NAME = HyperionCore;
+				PRODUCT_NAME = HyperionCore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		736E814D4BE867F3300DEE220FC67414 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68FE0626D06DE6A4558CE0AB607EAF6C /* HyperioniOS.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HyperioniOS/HyperioniOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HyperioniOS/HyperioniOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HyperioniOS/HyperioniOS.modulemap";
+				PRODUCT_MODULE_NAME = HyperionCore;
+				PRODUCT_NAME = HyperionCore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		74D10360091BD0313CF3985B76612C92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03D1DF9A8025B5AF708C8A1DAAB51EB9 /* GDPerformanceView-Swift.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GDPerformanceView-Swift/GDPerformanceView-Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GDPerformanceView-Swift/GDPerformanceView-Swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GDPerformanceView-Swift/GDPerformanceView-Swift.modulemap";
+				PRODUCT_MODULE_NAME = GDPerformanceView_Swift;
+				PRODUCT_NAME = GDPerformanceView_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		79759604D78320E712558F49DF19AA9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		84D37F695852109037332284EC294673 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EABD6A8038267A9B94C388048D07249C /* DeveloperKit.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DeveloperKit/DeveloperKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DeveloperKit/DeveloperKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DeveloperKit/DeveloperKit.modulemap";
+				PRODUCT_MODULE_NAME = DeveloperKit;
+				PRODUCT_NAME = DeveloperKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A0A295850F5AC1B3FAD30935843B77C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D232AA3AA97A2AEA843FB30132E7610D /* Pods-DeveloperKit_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DeveloperKit_Tests/Pods-DeveloperKit_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DeveloperKit_Tests/Pods-DeveloperKit_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B72EBFE5D62287A36041143268A3F9E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0C1C15D1021A8379C6CC2BADD3314FC /* DeveloperKit.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DeveloperKit/DeveloperKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DeveloperKit/DeveloperKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DeveloperKit/DeveloperKit.modulemap";
+				PRODUCT_MODULE_NAME = DeveloperKit;
+				PRODUCT_NAME = DeveloperKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CDE5B752524AFBBC5292D6F11ECD3CE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89CB1B08AA225F310180F3ED8D3C67B9 /* Wormholy.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Wormholy/Wormholy-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Wormholy/Wormholy-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Wormholy/Wormholy.modulemap";
+				PRODUCT_MODULE_NAME = Wormholy;
+				PRODUCT_NAME = Wormholy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E79AAD0EEFFDADA5B7683782F19CCA62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5659480162D741C9D387B6C52BA31C9 /* Pods-DeveloperKit_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DeveloperKit_Tests/Pods-DeveloperKit_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DeveloperKit_Tests/Pods-DeveloperKit_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E9A2B810A67F3FCD90F0DEF383E0E5D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8BF3762D83B9C40A3135258EE11651D /* GDPerformanceView-Swift.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GDPerformanceView-Swift/GDPerformanceView-Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GDPerformanceView-Swift/GDPerformanceView-Swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GDPerformanceView-Swift/GDPerformanceView-Swift.modulemap";
+				PRODUCT_MODULE_NAME = GDPerformanceView_Swift;
+				PRODUCT_NAME = GDPerformanceView_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F24669F9C35FD61AF024993F3E1AA785 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C72EDB0E415064FA6D4B9A4C5BD515C0 /* Wormholy.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Wormholy/Wormholy-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Wormholy/Wormholy-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Wormholy/Wormholy.modulemap";
+				PRODUCT_MODULE_NAME = Wormholy;
+				PRODUCT_NAME = Wormholy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F683643CA0E44B503C67F69CFD1A920F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F51CA2B064883D076D49B7256F9D4F8E /* Pods-DeveloperKit_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DeveloperKit_Example/Pods-DeveloperKit_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DeveloperKit_Example/Pods-DeveloperKit_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FD1D82662A5A4B54445890A3DF279805 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89CB1B08AA225F310180F3ED8D3C67B9 /* Wormholy.debug.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Wormholy";
+				IBSC_MODULE = Wormholy;
+				INFOPLIST_FILE = "Target Support Files/Wormholy/ResourceBundle-Wormholy-Wormholy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = Wormholy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0464877A5A134E25377F643916452C0F /* Build configuration list for PBXNativeTarget "Wormholy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDE5B752524AFBBC5292D6F11ECD3CE3 /* Debug */,
+				F24669F9C35FD61AF024993F3E1AA785 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05754972633FA917F9E112CE2B88A72D /* Build configuration list for PBXNativeTarget "Wormholy-Wormholy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD1D82662A5A4B54445890A3DF279805 /* Debug */,
+				03F5EE895649E15FC8993083D8D4D454 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79759604D78320E712558F49DF19AA9F /* Debug */,
+				431BA2B8298F0EE71735B9E0114E1955 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BB1E6137C88677DCC3DA6C8AD9834FF /* Build configuration list for PBXNativeTarget "Pods-DeveloperKit_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0A295850F5AC1B3FAD30935843B77C4 /* Debug */,
+				E79AAD0EEFFDADA5B7683782F19CCA62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DF7B8A80B00460BC8405AAE3B12DBF2 /* Build configuration list for PBXNativeTarget "HyperioniOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				736E814D4BE867F3300DEE220FC67414 /* Debug */,
+				69AE9D281ECFDC3748694DF54B70C06E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89478CDD4946A98A5FEB7030989D92FC /* Build configuration list for PBXNativeTarget "Pods-DeveloperKit_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F683643CA0E44B503C67F69CFD1A920F /* Debug */,
+				66787BE84A55B23AD49361020527324C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3978CC64567C4AE998A15500B2DA5C3 /* Build configuration list for PBXNativeTarget "DeveloperKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84D37F695852109037332284EC294673 /* Debug */,
+				B72EBFE5D62287A36041143268A3F9E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDA9C65E78B615EF13080F12AF4CEDE8 /* Build configuration list for PBXNativeTarget "GDPerformanceView-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9A2B810A67F3FCD90F0DEF383E0E5D1 /* Debug */,
+				74D10360091BD0313CF3985B76612C92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
