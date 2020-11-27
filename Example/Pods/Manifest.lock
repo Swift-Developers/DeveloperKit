@@ -47,7 +47,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  DeveloperKit: dfbf5c5344570a8004552248a75084e67d8cf12b
+  DeveloperKit: f27bda4368de4632537b26bc4ff58c469d34110c
   GDPerformanceView-Swift: 22d964fe40b19e3d914dba2586237d064de8fd77
   HyperioniOS: 9882a13fe1e4d020f84a2c4a1a5cddb980a21f76
   Wormholy: bfc1c8679eefd0edd92638758e21c3961b1b3b50

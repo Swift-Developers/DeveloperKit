@@ -68,7 +68,7 @@
         ]
       },
       "resources": [
-        "DeveloperKit/Network/Resources/*.png"
+        "DeveloperKit/Network/**/*.png"
       ]
     },
     {
@@ -80,7 +80,7 @@
         ]
       },
       "resources": [
-        "DeveloperKit/Clean/Resources/*.png"
+        "DeveloperKit/Clean/**/*.png"
       ]
     },
     {
@@ -92,7 +92,7 @@
         ]
       },
       "resources": [
-        "DeveloperKit/Environment/Resources/*.png"
+        "DeveloperKit/Environment/**/*.png"
       ]
     },
     {
@@ -104,7 +104,7 @@
         ]
       },
       "resources": [
-        "DeveloperKit/AppInfo/Resources/*.png"
+        "DeveloperKit/AppInfo/**/*.png"
       ]
     },
     {
@@ -119,7 +119,7 @@
         ]
       },
       "resources": [
-        "DeveloperKit/Performance/Resources/*.png"
+        "DeveloperKit/Performance/**/*.png"
       ]
     }
   ],

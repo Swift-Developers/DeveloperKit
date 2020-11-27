@@ -59,32 +59,32 @@ TODO: Add long description of the pod here.
       sub.source_files  = 'Sources/Plugins/Network/*.swift'
       sub.dependency 'DeveloperKit/Core'
       sub.dependency 'Wormholy'
-      sub.resources = ['DeveloperKit/Network/Resources/*.png']
+      sub.resources = ['DeveloperKit/Network/**/*.png']
   end
 
   s.subspec 'Clean' do |sub|
       sub.source_files  = 'DeveloperKit/Classes/Clean/*.swift'
       sub.dependency 'DeveloperKit/Core'
-      sub.resources = ['DeveloperKit/Clean/Resources/*.png']
+      sub.resources = ['DeveloperKit/Clean/**/*.png']
   end
   
   s.subspec 'Environment' do |sub|
       sub.source_files  = 'DeveloperKit/Classes/Environment/*.swift'
       sub.dependency 'DeveloperKit/Core'
-      sub.resources = ['DeveloperKit/Environment/Resources/*.png']
+      sub.resources = ['DeveloperKit/Environment/**/*.png']
   end
   
   s.subspec 'AppInfo' do |sub|
       sub.source_files  = 'DeveloperKit/Classes/AppInfo/*.swift'
       sub.dependency 'DeveloperKit/Core'
-      sub.resources = ['DeveloperKit/AppInfo/Resources/*.png']
+      sub.resources = ['DeveloperKit/AppInfo/**/*.png']
   end
   
   s.subspec 'Performance' do |sub|
       sub.source_files  = 'DeveloperKit/Classes/Performance/*.swift'
       sub.dependency 'GDPerformanceView-Swift'
       sub.dependency 'DeveloperKit/Core'
-      sub.resources = ['DeveloperKit/Performance/Resources/*.png']
+      sub.resources = ['DeveloperKit/Performance/**/*.png']
   end
   
 end
