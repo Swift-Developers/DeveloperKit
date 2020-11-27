@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import DeveloperKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +16,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        DeveloperKit.Clean.config {
+            print("task")
+        }
+        
+        DeveloperKit.AppInfo.config {
+            print("已复制")
+            
+        } infosClosure: { () -> [AppInfo.Group] in
+            [AppInfo.Group]()
+        }
+
+        DeveloperKit.Environment.config(.init(count: 2, {
+            "\($0)号"
+            
+        }, { env in
+            print("切换\(env)")
+        }))
+        
         return true
     }
 

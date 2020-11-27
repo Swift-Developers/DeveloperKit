@@ -34,16 +34,93 @@
   "subspecs": [
     {
       "name": "Plugins",
-      "source_files": "DeveloperKit/Classes/*.swift",
       "dependencies": {
-        "[\"Wormholy\", \"GDPerformanceView-Swift\"]": [
+        "DeveloperKit/Core": [
+
+        ],
+        "DeveloperKit/Network": [
+
+        ],
+        "DeveloperKit/Environment": [
+
+        ],
+        "DeveloperKit/AppInfo": [
+
+        ],
+        "DeveloperKit/Performance": [
 
         ]
       }
     },
     {
+      "name": "Core",
+      "source_files": "DeveloperKit/Classes/Core/*.swift"
+    },
+    {
+      "name": "Network",
+      "source_files": "Sources/Plugins/Network/*.swift",
+      "dependencies": {
+        "DeveloperKit/Core": [
+
+        ],
+        "Wormholy": [
+
+        ]
+      },
+      "resources": [
+        "DeveloperKit/Network/Resources/*.png"
+      ]
+    },
+    {
       "name": "Clean",
-      "source_files": "DeveloperKit/Classes/Clean/*.swift"
+      "source_files": "DeveloperKit/Classes/Clean/*.swift",
+      "dependencies": {
+        "DeveloperKit/Core": [
+
+        ]
+      },
+      "resources": [
+        "DeveloperKit/Clean/Resources/*.png"
+      ]
+    },
+    {
+      "name": "Environment",
+      "source_files": "DeveloperKit/Classes/Environment/*.swift",
+      "dependencies": {
+        "DeveloperKit/Core": [
+
+        ]
+      },
+      "resources": [
+        "DeveloperKit/Environment/Resources/*.png"
+      ]
+    },
+    {
+      "name": "AppInfo",
+      "source_files": "DeveloperKit/Classes/AppInfo/*.swift",
+      "dependencies": {
+        "DeveloperKit/Core": [
+
+        ]
+      },
+      "resources": [
+        "DeveloperKit/AppInfo/Resources/*.png"
+      ]
+    },
+    {
+      "name": "Performance",
+      "source_files": "DeveloperKit/Classes/Performance/*.swift",
+      "dependencies": {
+        "GDPerformanceView-Swift": [
+
+        ],
+        "DeveloperKit/Core": [
+
+        ]
+      },
+      "resources": [
+        "DeveloperKit/Performance/Resources/*.png"
+      ]
     }
   ],
   "swift_version": "5.0"

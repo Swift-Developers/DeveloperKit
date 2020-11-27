@@ -30,10 +30,6 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'DeveloperKit/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'DeveloperKit' => ['DeveloperKit/Assets/*.png']
-  # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
@@ -48,16 +44,47 @@ TODO: Add long description of the pod here.
   s.dependency 'HyperioniOS/Core'
   
   s.subspec 'Plugins' do |sub|
-      sub.source_files  = 'DeveloperKit/Classes/*.swift'
-      sub.dependency ['Wormholy', 'GDPerformanceView-Swift']
+       sub.dependency 'DeveloperKit/Core'
+       sub.dependency 'DeveloperKit/Network'
+       sub.dependency 'DeveloperKit/Environment'
+       sub.dependency 'DeveloperKit/AppInfo'
+       sub.dependency 'DeveloperKit/Performance'
+  end
+  
+  s.subspec 'Core' do |sub|
+       sub.source_files  = 'DeveloperKit/Classes/Core/*.swift'
   end
 
-  # s.subspec 'Network' do |sub|
-  #     sub.dependency ['Wormholy']
-  #     sub.source_files  = 'Sources/Plugins/Network/*.swift'
-  # end
+  s.subspec 'Network' do |sub|
+      sub.source_files  = 'Sources/Plugins/Network/*.swift'
+      sub.dependency 'DeveloperKit/Core'
+      sub.dependency 'Wormholy'
+      sub.resources = ['DeveloperKit/Network/Resources/*.png']
+  end
 
   s.subspec 'Clean' do |sub|
       sub.source_files  = 'DeveloperKit/Classes/Clean/*.swift'
+      sub.dependency 'DeveloperKit/Core'
+      sub.resources = ['DeveloperKit/Clean/Resources/*.png']
   end
+  
+  s.subspec 'Environment' do |sub|
+      sub.source_files  = 'DeveloperKit/Classes/Environment/*.swift'
+      sub.dependency 'DeveloperKit/Core'
+      sub.resources = ['DeveloperKit/Environment/Resources/*.png']
+  end
+  
+  s.subspec 'AppInfo' do |sub|
+      sub.source_files  = 'DeveloperKit/Classes/AppInfo/*.swift'
+      sub.dependency 'DeveloperKit/Core'
+      sub.resources = ['DeveloperKit/AppInfo/Resources/*.png']
+  end
+  
+  s.subspec 'Performance' do |sub|
+      sub.source_files  = 'DeveloperKit/Classes/Performance/*.swift'
+      sub.dependency 'GDPerformanceView-Swift'
+      sub.dependency 'DeveloperKit/Core'
+      sub.resources = ['DeveloperKit/Performance/Resources/*.png']
+  end
+  
 end
