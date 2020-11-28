@@ -45,11 +45,8 @@ TODO: Add long description of the pod here.
   s.dependency 'HyperioniOS/Core'
   
   s.subspec 'Plugins' do |sub|
-       sub.dependency 'DeveloperKit/Core'
-       sub.dependency 'DeveloperKit/Network'
-       sub.dependency 'DeveloperKit/Environment'
-       sub.dependency 'DeveloperKit/AppInfo'
-       sub.dependency 'DeveloperKit/Performance'
+        sub.dependency 'Wormholy'
+        sub.dependency 'GDPerformanceView-Swift'
   end
   
   s.subspec 'Core' do |sub|
@@ -60,33 +57,32 @@ TODO: Add long description of the pod here.
       sub.source_files  = 'DeveloperKit/Classes/Network/*.swift'
       sub.dependency 'DeveloperKit/Core'
       sub.dependency 'Wormholy'
-      sub.resource_bundles = {'DeveloperKit' => ['DeveloperKit/Classes/Network/*.png']}
+      sub.resources = ['DeveloperKit/Classes/Network/Resources/*.png']
   end
 
   s.subspec 'Clean' do |sub|
       sub.source_files  = 'DeveloperKit/Classes/Clean/*.swift'
       sub.dependency 'DeveloperKit/Core'
-      sub.resource_bundles = {'DeveloperKit' => ['DeveloperKit/Classes/Clean/*.png']}
+      sub.resources = ['DeveloperKit/Classes/Clean/Resources/*.png']
   end
   
   s.subspec 'Environment' do |sub|
       sub.source_files  = 'DeveloperKit/Classes/Environment/*.swift'
       sub.dependency 'DeveloperKit/Core'
-      sub.resource_bundles = {'DeveloperKit' => ['DeveloperKit/Classes/Environment/*.png']}
+      sub.resources = ['DeveloperKit/Classes/Environment/Resources/*.png']
   end
   
   s.subspec 'AppInfo' do |sub|
       sub.source_files  = 'DeveloperKit/Classes/AppInfo/*.swift'
       sub.dependency 'DeveloperKit/Core'
-      sub.resource_bundles = {'DeveloperKit' => ['DeveloperKit/Classes/AppInfo/*.png']}
+      sub.resources = ['DeveloperKit/Classes/AppInfo/Resources/*.png']
   end
   
   s.subspec 'Performance' do |sub|
       sub.source_files  = 'DeveloperKit/Classes/Performance/*.swift'
       sub.dependency 'GDPerformanceView-Swift'
       sub.dependency 'DeveloperKit/Core'
-#      sub.resources = ['DeveloperKit/Classes/Performance/*.png']
-      sub.resource_bundles = {'DeveloperKit' => ['DeveloperKit/Classes/Performance/*.png']}
+      sub.resources = ['DeveloperKit/Classes/Performance/Resources/*.png']
   end
   
 end

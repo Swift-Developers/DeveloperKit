@@ -36,19 +36,10 @@
     {
       "name": "Plugins",
       "dependencies": {
-        "DeveloperKit/Core": [
+        "Wormholy": [
 
         ],
-        "DeveloperKit/Network": [
-
-        ],
-        "DeveloperKit/Environment": [
-
-        ],
-        "DeveloperKit/AppInfo": [
-
-        ],
-        "DeveloperKit/Performance": [
+        "GDPerformanceView-Swift": [
 
         ]
       }
@@ -68,11 +59,9 @@
 
         ]
       },
-      "resource_bundles": {
-        "DeveloperKit": [
-          "DeveloperKit/Classes/Network/*.png"
-        ]
-      }
+      "resources": [
+        "DeveloperKit/Classes/Network/Resources/*.png"
+      ]
     },
     {
       "name": "Clean",
@@ -82,11 +71,9 @@
 
         ]
       },
-      "resource_bundles": {
-        "DeveloperKit": [
-          "DeveloperKit/Classes/Clean/*.png"
-        ]
-      }
+      "resources": [
+        "DeveloperKit/Classes/Clean/Resources/*.png"
+      ]
     },
     {
       "name": "Environment",
@@ -96,11 +83,9 @@
 
         ]
       },
-      "resource_bundles": {
-        "DeveloperKit": [
-          "DeveloperKit/Classes/Environment/*.png"
-        ]
-      }
+      "resources": [
+        "DeveloperKit/Classes/Environment/Resources/*.png"
+      ]
     },
     {
       "name": "AppInfo",
@@ -110,11 +95,9 @@
 
         ]
       },
-      "resource_bundles": {
-        "DeveloperKit": [
-          "DeveloperKit/Classes/AppInfo/*.png"
-        ]
-      }
+      "resources": [
+        "DeveloperKit/Classes/AppInfo/Resources/*.png"
+      ]
     },
     {
       "name": "Performance",
@@ -127,11 +110,9 @@
 
         ]
       },
-      "resource_bundles": {
-        "DeveloperKit": [
-          "DeveloperKit/Classes/Performance/*.png"
-        ]
-      }
+      "resources": [
+        "DeveloperKit/Classes/Performance/Resources/*.png"
+      ]
     }
   ],
   "swift_version": "5.0"

@@ -2,29 +2,10 @@ PODS:
   - DeveloperKit (0.1.0):
     - DeveloperKit/Plugins (= 0.1.0)
     - HyperioniOS/Core
-  - DeveloperKit/AppInfo (0.1.0):
-    - DeveloperKit/Core
-    - HyperioniOS/Core
-  - DeveloperKit/Core (0.1.0):
-    - HyperioniOS/Core
-  - DeveloperKit/Environment (0.1.0):
-    - DeveloperKit/Core
-    - HyperioniOS/Core
-  - DeveloperKit/Network (0.1.0):
-    - DeveloperKit/Core
-    - HyperioniOS/Core
-    - Wormholy
-  - DeveloperKit/Performance (0.1.0):
-    - DeveloperKit/Core
+  - DeveloperKit/Plugins (0.1.0):
     - GDPerformanceView-Swift
     - HyperioniOS/Core
-  - DeveloperKit/Plugins (0.1.0):
-    - DeveloperKit/AppInfo
-    - DeveloperKit/Core
-    - DeveloperKit/Environment
-    - DeveloperKit/Network
-    - DeveloperKit/Performance
-    - HyperioniOS/Core
+    - Wormholy
   - GDPerformanceView-Swift (2.1.1)
   - HyperioniOS/Core (1.1.0)
   - Wormholy (1.6.3)
@@ -43,7 +24,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  DeveloperKit: 49e87dc80407d69fc4d0c011f07c6c984f56559f
+  DeveloperKit: aa806af3cc7e5e5f1306bdb3b0d4541ae9832011
   GDPerformanceView-Swift: 22d964fe40b19e3d914dba2586237d064de8fd77
   HyperioniOS: 9882a13fe1e4d020f84a2c4a1a5cddb980a21f76
   Wormholy: bfc1c8679eefd0edd92638758e21c3961b1b3b50
