@@ -17,7 +17,7 @@
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "9.0"
+    "ios": "11.0"
   },
   "source_files": "DeveloperKit/Classes/**/*",
   "requires_arc": true,
@@ -59,7 +59,7 @@
     },
     {
       "name": "Network",
-      "source_files": "Sources/Plugins/Network/*.swift",
+      "source_files": "DeveloperKit/Classes/Network/*.swift",
       "dependencies": {
         "DeveloperKit/Core": [
 
@@ -68,9 +68,11 @@
 
         ]
       },
-      "resources": [
-        "DeveloperKit/Network/**/*.png"
-      ]
+      "resource_bundles": {
+        "DeveloperKit": [
+          "DeveloperKit/Classes/Network/*.png"
+        ]
+      }
     },
     {
       "name": "Clean",
@@ -80,9 +82,11 @@
 
         ]
       },
-      "resources": [
-        "DeveloperKit/Clean/**/*.png"
-      ]
+      "resource_bundles": {
+        "DeveloperKit": [
+          "DeveloperKit/Classes/Clean/*.png"
+        ]
+      }
     },
     {
       "name": "Environment",
@@ -92,9 +96,11 @@
 
         ]
       },
-      "resources": [
-        "DeveloperKit/Environment/**/*.png"
-      ]
+      "resource_bundles": {
+        "DeveloperKit": [
+          "DeveloperKit/Classes/Environment/*.png"
+        ]
+      }
     },
     {
       "name": "AppInfo",
@@ -104,9 +110,11 @@
 
         ]
       },
-      "resources": [
-        "DeveloperKit/AppInfo/**/*.png"
-      ]
+      "resource_bundles": {
+        "DeveloperKit": [
+          "DeveloperKit/Classes/AppInfo/*.png"
+        ]
+      }
     },
     {
       "name": "Performance",
@@ -119,9 +127,11 @@
 
         ]
       },
-      "resources": [
-        "DeveloperKit/Performance/**/*.png"
-      ]
+      "resource_bundles": {
+        "DeveloperKit": [
+          "DeveloperKit/Classes/Performance/*.png"
+        ]
+      }
     }
   ],
   "swift_version": "5.0"

@@ -28,7 +28,7 @@ TODO: Add long description of the pod here.
   s.author           = { 'fanglinwei' => 'calm1993@163.com' }
   s.source           = { :git => 'https://github.com/Swift-Developers/DeveloperKit.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '11.0'
 
   s.source_files = 'DeveloperKit/Classes/**/*'
 
@@ -57,35 +57,36 @@ TODO: Add long description of the pod here.
   end
 
   s.subspec 'Network' do |sub|
-      sub.source_files  = 'Sources/Plugins/Network/*.swift'
+      sub.source_files  = 'DeveloperKit/Classes/Network/*.swift'
       sub.dependency 'DeveloperKit/Core'
       sub.dependency 'Wormholy'
-      sub.resources = ['DeveloperKit/Network/**/*.png']
+      sub.resource_bundles = {'DeveloperKit' => ['DeveloperKit/Classes/Network/*.png']}
   end
 
   s.subspec 'Clean' do |sub|
       sub.source_files  = 'DeveloperKit/Classes/Clean/*.swift'
       sub.dependency 'DeveloperKit/Core'
-      sub.resources = ['DeveloperKit/Clean/**/*.png']
+      sub.resource_bundles = {'DeveloperKit' => ['DeveloperKit/Classes/Clean/*.png']}
   end
   
   s.subspec 'Environment' do |sub|
       sub.source_files  = 'DeveloperKit/Classes/Environment/*.swift'
       sub.dependency 'DeveloperKit/Core'
-      sub.resources = ['DeveloperKit/Environment/**/*.png']
+      sub.resource_bundles = {'DeveloperKit' => ['DeveloperKit/Classes/Environment/*.png']}
   end
   
   s.subspec 'AppInfo' do |sub|
       sub.source_files  = 'DeveloperKit/Classes/AppInfo/*.swift'
       sub.dependency 'DeveloperKit/Core'
-      sub.resources = ['DeveloperKit/AppInfo/**/*.png']
+      sub.resource_bundles = {'DeveloperKit' => ['DeveloperKit/Classes/AppInfo/*.png']}
   end
   
   s.subspec 'Performance' do |sub|
       sub.source_files  = 'DeveloperKit/Classes/Performance/*.swift'
       sub.dependency 'GDPerformanceView-Swift'
       sub.dependency 'DeveloperKit/Core'
-      sub.resources = ['DeveloperKit/Performance/**/*.png']
+#      sub.resources = ['DeveloperKit/Classes/Performance/*.png']
+      sub.resource_bundles = {'DeveloperKit' => ['DeveloperKit/Classes/Performance/*.png']}
   end
   
 end

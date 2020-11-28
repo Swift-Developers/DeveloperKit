@@ -12,13 +12,15 @@ protocol EnvironmentPluginMenuItemDelegate: NSObjectProtocol {
     func userInitiated(_ env: Env)
 }
 
-class EnvironmentPluginMenuItem:  HYPPluginMenuItem {
+class EnvironmentPluginMenuItem:  PluginMenuItem {
     
     weak var envDelegate: EnvironmentPluginMenuItemDelegate?
     
     private let buttonW: CGFloat = 50
     
-    private var sctollView = UIScrollView()
+    private lazy var sctollView = UIScrollView()
+    
+    private var contentView = UIView()
     
     private lazy var stackView = UIStackView(arrangedSubviews: buttons)
     
@@ -29,13 +31,16 @@ class EnvironmentPluginMenuItem:  HYPPluginMenuItem {
         button.setTitle(Environment.config.titleClosure($0), for: .normal)
         button.titleLabel?.font = .systemFont(ofSize: 14)
         button.addTarget(self, action: #selector(envAction), for: .touchUpInside)
-        button.setTitleColor(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0), for: .normal)
+        button.setTitleColor(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), for: .normal)
         button.setTitleColor(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0), for: .selected)
         button.setBackgroundImage(UIImage(color: #colorLiteral(red: 0.8823529412, green: 0.8823529412, blue: 0.8823529412, alpha: 1), size: CGSize(width: buttonW, height: buttonW)), for: .normal)
         button.setBackgroundImage(UIImage(color: #colorLiteral(red: 0.1921568627, green: 0.3607843137, blue: 0.9215686275, alpha: 1), size: CGSize(width: buttonW, height: buttonW)), for: .selected)
         button.layer.cornerRadius = 25
         button.layer.masksToBounds = true
         button.tag = $0
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.widthAnchor.constraint(equalToConstant: buttonW).isActive = true
+        button.heightAnchor.constraint(equalToConstant: buttonW).isActive = true
         return button
     }
 
@@ -53,7 +58,9 @@ class EnvironmentPluginMenuItem:  HYPPluginMenuItem {
     
     private func setup() {
         addSubview(sctollView)
-        sctollView.addSubview(stackView)
+        sctollView.addSubview(contentView)
+        contentView.addSubview(stackView)
+        
         sctollView.showsVerticalScrollIndicator = false
         sctollView.showsHorizontalScrollIndicator = false
         sctollView.contentInset = .zero
@@ -66,16 +73,24 @@ class EnvironmentPluginMenuItem:  HYPPluginMenuItem {
     
     func setupLayout() {
         sctollView.translatesAutoresizingMaskIntoConstraints = false
-        sctollView.topAnchor.constraint(equalTo: topAnchor, constant: 100).isActive = true
-        sctollView.leftAnchor.constraint(equalTo: leftAnchor, constant: 40).isActive = true
+        sctollView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 20).isActive = true
+        sctollView.leftAnchor.constraint(equalTo: imageView.leftAnchor, constant: 10).isActive = true
+        sctollView.rightAnchor.constraint(equalTo: titleLabel.rightAnchor).isActive = true
         sctollView.heightAnchor.constraint(equalToConstant: buttonW).isActive = true
-        sctollView.widthAnchor.constraint(equalToConstant: 200).isActive = true
+
+        contentView.translatesAutoresizingMaskIntoConstraints = false
+        contentView.topAnchor.constraint(equalTo: sctollView.contentLayoutGuide.topAnchor).isActive = true
+        contentView.bottomAnchor.constraint(equalTo: sctollView.contentLayoutGuide.bottomAnchor).isActive = true
+        contentView.leftAnchor.constraint(equalTo: sctollView.contentLayoutGuide.leftAnchor).isActive = true
+        contentView.rightAnchor.constraint(equalTo: sctollView.contentLayoutGuide.rightAnchor).isActive = true
         
         stackView.translatesAutoresizingMaskIntoConstraints = false
-        stackView.topAnchor.constraint(equalTo: sctollView.topAnchor).isActive = true
-        stackView.bottomAnchor.constraint(equalTo: sctollView.bottomAnchor).isActive = true
-        stackView.leftAnchor.constraint(equalTo: sctollView.leftAnchor).isActive = true
-        stackView.rightAnchor.constraint(equalTo: sctollView.rightAnchor).isActive = true
+        stackView.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
+        stackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
+        stackView.leftAnchor.constraint(equalTo: contentView.leftAnchor).isActive = true
+        stackView.rightAnchor.constraint(equalTo: contentView.rightAnchor).isActive = true
+        
+        contentHeight = 180
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
