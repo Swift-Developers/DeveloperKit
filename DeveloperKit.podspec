@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DeveloperKit'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A short description of DeveloperKit.'
 
   s.module_name      = 'DeveloperKit'
