@@ -90,7 +90,7 @@ class EnvironmentPluginMenuItem:  PluginMenuItem {
         stackView.leftAnchor.constraint(equalTo: contentView.leftAnchor).isActive = true
         stackView.rightAnchor.constraint(equalTo: contentView.rightAnchor).isActive = true
         
-        contentHeight = 180
+        contentHeight = 130
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
