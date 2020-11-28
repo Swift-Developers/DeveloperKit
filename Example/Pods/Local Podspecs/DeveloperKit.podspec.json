@@ -2,6 +2,7 @@
   "name": "DeveloperKit",
   "version": "0.1.0",
   "summary": "A short description of DeveloperKit.",
+  "module_name": "DeveloperKit",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/Swift-Developers/DeveloperKit",
   "license": {
@@ -16,7 +17,7 @@
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "9.0"
+    "ios": "11.0"
   },
   "source_files": "DeveloperKit/Classes/**/*",
   "requires_arc": true,
@@ -58,7 +59,7 @@
     },
     {
       "name": "Network",
-      "source_files": "Sources/Plugins/Network/*.swift",
+      "source_files": "DeveloperKit/Classes/Network/*.swift",
       "dependencies": {
         "DeveloperKit/Core": [
 
@@ -67,9 +68,11 @@
 
         ]
       },
-      "resources": [
-        "DeveloperKit/Network/Resources/*.png"
-      ]
+      "resource_bundles": {
+        "DeveloperKit": [
+          "DeveloperKit/Classes/Network/*.png"
+        ]
+      }
     },
     {
       "name": "Clean",
@@ -79,9 +82,11 @@
 
         ]
       },
-      "resources": [
-        "DeveloperKit/Clean/Resources/*.png"
-      ]
+      "resource_bundles": {
+        "DeveloperKit": [
+          "DeveloperKit/Classes/Clean/*.png"
+        ]
+      }
     },
     {
       "name": "Environment",
@@ -91,9 +96,11 @@
 
         ]
       },
-      "resources": [
-        "DeveloperKit/Environment/Resources/*.png"
-      ]
+      "resource_bundles": {
+        "DeveloperKit": [
+          "DeveloperKit/Classes/Environment/*.png"
+        ]
+      }
     },
     {
       "name": "AppInfo",
@@ -103,9 +110,11 @@
 
         ]
       },
-      "resources": [
-        "DeveloperKit/AppInfo/Resources/*.png"
-      ]
+      "resource_bundles": {
+        "DeveloperKit": [
+          "DeveloperKit/Classes/AppInfo/*.png"
+        ]
+      }
     },
     {
       "name": "Performance",
@@ -118,9 +127,11 @@
 
         ]
       },
-      "resources": [
-        "DeveloperKit/Performance/Resources/*.png"
-      ]
+      "resource_bundles": {
+        "DeveloperKit": [
+          "DeveloperKit/Classes/Performance/*.png"
+        ]
+      }
     }
   ],
   "swift_version": "5.0"

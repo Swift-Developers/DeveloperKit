@@ -12,7 +12,7 @@ class EnvironmentPluginModule: HYPPluginModule, HYPPluginMenuItemDelegate {
     private lazy var pluginItem: EnvironmentPluginMenuItem = {
         $0.delegate = self
         $0.envDelegate = self
-        $0.bind(withTitle: "环境切换", image: .resources(for: "developer_env_icon"))
+        $0.bind(with: "环境切换", image: .resources(for: "developer_env_icon"))
         return $0
     }( EnvironmentPluginMenuItem() )
     
@@ -46,7 +46,7 @@ public typealias Env = Int
 
 public enum Environment {
     
-    static var config: Config = Config()
+    static var config: Config = .default()
     
     public static func config(_ config: Config) {
         self.config = config
@@ -57,14 +57,21 @@ public enum Environment {
         var titleClosure: (Env) -> String = { index in "\(index)"}
         var switchClosure: (Env) -> Void = { index in print(index) }
         
-        init() {}
-        
         public init(count: Env,
                     _ titleClosure: @escaping (Env) -> String,
                     _ switchClosure: @escaping (Env) -> Void) {
             self.count = count
             self.titleClosure = titleClosure
             self.switchClosure = switchClosure
+        }
+        
+        static func `default`() -> Config {
+            self.init(count: 1) {_ in
+                "默认"
+            } _: { _ in
+                print("默认")
+            }
+
         }
     }
 }

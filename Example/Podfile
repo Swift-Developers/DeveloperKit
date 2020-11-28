@@ -3,7 +3,7 @@ use_frameworks!
 target 'DeveloperKit_Example' do
   pod 'DeveloperKit', :path => '../'
   
-  pod 'DeveloperKit/Clean', :path => '../'
+#  pod 'DeveloperKit/Performance', :path => '../'
 
   target 'DeveloperKit_Tests' do
     inherit! :search_paths
