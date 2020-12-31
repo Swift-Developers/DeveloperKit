@@ -41,10 +41,10 @@ public enum AppInfo {
     
     static var infos: [Group] { infosClosure() }
     
-    static var alertClosure: () -> Void = {}
+    static var alertClosure: (Row) -> Void = { _ in}
     static var infosClosure: (() -> [Group]) = { AppInfo.default }
     
-    public static func config(_ alertClosure: @escaping () -> Void, infosClosure: @escaping (() -> [Group])) {
+    public static func config(_ alertClosure: @escaping (Row) -> Void, infosClosure: @escaping (() -> [Group])) {
         AppInfo.infosClosure = infosClosure
         AppInfo.alertClosure = alertClosure
     }

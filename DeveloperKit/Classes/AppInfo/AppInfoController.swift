@@ -78,7 +78,7 @@ extension AppInfoController {
         let row = groups[indexPath.section].rows[indexPath.row]
         let action = UITableViewRowAction(style: .normal, title: "复制") { (action, _) in
             UIPasteboard.general.string = row.value
-            AppInfo.alertClosure()
+            AppInfo.alertClosure(row)
         }
         action.backgroundColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
         return [action]
