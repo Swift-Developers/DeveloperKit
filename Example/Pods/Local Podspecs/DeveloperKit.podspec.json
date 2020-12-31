@@ -1,16 +1,15 @@
 {
   "name": "DeveloperKit",
   "version": "0.1.1",
-  "summary": "A short description of DeveloperKit.",
+  "summary": "基于HyperioniOS组件封装",
   "module_name": "DeveloperKit",
-  "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/Swift-Developers/DeveloperKit",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "fanglinwei": "calm1993@163.com"
+    "fun": "lw_fun@163.com"
   },
   "source": {
     "git": "https://github.com/Swift-Developers/DeveloperKit.git",
@@ -19,34 +18,29 @@
   "platforms": {
     "ios": "11.0"
   },
-  "source_files": "DeveloperKit/Classes/**/*",
   "requires_arc": true,
   "frameworks": [
     "UIKit",
     "Foundation"
   ],
   "swift_versions": "5.0",
-  "default_subspecs": "Plugins",
-  "dependencies": {
-    "HyperioniOS/Core": [
-
-    ]
-  },
+  "default_subspecs": [
+    "Core",
+    "Network",
+    "Clean",
+    "Environment",
+    "AppInfo",
+    "Performance"
+  ],
   "subspecs": [
     {
-      "name": "Plugins",
+      "name": "Core",
+      "source_files": "DeveloperKit/Classes/Core/*.swift",
       "dependencies": {
-        "Wormholy": [
-
-        ],
-        "GDPerformanceView-Swift": [
+        "HyperioniOS/Core": [
 
         ]
       }
-    },
-    {
-      "name": "Core",
-      "source_files": "DeveloperKit/Classes/Core/*.swift"
     },
     {
       "name": "Network",

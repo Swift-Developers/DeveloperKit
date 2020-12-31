@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'DeveloperKit'
   s.version          = '0.1.1'
-  s.summary          = 'A short description of DeveloperKit.'
+  s.summary          = '基于HyperioniOS组件封装'
 
   s.module_name      = 'DeveloperKit'
 # This description is used to generate tags and improve search results.
@@ -18,19 +18,19 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+#  s.description      = <<-DESC
+#TODO: Add long description of the pod here.
+#                       DESC
 
   s.homepage         = 'https://github.com/Swift-Developers/DeveloperKit'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'fanglinwei' => 'calm1993@163.com' }
-  s.source           = { :git => 'https://github.com/Swift-Developers/DeveloperKit.git', :tag => s.version.to_s }
+  s.author           = { 'fun' => 'lw_fun@163.com' }
+  s.source           = { :git => 'https://github.com/Swift-Developers/DeveloperKit.git', :tag => s.version }
 
   s.ios.deployment_target = '11.0'
 
-  s.source_files = 'DeveloperKit/Classes/**/*'
+#  s.source_files = 'DeveloperKit/Classes/**/*'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
@@ -40,17 +40,11 @@ TODO: Add long description of the pod here.
 
   s.swift_version = '5.0'
 
-  s.default_subspec = 'Plugins'
+  s.default_subspecs = 'Core', 'Network', 'Clean', 'Environment', 'AppInfo', 'Performance'
 
-  s.dependency 'HyperioniOS/Core'
-  
-  s.subspec 'Plugins' do |sub|
-        sub.dependency 'Wormholy'
-        sub.dependency 'GDPerformanceView-Swift'
-  end
-  
   s.subspec 'Core' do |sub|
        sub.source_files  = 'DeveloperKit/Classes/Core/*.swift'
+       sub.dependency 'HyperioniOS/Core'
   end
 
   s.subspec 'Network' do |sub|
