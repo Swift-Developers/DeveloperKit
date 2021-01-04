@@ -26,7 +26,7 @@ class EnvironmentPluginMenuItem:  PluginMenuItem {
     
     private let count = Environment.config.envs()
     
-    private lazy var buttons: [UIButton] = (1 ... count).map {
+    private lazy var buttons: [UIButton] = (0 ... count - 1).map {
         let button = UIButton()
         button.setTitle(Environment.config.title($0), for: .normal)
         button.titleLabel?.font = .systemFont(ofSize: 14)
