@@ -16,23 +16,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        DeveloperKit.Clean.config {
+        
+        Clean.config {
             print("task")
         }
         
-        DeveloperKit.AppInfo.config { _ in 
+        AppInfo.config { _ in
             print("已复制")
             
         } infosClosure: { () -> [AppInfo.Group] in
-            [AppInfo.Group]()
+            [AppInfo.Group("123", [AppInfo.Row("123", "")])]
+        }
+        
+        Environment.config { () -> Env in
+            return 2
+            
+        } titleConfig: {
+            "环境\($0)"
+            
+        } switchConfig: {
+            print("\($0)")
         }
 
-        DeveloperKit.Environment.config(.init(count: 1, {
-            "\($0)号"
-            
-        }, { env in
-            print("切换\(env)")
-        }))
         
         return true
     }

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DeveloperKit'
-  s.version          = '0.1.3'
+  s.version          = '0.1.4'
   s.summary          = '基于HyperioniOS组件封装'
 
   s.module_name      = 'DeveloperKit'

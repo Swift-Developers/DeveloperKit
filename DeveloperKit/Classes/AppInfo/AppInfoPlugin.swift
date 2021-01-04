@@ -64,20 +64,20 @@ extension AppInfo {
     ]
 
     public struct Group {
-        let title: String
-        let rows: [Row]
+        public let title: String
+        public let rows: [Row]
 
-        init(_ title: String, _ rows: [Row]) {
+        public init(_ title: String, _ rows: [Row]) {
             self.title = title
             self.rows = rows
         }
     }
 
     public struct Row {
-        let title: String
-        let value: String?
+        public let title: String
+        public let value: String?
 
-        init(_ title: String, _ value: String?) {
+        public init(_ title: String, _ value: String?) {
             self.title = title
             self.value = value
         }

@@ -32,13 +32,13 @@ class EnvironmentPluginModule: HYPPluginModule, HYPPluginMenuItemDelegate {
 extension EnvironmentPluginModule: EnvironmentPluginMenuItemDelegate  {
     
     func currentAnimationSpeed() -> Env {
-        return Environment.config.count
+        return Environment.config.envConfig()
     }
     
     func userInitiated(_ env: Env) {
         guard shouldHideDrawerOnSelection() else { return }
         HyperionManager.sharedInstance()?.togglePluginDrawer()
-        Environment.config.switchClosure(env)
+        Environment.config.switchConfig(env)
     }
 }
 
@@ -46,32 +46,31 @@ public typealias Env = Int
 
 public enum Environment {
     
-    static var config: Config = .default()
+    public typealias EnvConfig = () -> Env
+    public typealias TitleConfig = (Env) -> String
+    public typealias SwitchConfig = (Env) -> Void
     
-    public static func config(_ config: Config) {
-        self.config = config
+    static var config: Config = Config()
+    
+    public static func config(envConfig: @escaping EnvConfig,
+                              titleConfig: @escaping TitleConfig,
+                              switchConfig: @escaping SwitchConfig) {
+        self.config = Config(envConfig, titleConfig, switchConfig)
     }
     
     public struct Config {
-        var count: Env = 0
-        var titleClosure: (Env) -> String = { index in "\(index)"}
-        var switchClosure: (Env) -> Void = { index in print(index) }
         
-        public init(count: Env,
-                    _ titleClosure: @escaping (Env) -> String,
-                    _ switchClosure: @escaping (Env) -> Void) {
-            self.count = count
-            self.titleClosure = titleClosure
-            self.switchClosure = switchClosure
-        }
+        let envConfig: EnvConfig
+        let titleConfig: TitleConfig
+        let switchConfig: SwitchConfig
         
-        static func `default`() -> Config {
-            self.init(count: 1) {_ in
-                "默认"
-            } _: { _ in
-                print("默认")
-            }
-
+        init(_ envConfig: @escaping EnvConfig = { 1 },
+             _ titleConfig: @escaping TitleConfig = { index in "\(index)"},
+             _ switchConfig: @escaping SwitchConfig = { index in print(index) }) {
+            
+            self.envConfig = envConfig
+            self.titleConfig = titleConfig
+            self.switchConfig = switchConfig
         }
     }
 }

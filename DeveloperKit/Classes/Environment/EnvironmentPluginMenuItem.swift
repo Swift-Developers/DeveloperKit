@@ -24,11 +24,11 @@ class EnvironmentPluginMenuItem:  PluginMenuItem {
     
     private lazy var stackView = UIStackView(arrangedSubviews: buttons)
     
-    private let count = Environment.config.count
+    private let count = Environment.config.envConfig()
     
     private lazy var buttons: [UIButton] = (1 ... count).map {
         let button = UIButton()
-        button.setTitle(Environment.config.titleClosure($0), for: .normal)
+        button.setTitle(Environment.config.titleConfig($0), for: .normal)
         button.titleLabel?.font = .systemFont(ofSize: 14)
         button.addTarget(self, action: #selector(envAction), for: .touchUpInside)
         button.setTitleColor(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), for: .normal)
