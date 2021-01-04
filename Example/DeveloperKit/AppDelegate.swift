@@ -27,17 +27,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } infosClosure: { () -> [AppInfo.Group] in
             [AppInfo.Group("123", [AppInfo.Row("123", "")])]
         }
-        
-        Environment.config { () -> Env in
+        Environment.config {
             return 2
             
-        } titleConfig: {
+        } selected: { 
+            return 0
+            
+        } title: {
             "环境\($0)"
             
-        } switchConfig: {
+        } switch: {
             print("\($0)")
         }
-
         
         return true
     }
