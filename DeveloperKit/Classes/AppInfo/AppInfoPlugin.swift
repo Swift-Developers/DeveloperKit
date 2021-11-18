@@ -58,8 +58,7 @@ extension AppInfo {
                 Row("名称", UIApplication.appName),
                 Row("version",  UIApplication.appVersion),
                 Row("build",  UIApplication.bundleVersion),
-                Row("bundleId",  Bundle.main.bundleIdentifier),
-                Row("idfa", UIApplication.IDFA)]
+                Row("bundleId",  Bundle.main.bundleIdentifier)]
         )
     ]
 

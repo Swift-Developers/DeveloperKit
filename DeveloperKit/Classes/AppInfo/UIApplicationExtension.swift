@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import AdSupport
 
 extension UIApplication {
     
@@ -28,10 +27,5 @@ extension UIApplication {
     /// 系统版本
     static var osVersion: String {
         ProcessInfo.processInfo.operatingSystemVersionString
-    }
-    
-    /// 广告标识符
-    static var IDFA: String? {
-        ASIdentifierManager.shared().advertisingIdentifier.uuidString
     }
 }
