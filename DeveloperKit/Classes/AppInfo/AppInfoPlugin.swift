@@ -37,42 +37,42 @@ class AppInfoPluginModule: HYPPluginModule, HYPPluginMenuItemDelegate {
     }
 }
 
-public enum AppInfo {
+public enum DPAppInfo {
     
-    static var infos: [Group] { infosClosure() }
+    static var infos: [DPSection] { infosClosure() }
     
-    static var alertClosure: (Row) -> Void = { _ in}
-    static var infosClosure: (() -> [Group]) = { AppInfo.default }
+    static var alertClosure: (DPRow) -> Void = { _ in}
+    static var infosClosure: (() -> [DPSection]) = { DPAppInfo.default }
     
-    public static func config(_ alertClosure: @escaping (Row) -> Void, infosClosure: @escaping (() -> [Group])) {
-        AppInfo.infosClosure = infosClosure
-        AppInfo.alertClosure = alertClosure
+    public static func config(_ alertClosure: @escaping (DPRow) -> Void, infosClosure: @escaping (() -> [DPSection])) {
+        DPAppInfo.infosClosure = infosClosure
+        DPAppInfo.alertClosure = alertClosure
     }
 }
 
-extension AppInfo {
+extension DPAppInfo {
     
     public static let `default` = [
-        Group("App信息",
+        DPSection("App信息",
               [
-                Row("名称", UIApplication.appName),
-                Row("version",  UIApplication.appVersion),
-                Row("build",  UIApplication.bundleVersion),
-                Row("bundleId",  Bundle.main.bundleIdentifier)]
+                DPRow("名称", UIApplication.appName),
+                DPRow("version",  UIApplication.appVersion),
+                DPRow("build",  UIApplication.bundleVersion),
+                DPRow("bundleId",  Bundle.main.bundleIdentifier)]
         )
     ]
 
-    public struct Group {
+    public struct DPSection {
         public let title: String
-        public let rows: [Row]
+        public let rows: [DPRow]
 
-        public init(_ title: String, _ rows: [Row]) {
+        public init(_ title: String, _ rows: [DPRow]) {
             self.title = title
             self.rows = rows
         }
     }
 
-    public struct Row {
+    public struct DPRow {
         public let title: String
         public let value: String?
 

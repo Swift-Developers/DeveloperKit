@@ -8,8 +8,8 @@
 import HyperionCore
 
 protocol EnvironmentPluginMenuItemDelegate: NSObjectProtocol {
-    func currentAnimationSpeed() -> Env
-    func userInitiated(_ env: Env)
+    func currentAnimationSpeed() -> DPEnv
+    func userInitiated(_ env: DPEnv)
 }
 
 class EnvironmentPluginMenuItem:  PluginMenuItem {
@@ -24,11 +24,11 @@ class EnvironmentPluginMenuItem:  PluginMenuItem {
     
     private lazy var stackView = UIStackView(arrangedSubviews: buttons)
     
-    private let count = Environment.config.envs()
+    private let count = DPEnvironment.config.envs()
     
     private lazy var buttons: [UIButton] = (0 ... count - 1).map {
         let button = UIButton()
-        button.setTitle(Environment.config.title($0), for: .normal)
+        button.setTitle(DPEnvironment.config.title($0), for: .normal)
         button.titleLabel?.font = .systemFont(ofSize: 14)
         button.addTarget(self, action: #selector(envAction), for: .touchUpInside)
         button.setTitleColor(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), for: .normal)
@@ -125,7 +125,7 @@ class EnvironmentPluginMenuItem:  PluginMenuItem {
         envDelegate?.userInitiated(sender.tag)
     }
     
-    func updateButtonSelection(_ env: Env) {
+    func updateButtonSelection(_ env: DPEnv) {
         buttons.forEach { $0.isSelected = $0.tag == env }
     }
 }

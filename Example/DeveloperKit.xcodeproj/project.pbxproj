@@ -212,12 +212,13 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = MHW5BL2Z4W;
+						DevelopmentTeam = 34Z49UTC7S;
 						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = MHW5BL2Z4W;
+						DevelopmentTeam = 34Z49UTC7S;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -486,12 +487,15 @@
 			baseConfigurationReference = 714523DD5A7CA03102A26F09 /* Pods-DeveloperKit_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = MHW5BL2Z4W;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34Z49UTC7S;
 				INFOPLIST_FILE = DeveloperKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
@@ -502,7 +506,7 @@
 			baseConfigurationReference = 1524DFA058F38797AA9482D0 /* Pods-DeveloperKit_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = MHW5BL2Z4W;
+				DEVELOPMENT_TEAM = 34Z49UTC7S;
 				INFOPLIST_FILE = DeveloperKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -517,7 +521,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C582BEB2A49261DFEB0835C9 /* Pods-DeveloperKit_Tests.debug.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = MHW5BL2Z4W;
+				DEVELOPMENT_TEAM = 34Z49UTC7S;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -540,7 +544,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 79A0EE4B82FD13F9445C5B48 /* Pods-DeveloperKit_Tests.release.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = MHW5BL2Z4W;
+				DEVELOPMENT_TEAM = 34Z49UTC7S;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",

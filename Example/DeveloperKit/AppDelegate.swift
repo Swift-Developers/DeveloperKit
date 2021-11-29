@@ -17,17 +17,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        Clean.config {
+        DPClean.config {
             print("task")
         }
         
-        AppInfo.config { _ in
+        DPAppInfo.config { _ in
             print("已复制")
             
-        } infosClosure: { () -> [AppInfo.Group] in
-            [AppInfo.Group("123", [AppInfo.Row("123", "")])]
+        } infosClosure: { () -> [DPAppInfo.DPSection] in
+            [DPAppInfo.DPSection("123", [DPAppInfo.DPRow("123", "")])]
         }
-        Environment.config {
+        DPEnvironment.config {
             return 2
             
         } selected: { 

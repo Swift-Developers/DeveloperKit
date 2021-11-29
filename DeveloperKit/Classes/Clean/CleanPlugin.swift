@@ -23,7 +23,7 @@ class CleanPluginModule: HYPPluginModule, HYPPluginMenuItemDelegate {
     
     func pluginMenuItemSelected(_ pluginView: (UIView & HYPPluginMenuItemProtocol)!) {
         guard shouldHideDrawerOnSelection() else { return }
-        Clean.task?()
+        DPClean.task?()
     }
     
     override func pluginMenuItemTitle() -> String {
@@ -35,11 +35,11 @@ class CleanPluginModule: HYPPluginModule, HYPPluginMenuItemDelegate {
     }
 }
 
-public enum Clean {
+public enum DPClean {
     
     fileprivate static var task: (() -> Void)?
     
     public static func config(_ task: @escaping (() -> Void)) {
-        Clean.task = task
+        DPClean.task = task
     }
 }

@@ -11,7 +11,7 @@ class AppInfoController: UITableViewController {
 
     private static var isPresent = false
 
-    private var groups: [AppInfo.Group] { AppInfo.infos }
+    private var sections: [DPAppInfo.DPSection] { DPAppInfo.infos }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,23 +51,23 @@ extension AppInfoController {
 extension AppInfoController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return groups.count
+        return sections.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return groups[section].rows.count
+        return sections[section].rows.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: AppInfoCell.self),
                                                  for: indexPath) as! AppInfoCell
-        let row = groups[indexPath.section].rows[indexPath.row]
+        let row = sections[indexPath.section].rows[indexPath.row]
         cell.set(title: row.title, desc: row.value)
         return cell
     }
 
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return groups[section].title
+        return sections[section].title
     }
 
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -75,10 +75,10 @@ extension AppInfoController {
     }
 
     override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
-        let row = groups[indexPath.section].rows[indexPath.row]
+        let row = sections[indexPath.section].rows[indexPath.row]
         let action = UITableViewRowAction(style: .normal, title: "复制") { (action, _) in
             UIPasteboard.general.string = row.value
-            AppInfo.alertClosure(row)
+            DPAppInfo.alertClosure(row)
         }
         action.backgroundColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
         return [action]

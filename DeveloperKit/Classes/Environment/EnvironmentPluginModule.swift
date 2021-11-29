@@ -31,35 +31,35 @@ class EnvironmentPluginModule: HYPPluginModule, HYPPluginMenuItemDelegate {
 
 extension EnvironmentPluginModule: EnvironmentPluginMenuItemDelegate  {
     
-    func currentAnimationSpeed() -> Env {
-        return Environment.config.selected()
+    func currentAnimationSpeed() -> DPEnv {
+        return DPEnvironment.config.selected()
     }
     
-    func userInitiated(_ env: Env) {
+    func userInitiated(_ env: DPEnv) {
         guard shouldHideDrawerOnSelection() else { return }
         HyperionManager.sharedInstance()?.togglePluginDrawer()
-        Environment.config.switch(env)
+        DPEnvironment.config.switch(env)
     }
 }
 
-public typealias Env = Int
+public typealias DPEnv = Int
 
-public enum Environment {
+public enum DPEnvironment {
     
-    public typealias EnvConfig = () -> Env
-    public typealias TitleConfig = (Env) -> String
-    public typealias SwitchConfig = (Env) -> Void
+    public typealias EnvConfig = () -> DPEnv
+    public typealias TitleConfig = (DPEnv) -> String
+    public typealias SwitchConfig = (DPEnv) -> Void
     
-    static var config: Config = Config()
+    static var config: DPConfig = DPConfig()
     
     public static func config(envs: @escaping EnvConfig,
                               selected: @escaping EnvConfig,
                               title: @escaping TitleConfig,
                               `switch`: @escaping SwitchConfig) {
-        self.config = Config(envs, selected, title, `switch`)
+        self.config = DPConfig(envs, selected, title, `switch`)
     }
     
-    public struct Config {
+    public struct DPConfig {
         
         let envs: EnvConfig
         let selected: EnvConfig
