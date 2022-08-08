@@ -14,11 +14,9 @@
 		0807DF4202B06F4F328BEE4CE0A808B4 /* UIWindow+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = FF372C8E91377A1354B6AEDEDA818D23 /* UIWindow+Swizzling.m */; };
 		09BE41B30F51E8A26EEB91CFA3B2133F /* CleanPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FF3303740E3EEE5C58738081BCCD89 /* CleanPlugin.swift */; };
 		0ACA21B95796F7F130452BA8C8EC8FF5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B04C406B8A88FC9B5DD912BE101A3A /* UIKit.framework */; };
-		0BE2846630F24F58EEA835F3CCDC1F58 /* developer_clean_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3896DB196A9A1A64CB12135EA5B17A04 /* developer_clean_icon@3x.png */; };
 		0C6FA0529EB46F3A72D4943F44B814A0 /* WHBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EA020A7C0B971C6092A258CF2D2AD8 /* WHBaseViewController.swift */; };
 		0D108DCAAFEF5821686DD7243D98A708 /* EnvironmentPluginModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32591084B29C0AC804F0B04F37A1A73F /* EnvironmentPluginModule.swift */; };
 		102B2A3027A5E31D8E71CF753218599B /* PerformanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9608091953E902DF8A0BBF8665E04101 /* PerformanceView.swift */; };
-		115C41E4ACE813D6F387D990AD9A584C /* developer_performance_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D712477A3B59B2FC582997F32CEFAA67 /* developer_performance_icon@3x.png */; };
 		11BCD056927008405BE7775FC77776DF /* HyperionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B691A557D94D14152EE6693F4341B835 /* HyperionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		15DC2B45621183649048162C98A843B9 /* SwiftySelfAwareHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2480910AD96F6065A21A6313FB78D5FC /* SwiftySelfAwareHelper.swift */; };
 		19310B45FD5AA838CC8DDC0A91E9BF0B /* WHTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465A279CB0DE8A52A8ED1E2C62AD584 /* WHTableView.swift */; };
@@ -48,7 +46,7 @@
 		4232C7EA499A433FB38EF791A37D65D1 /* RequestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C3681D0C310D1BCF7632E046C8D77D /* RequestsViewController.swift */; };
 		42AEEAEAED1F19B0F218A1F6D8E65F48 /* FileHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0322CF9E337C8ACE010C15857E0025AE /* FileHandler.swift */; };
 		44A09E5481598B77804455037168E254 /* PluginListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C4900D9FC5B76155A6051FB0C9712D /* PluginListViewController.m */; };
-		45927504FF05D5BA03660B359F68D3E4 /* developer_env_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 293EFF7B1C94150C979077FF96AFB9D2 /* developer_env_icon@3x.png */; };
+		45927504FF05D5BA03660B359F68D3E4 /* developer_env_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 293EFF7B1C94150C979077FF96AFB9D2 /* developer_env_icon@2x.png */; };
 		45B18611EA837BD590DEFF72CFA22845 /* WHTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE88E396CBEA6DACBB1511BC2FDDB4A /* WHTextView.swift */; };
 		46F00782CBC5C53DDF2D78A73AED771E /* HYPPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E18402437CAE1830B1B91BD77C3E7CA /* HYPPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4A1CCBC24BE4A6F7BA843F139C1B2583 /* DeveloperKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDC527F2979EBF59AE00AEBE87546FC /* DeveloperKit.swift */; };
@@ -110,10 +108,14 @@
 		AD08918FFB853314EEE3C54D5946CFDC /* Flow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FD6AB1E3774B546C1A004DFB14D122C /* Flow.storyboard */; };
 		AED18AD58D96F4BE6FC947FC68B1F850 /* HyperioniOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A1CFDADE1927A654B82383A96778EC /* HyperioniOS-dummy.m */; };
 		AF50BA09762CBCB7153374546E75FA15 /* HYPSnapshotPluginModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A06D883337A1E83B9A535EC5DFC4EC7 /* HYPSnapshotPluginModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B34653E828A10D41007BFA85 /* developer_clean_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B34653E628A10D41007BFA85 /* developer_clean_icon@2x.png */; };
+		B34653E928A10D41007BFA85 /* developer_clean_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B34653E728A10D41007BFA85 /* developer_clean_icon@3x.png */; };
+		B34653EC28A10E00007BFA85 /* developer_performance_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B34653EA28A10E00007BFA85 /* developer_performance_icon@3x.png */; };
+		B34653ED28A10E00007BFA85 /* developer_performance_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B34653EB28A10E00007BFA85 /* developer_performance_icon@2x.png */; };
 		B4DD7727DAD39A3E0C77CC8B779B8C54 /* HYPPluginModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F627F3A2ECE35862AE68A00416F461B /* HYPPluginModule.m */; };
 		B557B37548EB9E4D53A0F5D668A691E0 /* Pods-DeveloperKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 830D00D1619E4180B0AB5AD894393AD8 /* Pods-DeveloperKit_Example-dummy.m */; };
 		B64320B60D36307552AE6FA2FD177153 /* HYPInAppOverlayContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 349A0E8A559F1DC4BC19293FB497E0FB /* HYPInAppOverlayContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B84238306694772A4906C9366C835AE4 /* developer_info_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 019DD303F969D2850D007D4E12481AD9 /* developer_info_icon@3x.png */; };
+		B84238306694772A4906C9366C835AE4 /* developer_info_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 019DD303F969D2850D007D4E12481AD9 /* developer_info_icon@2x.png */; };
 		B9D5AA9A0DB0DDC0A1E64BFACC1A3418 /* HYPPluginExtensionImp.h in Headers */ = {isa = PBXBuildFile; fileRef = 17682248EF5FE3848F05A08E790B7CCA /* HYPPluginExtensionImp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA4036E79E0CE881C234A63AB4A7A805 /* HYPSnapshotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D35ACD2527E60B09CC14F43613CA6ED6 /* HYPSnapshotViewController.m */; };
 		BAB2A2DF890D72BC7EF5DC4F74C10EB9 /* NSURLSessionConfiguration+Wormholy.m in Sources */ = {isa = PBXBuildFile; fileRef = 25291A450718A3B690EA1B2E4BDF3608 /* NSURLSessionConfiguration+Wormholy.m */; };
@@ -123,7 +125,6 @@
 		BF29707E38CD0FDB2ADFACF42828B0AA /* EnvironmentPluginMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A761B7FB80AEA81B64EEA86A85D7228A /* EnvironmentPluginMenuItem.swift */; };
 		BFE95FF954257ACFBB525B6A71F5DD87 /* Postman.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2ACDF16ADCFF97B106387D8A9CAC73 /* Postman.swift */; };
 		C0233B101B37E289EA29874876AD6FAD /* UIApplication+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EF857170A9CE59F44896EC5CACC9D98 /* UIApplication+Swizzling.m */; };
-		C13388AC55D1D24A97D33D428AD00E11 /* developer_clean_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BDC6DC332F5C86EF6DE53726C17F0E4 /* developer_clean_icon@2x.png */; };
 		C1E4104916FB7699D0C9034E4689C6DB /* HyperionCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0D30822AB0B262185B0D5AABD32B97E /* HyperionCore.framework */; };
 		C57F46EA65F3C8953E988D4DC4D31CB5 /* Pods-DeveloperKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 76AAF88C81CBAAD31198D4CC3ED3E3C3 /* Pods-DeveloperKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C72B85206007E7AB6657294DB8A43D6E /* NSURLSessionConfiguration+Wormholy.h in Headers */ = {isa = PBXBuildFile; fileRef = D4591AC9D3DC42094DEA5C1ABDAFA70A /* NSURLSessionConfiguration+Wormholy.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -137,12 +138,11 @@
 		D1D0173CFC168E460A5612030759E85F /* WindowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0961DEFC83F8BBEEBD0F72FAFAF0DCFC /* WindowViewController.swift */; };
 		D2A2E0A2214F792957E282A9934655EC /* BodyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023521716BF9AADCA759C3F88A9B403A /* BodyDetailViewController.swift */; };
 		D6AFEB9605E5533105C8556411FFD2F4 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97A7E01D67E3BC6E8077CDA6501D6D6 /* Protocols.swift */; };
-		D6BFD2E6570B6A64774F847C657F749F /* developer_performance_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47729D90FFA4D11A80FC1CE41D4DFEA9 /* developer_performance_icon@2x.png */; };
 		D7B0DBE6A56E16F90BE4306D31B59E28 /* WHString.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1220E39474BFCA5C7D573E55AF2FC49 /* WHString.swift */; };
 		D90A8705359E55550F6E60C55367D71A /* HYPSnapshotDebuggingWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CCCD93E840FC02C1C261D62911B300A /* HYPSnapshotDebuggingWindow.m */; };
 		D90B51C9A5246ADF29FFDB0E22AA5B73 /* HyperionWindowManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA95D9B24EE1492682667A5184452ED /* HyperionWindowManager.m */; };
-		DA4AA347F90AEFCE71C88EB0C4AC7879 /* developer_env_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 58E6F181EDA8A6A45FEFCADFD062D406 /* developer_env_icon@2x.png */; };
-		DA941BC43E9EA021A4FEBE41A67E54F0 /* developer_info_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83990295671DE4E3967E33882BCE3D1A /* developer_info_icon@2x.png */; };
+		DA4AA347F90AEFCE71C88EB0C4AC7879 /* developer_env_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 58E6F181EDA8A6A45FEFCADFD062D406 /* developer_env_icon@3x.png */; };
+		DA941BC43E9EA021A4FEBE41A67E54F0 /* developer_info_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83990295671DE4E3967E33882BCE3D1A /* developer_info_icon@3x.png */; };
 		E0D1C65878E64211ED569FDB848541DD /* HYPPluginHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 65D07921DC3323655271E91E743CD07C /* HYPPluginHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E167716817B4AC995D6C8107C78CEE06 /* Wormholy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3D82509BBF4BDFB47069E898274526 /* Wormholy-dummy.m */; };
 		E1B140FBD210DF122B85DA0C776CDD95 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C6330537A38DDA2F4EC7D81CB255A50 /* Foundation.framework */; };
@@ -235,7 +235,7 @@
 /* Begin PBXFileReference section */
 		000FC8FA0E6E5FDEB9039727F0DCA83C /* Wormholy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Wormholy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		008FE2C416A63302D2AC4FF7FA9E7110 /* RequestDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestDetailViewController.swift; path = Sources/UI/RequestDetailViewController.swift; sourceTree = "<group>"; };
-		019DD303F969D2850D007D4E12481AD9 /* developer_info_icon@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "developer_info_icon@3x.png"; path = "DeveloperKit/Classes/AppInfo/Resources/developer_info_icon@3x.png"; sourceTree = "<group>"; };
+		019DD303F969D2850D007D4E12481AD9 /* developer_info_icon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "developer_info_icon@2x.png"; path = "DeveloperKit/Classes/AppInfo/Resources/developer_info_icon@2x.png"; sourceTree = "<group>"; };
 		0218BB824FF94A54A9C444FDC913136F /* HYPOverlayDebuggingWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HYPOverlayDebuggingWindow.h; path = Core/OverlayDebuggingWindow/HYPOverlayDebuggingWindow.h; sourceTree = "<group>"; };
 		023521716BF9AADCA759C3F88A9B403A /* BodyDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BodyDetailViewController.swift; path = Sources/UI/BodyDetailViewController.swift; sourceTree = "<group>"; };
 		02F9B100804A01FC6DEE18CD5DBEEA46 /* HyperionDefaultConfiguration.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = HyperionDefaultConfiguration.plist; path = Core/HyperionDefaultConfiguration.plist; sourceTree = "<group>"; };
@@ -270,12 +270,11 @@
 		23F98E74BD7A8EE832F8DD1FFF10A24E /* TextTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextTableViewCell.swift; path = Sources/UI/Cells/TextTableViewCell.swift; sourceTree = "<group>"; };
 		2480910AD96F6065A21A6313FB78D5FC /* SwiftySelfAwareHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftySelfAwareHelper.swift; path = Sources/Utils/SwiftySelfAwareHelper.swift; sourceTree = "<group>"; };
 		25291A450718A3B690EA1B2E4BDF3608 /* NSURLSessionConfiguration+Wormholy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURLSessionConfiguration+Wormholy.m"; path = "Sources/Objc/NSURLSessionConfiguration+Wormholy.m"; sourceTree = "<group>"; };
-		2530BC414137FF7A53A0368B476547B9 /* Wormholy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Wormholy.framework; path = Wormholy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2530BC414137FF7A53A0368B476547B9 /* Wormholy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Wormholy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2677067EFDE95569C2E88FC402E10B88 /* GDPerformanceView_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GDPerformanceView_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		28F5D4B3223BF3C309D789F6261D18D7 /* PluginMenuItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PluginMenuItem.swift; path = DeveloperKit/Classes/Core/PluginMenuItem.swift; sourceTree = "<group>"; };
-		293EFF7B1C94150C979077FF96AFB9D2 /* developer_env_icon@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "developer_env_icon@3x.png"; path = "DeveloperKit/Classes/Environment/Resources/developer_env_icon@3x.png"; sourceTree = "<group>"; };
+		293EFF7B1C94150C979077FF96AFB9D2 /* developer_env_icon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "developer_env_icon@2x.png"; path = "DeveloperKit/Classes/Environment/Resources/developer_env_icon@2x.png"; sourceTree = "<group>"; };
 		2B8D25FFC3C0FCD4AECC0461DA5BF0D7 /* PerformancePlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PerformancePlugin.swift; path = DeveloperKit/Classes/Performance/PerformancePlugin.swift; sourceTree = "<group>"; };
-		2BDC6DC332F5C86EF6DE53726C17F0E4 /* developer_clean_icon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "developer_clean_icon@2x.png"; path = "DeveloperKit/Classes/Clean/Resources/developer_clean_icon@2x.png"; sourceTree = "<group>"; };
 		2E69F0E5D121721E4C4F8C81FAD335D7 /* WormholyStarterEngine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WormholyStarterEngine.m; path = Sources/Objc/WormholyStarterEngine.m; sourceTree = "<group>"; };
 		2EC10257E7621063FE4E984ADDDB228D /* RequestModelBeautifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestModelBeautifier.swift; path = Sources/Utils/RequestModelBeautifier.swift; sourceTree = "<group>"; };
 		2F627F3A2ECE35862AE68A00416F461B /* HYPPluginModule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HYPPluginModule.m; path = Core/Public/Plugin/HYPPluginModule.m; sourceTree = "<group>"; };
@@ -285,7 +284,6 @@
 		32E07A4D1146C3F5C1D9D209ABAC453E /* HYPConfigurationConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HYPConfigurationConstants.m; path = Core/OverlayDebuggingWindow/HYPConfigurationConstants.m; sourceTree = "<group>"; };
 		33FBC8BB9D754414DEC98B588D36660A /* AppInfoController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppInfoController.swift; path = DeveloperKit/Classes/AppInfo/AppInfoController.swift; sourceTree = "<group>"; };
 		349A0E8A559F1DC4BC19293FB497E0FB /* HYPInAppOverlayContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HYPInAppOverlayContainer.h; path = Core/OverlayDebuggingWindow/HYPInAppOverlayContainer.h; sourceTree = "<group>"; };
-		3896DB196A9A1A64CB12135EA5B17A04 /* developer_clean_icon@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "developer_clean_icon@3x.png"; path = "DeveloperKit/Classes/Clean/Resources/developer_clean_icon@3x.png"; sourceTree = "<group>"; };
 		3B3D82509BBF4BDFB47069E898274526 /* Wormholy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Wormholy-dummy.m"; sourceTree = "<group>"; };
 		3B868D3F9AFFADC2F07CD70BA1D1F3D9 /* TextTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = TextTableViewCell.xib; path = Sources/UI/Cells/TextTableViewCell.xib; sourceTree = "<group>"; };
 		3C09BD64FE07B61EE9B9E35CE0D9954B /* HYPPopoverViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HYPPopoverViewController.m; path = Core/SnapShotDebuggingWindow/HYPPopoverViewController.m; sourceTree = "<group>"; };
@@ -295,9 +293,8 @@
 		3D66B81AA8B34EF788893DD2E9653CF1 /* RequestTitleSectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestTitleSectionView.swift; path = Sources/UI/Sections/RequestTitleSectionView.swift; sourceTree = "<group>"; };
 		3EA95D9B24EE1492682667A5184452ED /* HyperionWindowManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HyperionWindowManager.m; path = Core/HyperionWindowManager.m; sourceTree = "<group>"; };
 		433D14A17134C9F2DFEB1E2D4A2863F0 /* RequestResponseExportOption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestResponseExportOption.swift; path = Sources/Utils/RequestResponseExportOption.swift; sourceTree = "<group>"; };
-		47729D90FFA4D11A80FC1CE41D4DFEA9 /* developer_performance_icon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "developer_performance_icon@2x.png"; path = "DeveloperKit/Classes/Performance/Resources/developer_performance_icon@2x.png"; sourceTree = "<group>"; };
 		47EDAD2EE06AD66E8615F883453A3983 /* DeveloperKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DeveloperKit-Info.plist"; sourceTree = "<group>"; };
-		4AB76ADF1CC453A269F5AF13A0B501A4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		4AB76ADF1CC453A269F5AF13A0B501A4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4B54936869244BB67516D42CA724535A /* Pods-DeveloperKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DeveloperKit_Tests-dummy.m"; sourceTree = "<group>"; };
 		4CE88E396CBEA6DACBB1511BC2FDDB4A /* WHTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WHTextView.swift; path = Sources/Subclasses/WHTextView.swift; sourceTree = "<group>"; };
 		4D287CAC1C0394B5F6E6A41FDE7037BF /* HYPPluginExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HYPPluginExtension.h; path = Core/Public/Plugin/HYPPluginExtension.h; sourceTree = "<group>"; };
@@ -306,10 +303,10 @@
 		51C66D12A8EBBB446C09740C13001327 /* Section.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Section.swift; path = Sources/Models/Section.swift; sourceTree = "<group>"; };
 		54353E590429EC345D33C506EE36416B /* Pods-DeveloperKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DeveloperKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		555A6AD2194648136C42AA14B9263A23 /* ActionableTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ActionableTableViewCell.xib; path = Sources/UI/Cells/ActionableTableViewCell.xib; sourceTree = "<group>"; };
-		58E6F181EDA8A6A45FEFCADFD062D406 /* developer_env_icon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "developer_env_icon@2x.png"; path = "DeveloperKit/Classes/Environment/Resources/developer_env_icon@2x.png"; sourceTree = "<group>"; };
+		58E6F181EDA8A6A45FEFCADFD062D406 /* developer_env_icon@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "developer_env_icon@3x.png"; path = "DeveloperKit/Classes/Environment/Resources/developer_env_icon@3x.png"; sourceTree = "<group>"; };
 		5C4327E9D616DB0C9991BC0AECE04C6D /* HYPSnapshotViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HYPSnapshotViewController.h; path = Core/SnapShotDebuggingWindow/HYPSnapshotViewController.h; sourceTree = "<group>"; };
 		5CE65C08F2C4B3C6AD0E9C097E8780B5 /* EnvironmentPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EnvironmentPlugin.swift; path = DeveloperKit/Classes/Environment/EnvironmentPlugin.swift; sourceTree = "<group>"; };
-		5DFD3B279054F3A653D79F7CAC5C7847 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		5DFD3B279054F3A653D79F7CAC5C7847 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		5E18402437CAE1830B1B91BD77C3E7CA /* HYPPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HYPPlugin.h; path = Core/Public/Plugin/HYPPlugin.h; sourceTree = "<group>"; };
 		5E2A4A3CBFBE9EED8F8201AC99A5E846 /* GDPerformanceView-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GDPerformanceView-Swift-umbrella.h"; sourceTree = "<group>"; };
 		5EF857170A9CE59F44896EC5CACC9D98 /* UIApplication+Swizzling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+Swizzling.m"; path = "Core/Swizzling/UIApplication+Swizzling.m"; sourceTree = "<group>"; };
@@ -334,11 +331,11 @@
 		752D4B0CE4CC1C48A23A27463B88AFA8 /* HyperionWindowManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HyperionWindowManager.h; path = Core/HyperionWindowManager.h; sourceTree = "<group>"; };
 		76AAF88C81CBAAD31198D4CC3ED3E3C3 /* Pods-DeveloperKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DeveloperKit_Tests-umbrella.h"; sourceTree = "<group>"; };
 		779CDB31989FD2D9B10DEBCB24BE7671 /* GDPerformanceView-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "GDPerformanceView-Swift.release.xcconfig"; sourceTree = "<group>"; };
-		77EE993768C441B7C092BB842C205A81 /* DeveloperKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = DeveloperKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		77EE993768C441B7C092BB842C205A81 /* DeveloperKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = DeveloperKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		7B1C003A5C211DBC939A5DD5DB2358AD /* Pods-DeveloperKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DeveloperKit_Example-umbrella.h"; sourceTree = "<group>"; };
 		80C2C63A305C3E400AB132095F63F3D9 /* developer_network_icon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "developer_network_icon@2x.png"; path = "DeveloperKit/Classes/Network/Resources/developer_network_icon@2x.png"; sourceTree = "<group>"; };
 		830D00D1619E4180B0AB5AD894393AD8 /* Pods-DeveloperKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DeveloperKit_Example-dummy.m"; sourceTree = "<group>"; };
-		83990295671DE4E3967E33882BCE3D1A /* developer_info_icon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "developer_info_icon@2x.png"; path = "DeveloperKit/Classes/AppInfo/Resources/developer_info_icon@2x.png"; sourceTree = "<group>"; };
+		83990295671DE4E3967E33882BCE3D1A /* developer_info_icon@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "developer_info_icon@3x.png"; path = "DeveloperKit/Classes/AppInfo/Resources/developer_info_icon@3x.png"; sourceTree = "<group>"; };
 		8A06D883337A1E83B9A535EC5DFC4EC7 /* HYPSnapshotPluginModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HYPSnapshotPluginModule.h; path = Core/Public/Plugin/SnapShotPlugin/HYPSnapshotPluginModule.h; sourceTree = "<group>"; };
 		8BCEA425A41993653C71AEEB8FF7FCB7 /* DeveloperKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DeveloperKit-umbrella.h"; sourceTree = "<group>"; };
 		8C6330537A38DDA2F4EC7D81CB255A50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -351,16 +348,16 @@
 		92C3681D0C310D1BCF7632E046C8D77D /* RequestsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestsViewController.swift; path = Sources/UI/RequestsViewController.swift; sourceTree = "<group>"; };
 		93940BFC483371028BE514636DD75541 /* Storage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Storage.swift; path = Sources/Storage.swift; sourceTree = "<group>"; };
 		9608091953E902DF8A0BBF8665E04101 /* PerformanceView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PerformanceView.swift; path = "GDPerformanceView-Swift/GDPerformanceMonitoring/PerformanceView.swift"; sourceTree = "<group>"; };
-		964F3A7E285B5AF5EE4695917F392E79 /* Pods_DeveloperKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DeveloperKit_Example.framework; path = "Pods-DeveloperKit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		964F3A7E285B5AF5EE4695917F392E79 /* Pods_DeveloperKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeveloperKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		968A83611106723B002F2895E61D4456 /* DeveloperKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DeveloperKit.release.xcconfig; sourceTree = "<group>"; };
 		9870E0E2AB6A772EF7C45B7F5E4CD7E3 /* LinkedFramesList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LinkedFramesList.swift; path = "GDPerformanceView-Swift/GDPerformanceMonitoring/LinkedFramesList.swift"; sourceTree = "<group>"; };
 		99BF7A78EB3A9B8C3C2174AAEEEE7194 /* HYPListenerContainer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HYPListenerContainer.m; path = Core/HYPListenerContainer.m; sourceTree = "<group>"; };
-		99F5C7A2FD7506B1AE4BF2E70DB257D2 /* HyperionCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HyperionCore.framework; path = HyperioniOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		99F5C7A2FD7506B1AE4BF2E70DB257D2 /* HyperionCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HyperionCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9FDC527F2979EBF59AE00AEBE87546FC /* DeveloperKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeveloperKit.swift; path = DeveloperKit/Classes/Core/DeveloperKit.swift; sourceTree = "<group>"; };
 		A0A401D98F0A3C518F3234CDABB8B850 /* UIApplication+Swizzling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+Swizzling.h"; path = "Core/Swizzling/UIApplication+Swizzling.h"; sourceTree = "<group>"; };
 		A0D30822AB0B262185B0D5AABD32B97E /* HyperionCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HyperionCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A18572569E8FDE11E7E2402DAE9A8D17 /* DeveloperKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DeveloperKit.framework; path = DeveloperKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A18572569E8FDE11E7E2402DAE9A8D17 /* DeveloperKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DeveloperKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A265647CAA5115BDCFEAAFB9D023D6C2 /* UIViewController+Top.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Top.swift"; path = "DeveloperKit/Classes/Core/UIViewController+Top.swift"; sourceTree = "<group>"; };
 		A2897C60F76A51170CE34517D5279C62 /* HYPOverlayPluginModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HYPOverlayPluginModule.h; path = Core/Public/Plugin/OverlayPlugin/HYPOverlayPluginModule.h; sourceTree = "<group>"; };
 		A4A9B439EEC63E459B882C173799CA55 /* HyperioniOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HyperioniOS-umbrella.h"; sourceTree = "<group>"; };
@@ -370,8 +367,12 @@
 		A761B7FB80AEA81B64EEA86A85D7228A /* EnvironmentPluginMenuItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EnvironmentPluginMenuItem.swift; path = DeveloperKit/Classes/Environment/EnvironmentPluginMenuItem.swift; sourceTree = "<group>"; };
 		A7967A4514D9E05FC05BED8E5CC17C6A /* Pods-DeveloperKit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DeveloperKit_Example-Info.plist"; sourceTree = "<group>"; };
 		AA76C2258F79706E64384D4B24BC67FF /* Wormholy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Wormholy.swift; path = Sources/Wormholy.swift; sourceTree = "<group>"; };
-		AA92ED38E716E03D3FC758C810953B95 /* Wormholy.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Wormholy.bundle; path = "Wormholy-Wormholy.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA92ED38E716E03D3FC758C810953B95 /* Wormholy.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Wormholy.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		B11A6ACBFBACE3A13FE0175D63DA9ADE /* HYPSnapshotPluginModule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HYPSnapshotPluginModule.m; path = Core/Public/Plugin/SnapShotPlugin/HYPSnapshotPluginModule.m; sourceTree = "<group>"; };
+		B34653E628A10D41007BFA85 /* developer_clean_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "developer_clean_icon@2x.png"; sourceTree = "<group>"; };
+		B34653E728A10D41007BFA85 /* developer_clean_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "developer_clean_icon@3x.png"; sourceTree = "<group>"; };
+		B34653EA28A10E00007BFA85 /* developer_performance_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "developer_performance_icon@3x.png"; sourceTree = "<group>"; };
+		B34653EB28A10E00007BFA85 /* developer_performance_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "developer_performance_icon@2x.png"; sourceTree = "<group>"; };
 		B36ED3A265C6645E1A77FC8BC6A2A634 /* HYPViewSelectionTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HYPViewSelectionTableViewController.h; path = Core/SnapShotDebuggingWindow/HYPViewSelectionTableViewController.h; sourceTree = "<group>"; };
 		B3C4900D9FC5B76155A6051FB0C9712D /* PluginListViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PluginListViewController.m; path = Core/SnapShotDebuggingWindow/PluginListViewController.m; sourceTree = "<group>"; };
 		B691A557D94D14152EE6693F4341B835 /* HyperionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HyperionManager.h; path = Core/Public/HyperionManager.h; sourceTree = "<group>"; };
@@ -399,10 +400,9 @@
 		D5CCA5E4D593C3DF23998BE0E664FA10 /* HyperionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HyperionManager.m; path = Core/Public/HyperionManager.m; sourceTree = "<group>"; };
 		D658224AFACBCC233467CF0B40E9ED0B /* HyperioniOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HyperioniOS.modulemap; sourceTree = "<group>"; };
 		D711AD06E599BCB1C813FD642281607F /* Wormholy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Wormholy.debug.xcconfig; sourceTree = "<group>"; };
-		D712477A3B59B2FC582997F32CEFAA67 /* developer_performance_icon@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "developer_performance_icon@3x.png"; path = "DeveloperKit/Classes/Performance/Resources/developer_performance_icon@3x.png"; sourceTree = "<group>"; };
 		DB648F3AE40E745E7128EEEBC362EEEF /* Pods-DeveloperKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DeveloperKit_Tests.modulemap"; sourceTree = "<group>"; };
 		DFBBBE8F0C8B0088B7CB369BDE52F4BA /* WHNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WHNavigationController.swift; path = Sources/Subclasses/WHNavigationController.swift; sourceTree = "<group>"; };
-		E1AD9A1B0DED66DE443A4BCBD43EB6F4 /* Pods_DeveloperKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DeveloperKit_Tests.framework; path = "Pods-DeveloperKit_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1AD9A1B0DED66DE443A4BCBD43EB6F4 /* Pods_DeveloperKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeveloperKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2030E30B1D46B2869CEE0F6ED203E01 /* HYPOverlayDebuggingWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HYPOverlayDebuggingWindow.m; path = Core/OverlayDebuggingWindow/HYPOverlayDebuggingWindow.m; sourceTree = "<group>"; };
 		E5659480162D741C9D387B6C52BA31C9 /* Pods-DeveloperKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DeveloperKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		E76471699F98BA57BE38BA97D399128B /* Pods-DeveloperKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DeveloperKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -421,7 +421,7 @@
 		FB57B286F2D8EF15BF992A123DEA28F5 /* HYPActivationGestureOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HYPActivationGestureOptions.h; path = Core/Public/HYPActivationGestureOptions.h; sourceTree = "<group>"; };
 		FB99D2B320AC9DE313B8C0DC45798F34 /* HyperionCore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HyperionCore.h; path = Core/HyperionCore.h; sourceTree = "<group>"; };
 		FCC36B472E7137CF9C32372D4EC4175F /* HYPInAppOverlayContainer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HYPInAppOverlayContainer.m; path = Core/OverlayDebuggingWindow/HYPInAppOverlayContainer.m; sourceTree = "<group>"; };
-		FCD4D12752A60C0926DB2C8C2BE5CF1F /* GDPerformanceView_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GDPerformanceView_Swift.framework; path = "GDPerformanceView-Swift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCD4D12752A60C0926DB2C8C2BE5CF1F /* GDPerformanceView_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GDPerformanceView_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD7140F236ED91E2DF72023D55393AEC /* HYPListenerContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HYPListenerContainer.h; path = Core/HYPListenerContainer.h; sourceTree = "<group>"; };
 		FE2ACDF16ADCFF97B106387D8A9CAC73 /* Postman.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Postman.swift; path = Sources/Models/Postman/Postman.swift; sourceTree = "<group>"; };
 		FF372C8E91377A1354B6AEDEDA818D23 /* UIWindow+Swizzling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWindow+Swizzling.m"; path = "Core/Swizzling/UIWindow+Swizzling.m"; sourceTree = "<group>"; };
@@ -520,7 +520,6 @@
 				0961DEFC83F8BBEEBD0F72FAFAF0DCFC /* WindowViewController.swift */,
 				7EAC9B1F1320ED1344EF588C9FDFFE3A /* Support Files */,
 			);
-			name = "GDPerformanceView-Swift";
 			path = "GDPerformanceView-Swift";
 			sourceTree = "<group>";
 		};
@@ -608,16 +607,15 @@
 				64DA63E5D9330277791FE93875115A56 /* Resources */,
 				A2C770CBE59DA5416079B3A6464A76D6 /* Support Files */,
 			);
-			name = Wormholy;
 			path = Wormholy;
 			sourceTree = "<group>";
 		};
 		1A2E23F03A70B07DA05E11A5304FEF7D /* Performance */ = {
 			isa = PBXGroup;
 			children = (
-				47729D90FFA4D11A80FC1CE41D4DFEA9 /* developer_performance_icon@2x.png */,
-				D712477A3B59B2FC582997F32CEFAA67 /* developer_performance_icon@3x.png */,
 				2B8D25FFC3C0FCD4AECC0461DA5BF0D7 /* PerformancePlugin.swift */,
+				B34653EB28A10E00007BFA85 /* developer_performance_icon@2x.png */,
+				B34653EA28A10E00007BFA85 /* developer_performance_icon@3x.png */,
 			);
 			name = Performance;
 			sourceTree = "<group>";
@@ -667,8 +665,8 @@
 			isa = PBXGroup;
 			children = (
 				E7FF3303740E3EEE5C58738081BCCD89 /* CleanPlugin.swift */,
-				2BDC6DC332F5C86EF6DE53726C17F0E4 /* developer_clean_icon@2x.png */,
-				3896DB196A9A1A64CB12135EA5B17A04 /* developer_clean_icon@3x.png */,
+				B34653E628A10D41007BFA85 /* developer_clean_icon@2x.png */,
+				B34653E728A10D41007BFA85 /* developer_clean_icon@3x.png */,
 			);
 			name = Clean;
 			sourceTree = "<group>";
@@ -741,9 +739,9 @@
 			children = (
 				33FBC8BB9D754414DEC98B588D36660A /* AppInfoController.swift */,
 				D37DDDF756BAB1215190B5E7DFAA21EB /* AppInfoPlugin.swift */,
-				83990295671DE4E3967E33882BCE3D1A /* developer_info_icon@2x.png */,
-				019DD303F969D2850D007D4E12481AD9 /* developer_info_icon@3x.png */,
 				F3713ACD84C282221B1425D0772672F2 /* UIApplicationExtension.swift */,
+				019DD303F969D2850D007D4E12481AD9 /* developer_info_icon@2x.png */,
+				83990295671DE4E3967E33882BCE3D1A /* developer_info_icon@3x.png */,
 			);
 			name = AppInfo;
 			sourceTree = "<group>";
@@ -780,7 +778,6 @@
 				C033CFFB521DA3EC231CBC1DBEE2C1D1 /* Core */,
 				4F5F96649B13E115B3E34CBA9AD2D6DF /* Support Files */,
 			);
-			name = HyperioniOS;
 			path = HyperioniOS;
 			sourceTree = "<group>";
 		};
@@ -875,8 +872,8 @@
 		CC5CE2A7BC038B336DBFEBB325A6C920 /* Environment */ = {
 			isa = PBXGroup;
 			children = (
-				58E6F181EDA8A6A45FEFCADFD062D406 /* developer_env_icon@2x.png */,
-				293EFF7B1C94150C979077FF96AFB9D2 /* developer_env_icon@3x.png */,
+				293EFF7B1C94150C979077FF96AFB9D2 /* developer_env_icon@2x.png */,
+				58E6F181EDA8A6A45FEFCADFD062D406 /* developer_env_icon@3x.png */,
 				5CE65C08F2C4B3C6AD0E9C097E8780B5 /* EnvironmentPlugin.swift */,
 				A761B7FB80AEA81B64EEA86A85D7228A /* EnvironmentPluginMenuItem.swift */,
 				32591084B29C0AC804F0B04F37A1A73F /* EnvironmentPluginModule.swift */,
@@ -1214,16 +1211,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C13388AC55D1D24A97D33D428AD00E11 /* developer_clean_icon@2x.png in Resources */,
-				0BE2846630F24F58EEA835F3CCDC1F58 /* developer_clean_icon@3x.png in Resources */,
-				DA4AA347F90AEFCE71C88EB0C4AC7879 /* developer_env_icon@2x.png in Resources */,
-				45927504FF05D5BA03660B359F68D3E4 /* developer_env_icon@3x.png in Resources */,
-				DA941BC43E9EA021A4FEBE41A67E54F0 /* developer_info_icon@2x.png in Resources */,
-				B84238306694772A4906C9366C835AE4 /* developer_info_icon@3x.png in Resources */,
+				DA4AA347F90AEFCE71C88EB0C4AC7879 /* developer_env_icon@3x.png in Resources */,
+				B34653ED28A10E00007BFA85 /* developer_performance_icon@2x.png in Resources */,
+				B34653E828A10D41007BFA85 /* developer_clean_icon@2x.png in Resources */,
+				B34653EC28A10E00007BFA85 /* developer_performance_icon@3x.png in Resources */,
+				45927504FF05D5BA03660B359F68D3E4 /* developer_env_icon@2x.png in Resources */,
+				DA941BC43E9EA021A4FEBE41A67E54F0 /* developer_info_icon@3x.png in Resources */,
+				B84238306694772A4906C9366C835AE4 /* developer_info_icon@2x.png in Resources */,
 				ABB53B774D71D71C15C6F2FCEA80EB30 /* developer_network_icon@2x.png in Resources */,
 				1DB8B0CAD24A6BC2A39A0029FF407B0D /* developer_network_icon@3x.png in Resources */,
-				D6BFD2E6570B6A64774F847C657F749F /* developer_performance_icon@2x.png in Resources */,
-				115C41E4ACE813D6F387D990AD9A584C /* developer_performance_icon@3x.png in Resources */,
+				B34653E928A10D41007BFA85 /* developer_clean_icon@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1979,8 +1976,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
