@@ -21,12 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print("task")
         }
         
-        DPAppInfo.config { _ in
-            print("已复制")
-            
-        } infosClosure: { () -> [DPAppInfo.DPSection] in
-            [DPAppInfo.DPSection("123", [DPAppInfo.DPRow("123", "")])]
-        }
+        DPAppInfo.setup(Provider())
+
         DPEnvironment.config {
             return 2
             
@@ -68,3 +64,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+struct Provider: DPAppInfoable {
+    
+    let sections = [
+        DPAppInfo.DPSection("123", [DPAppInfo.DPRow("123", "aasasaasasaasasaasasaasasaasasaasasaasasaasasaasasaasasaasasaasasaasas")])
+    ]
+    
+    func appInfo(pasteboardAt indexPath: IndexPath) {
+        print(sections[indexPath.section].rows[indexPath.row])
+    }
+    
+    func appInfo(didSelectRowAt indexPath: IndexPath) {
+        print(sections[indexPath.section].rows[indexPath.row])
+    }
+    
+    func appInfos() -> [DPAppInfo.DPSection] {
+        sections
+    }
+}

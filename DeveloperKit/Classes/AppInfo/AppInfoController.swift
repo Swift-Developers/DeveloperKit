@@ -11,7 +11,7 @@ class AppInfoController: UITableViewController {
 
     private static var isPresent = false
 
-    private var sections: [DPAppInfo.DPSection] { DPAppInfo.infos }
+    private var sections: [DPAppInfo.DPSection] { DPAppInfo.provider.appInfos() }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,12 +73,14 @@ extension AppInfoController {
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        DPAppInfo.provider.appInfo(didSelectRowAt: indexPath)
+    }
 
     override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
-        let row = sections[indexPath.section].rows[indexPath.row]
         let action = UITableViewRowAction(style: .normal, title: "复制") { (action, _) in
-            UIPasteboard.general.string = row.value
-            DPAppInfo.alertClosure(row)
+            DPAppInfo.provider.appInfo(pasteboardAt: indexPath)
         }
         action.backgroundColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
         return [action]
@@ -101,7 +103,7 @@ fileprivate class AppInfoCell: UITableViewCell {
         textLabel?.textColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         detailTextLabel?.textColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         selectionStyle = .none
-        detailTextLabel?.numberOfLines = 0
+        detailTextLabel?.numberOfLines = 2
 
         if #available(iOS 13.0, *) {
             textLabel?.font = .monospacedSystemFont(ofSize: 15, weight: .regular)

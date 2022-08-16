@@ -37,17 +37,36 @@ class AppInfoPluginModule: HYPPluginModule, HYPPluginMenuItemDelegate {
     }
 }
 
+public protocol DPAppInfoable {
+    
+    func appInfo(pasteboardAt indexPath: IndexPath)
+    
+    func appInfo(didSelectRowAt indexPath: IndexPath)
+    
+    func appInfos() -> [DPAppInfo.DPSection]
+}
+
+public extension DPAppInfoable {
+    
+    func appInfo(pasteboardAt indexPath: IndexPath) {}
+     
+    func appInfo(didSelectRowAt indexPath: IndexPath) {}
+    
+    func appInfos() -> [DPAppInfo.DPSection] { [] }
+}
+
 public enum DPAppInfo {
     
-    static var infos: [DPSection] { infosClosure() }
+    static var provider: DPAppInfoable = Provider()
     
-    static var alertClosure: (DPRow) -> Void = { _ in}
-    static var infosClosure: (() -> [DPSection]) = { DPAppInfo.default }
-    
-    public static func config(_ alertClosure: @escaping (DPRow) -> Void, infosClosure: @escaping (() -> [DPSection])) {
-        DPAppInfo.infosClosure = infosClosure
-        DPAppInfo.alertClosure = alertClosure
+    public static func setup(_ provider: DPAppInfoable) {
+        self.provider = provider
     }
+}
+
+internal extension DPAppInfo {
+    
+    struct Provider: DPAppInfoable { }
 }
 
 extension DPAppInfo {
