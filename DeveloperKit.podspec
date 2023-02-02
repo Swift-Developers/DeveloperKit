@@ -40,7 +40,7 @@ Pod::Spec.new do |s|
 
   s.swift_version = '5.0'
 
-  s.default_subspecs = 'Core', 'Network', 'Clean', 'Environment', 'AppInfo', 'Performance'
+  s.default_subspecs = 'Core', 'Network', 'Clean', 'AppInfo', 'Performance'
 
   s.subspec 'Core' do |sub|
        sub.source_files  = 'DeveloperKit/Classes/Core/*.swift'
@@ -58,12 +58,6 @@ Pod::Spec.new do |s|
       sub.source_files  = 'DeveloperKit/Classes/Clean/*.swift'
       sub.dependency 'DeveloperKit/Core'
       sub.resources = ['DeveloperKit/Classes/Clean/Resources/*.png']
-  end
-  
-  s.subspec 'Environment' do |sub|
-      sub.source_files  = 'DeveloperKit/Classes/Environment/*.swift'
-      sub.dependency 'DeveloperKit/Core'
-      sub.resources = ['DeveloperKit/Classes/Environment/Resources/*.png']
   end
   
   s.subspec 'AppInfo' do |sub|

@@ -1,20 +1,23 @@
 //
-//  ENVPluginMenuItem.swift
-//  TODOEN-IELTS-MAIN
+//  RadioPluginMenuItem.swift
+//  DeveloperKit
 //
-//  Created by 方林威 on 2020/6/5.
+//  Created by 方林威 on 2023/2/2.
 //
-//
-import HyperionCore
 
-protocol EnvironmentPluginMenuItemDelegate: NSObjectProtocol {
-    func currentAnimationSpeed() -> DPEnv
-    func userInitiated(_ env: DPEnv)
+import HyperionCore
+import UIKit
+
+public protocol RadioPluginMenuItemDataSource: NSObjectProtocol {
+    func numberOfItems() -> Int
+    func radio(_ radio: RadioPluginMenuItem, titleAt index: Int) -> String?
+    func radio(_ radio: RadioPluginMenuItem, selectedAt index: Int) -> Bool
+    func radio(_ radio: RadioPluginMenuItem, didSelectedAt index: Int)
 }
 
-class EnvironmentPluginMenuItem:  PluginMenuItem {
+public class RadioPluginMenuItem:  PluginMenuItem {
     
-    weak var envDelegate: EnvironmentPluginMenuItemDelegate?
+    weak var dataSource: RadioPluginMenuItemDataSource?
     
     private let buttonW: CGFloat = 50
     
@@ -22,28 +25,8 @@ class EnvironmentPluginMenuItem:  PluginMenuItem {
     
     private var contentView = UIView()
     
-    private lazy var stackView = UIStackView(arrangedSubviews: buttons)
+    private lazy var stackView = UIStackView()
     
-    private let count = DPEnvironment.config.envs()
-    
-    private lazy var buttons: [UIButton] = (0 ... count - 1).map {
-        let button = UIButton()
-        button.setTitle(DPEnvironment.config.title($0), for: .normal)
-        button.titleLabel?.font = .systemFont(ofSize: 14)
-        button.addTarget(self, action: #selector(envAction), for: .touchUpInside)
-        button.setTitleColor(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), for: .normal)
-        button.setTitleColor(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0), for: .selected)
-        button.setBackgroundImage(UIImage(color: #colorLiteral(red: 0.8823529412, green: 0.8823529412, blue: 0.8823529412, alpha: 1), size: CGSize(width: buttonW, height: buttonW)), for: .normal)
-        button.setBackgroundImage(UIImage(color: #colorLiteral(red: 0.1921568627, green: 0.3607843137, blue: 0.9215686275, alpha: 1), size: CGSize(width: buttonW, height: buttonW)), for: .selected)
-        button.layer.cornerRadius = 25
-        button.layer.masksToBounds = true
-        button.tag = $0
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.widthAnchor.constraint(equalToConstant: buttonW).isActive = true
-        button.heightAnchor.constraint(equalToConstant: buttonW).isActive = true
-        return button
-    }
-
     override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
@@ -71,7 +54,8 @@ class EnvironmentPluginMenuItem:  PluginMenuItem {
         stackView.distribution = .fill
     }
     
-    func setupLayout() {
+    public func setupLayout() {
+     
         sctollView.translatesAutoresizingMaskIntoConstraints = false
         sctollView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 20).isActive = true
         sctollView.leftAnchor.constraint(equalTo: imageView.leftAnchor, constant: 10).isActive = true
@@ -93,19 +77,21 @@ class EnvironmentPluginMenuItem:  PluginMenuItem {
         contentHeight = 130
     }
     
-    override func setSelected(_ selected: Bool, animated: Bool) {
+    public override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        buttons.forEach { $0.alpha = selected ? 0 : 1 }
+        prepare()
+        
+        stackView.arrangedSubviews.forEach { $0.alpha = selected ? 0 : 1 }
 
         let yTranslation = CATransform3DTranslate(CATransform3DIdentity, 0, -45, 0)
-        buttons.forEach { $0.layer.transform = selected ? yTranslation : CATransform3DIdentity}
+        stackView.arrangedSubviews.forEach { $0.layer.transform = selected ? yTranslation : CATransform3DIdentity}
         
         UIView.animateKeyframes(
             withDuration: animated ? 0.4 : 0.0,
             delay: 0.0,
             options: [.beginFromCurrentState, .calculationModeCubic],
             animations: {
-                self.buttons.forEach { btn in
+                self.stackView.arrangedSubviews.forEach { btn in
                     UIView.addKeyframe(withRelativeStartTime: 0.0, relativeDuration: 0.33) {
                         btn.layer.transform = selected ? CATransform3DIdentity : yTranslation
                         btn.alpha = selected ? 1.0 : 0.0;
@@ -113,25 +99,53 @@ class EnvironmentPluginMenuItem:  PluginMenuItem {
                 }
             },
             completion: nil)
-
-        if let env = envDelegate?.currentAnimationSpeed() {
-            updateButtonSelection(env)
-        }
     }
     
     @objc
-    private func envAction(_ sender: UIButton) {
-        updateButtonSelection(sender.tag)
-        envDelegate?.userInitiated(sender.tag)
+    private func radioAction(_ sender: UIButton) {
+        dataSource?.radio(self, didSelectedAt: sender.tag)
+        reloadButtons()
     }
     
-    func updateButtonSelection(_ env: DPEnv) {
-        buttons.forEach { $0.isSelected = $0.tag == env }
+    /// 绘制按钮
+    private func prepare() {
+        guard let count = dataSource?.numberOfItems() else {
+            return
+        }
+        stackView.arrangedSubviews.forEach { stackView.removeArrangedSubview($0) }
+        stackView.subviews.forEach { $0.removeFromSuperview() }
+        
+        (0 ... (count - Int(1))).map {
+            let button = UIButton()
+            button.setTitle(dataSource?.radio(self, titleAt: $0), for: .normal)
+            button.titleLabel?.font = .systemFont(ofSize: 14)
+            button.addTarget(self, action: #selector(radioAction), for: .touchUpInside)
+            button.setTitleColor(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), for: .normal)
+            button.setTitleColor(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0), for: .selected)
+            button.setBackgroundImage(UIImage(color: #colorLiteral(red: 0.8823529412, green: 0.8823529412, blue: 0.8823529412, alpha: 1), size: CGSize(width: buttonW, height: buttonW)), for: .normal)
+            button.setBackgroundImage(UIImage(color: #colorLiteral(red: 0.1921568627, green: 0.3607843137, blue: 0.9215686275, alpha: 1), size: CGSize(width: buttonW, height: buttonW)), for: .selected)
+            button.layer.cornerRadius = 25
+            button.layer.masksToBounds = true
+            button.tag = $0
+            button.translatesAutoresizingMaskIntoConstraints = false
+            button.widthAnchor.constraint(equalToConstant: buttonW).isActive = true
+            button.heightAnchor.constraint(equalToConstant: buttonW).isActive = true
+            return button
+        }.forEach {
+            stackView.addArrangedSubview($0)
+        }
+        reloadButtons()
+    }
+    
+    private func reloadButtons() {
+        guard let dataSource = dataSource else { return }
+        stackView.arrangedSubviews.compactMap { $0 as? UIButton }.forEach {
+            $0.isSelected = dataSource.radio(self, selectedAt: $0.tag)
+        }
     }
 }
 
-
-extension UIImage {
+private extension UIImage {
     
     convenience init(color: UIColor, size: CGSize) {
         UIGraphicsBeginImageContextWithOptions(size, false, 1)

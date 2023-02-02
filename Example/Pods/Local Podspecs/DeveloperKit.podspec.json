@@ -1,6 +1,6 @@
 {
   "name": "DeveloperKit",
-  "version": "0.1.1",
+  "version": "0.2.1",
   "summary": "基于HyperioniOS组件封装",
   "module_name": "DeveloperKit",
   "homepage": "https://github.com/Swift-Developers/DeveloperKit",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/Swift-Developers/DeveloperKit.git",
-    "tag": "0.1.1"
+    "tag": "0.2.1"
   },
   "platforms": {
     "ios": "11.0"
@@ -28,7 +28,6 @@
     "Core",
     "Network",
     "Clean",
-    "Environment",
     "AppInfo",
     "Performance"
   ],
@@ -67,18 +66,6 @@
       },
       "resources": [
         "DeveloperKit/Classes/Clean/Resources/*.png"
-      ]
-    },
-    {
-      "name": "Environment",
-      "source_files": "DeveloperKit/Classes/Environment/*.swift",
-      "dependencies": {
-        "DeveloperKit/Core": [
-
-        ]
-      },
-      "resources": [
-        "DeveloperKit/Classes/Environment/Resources/*.png"
       ]
     },
     {

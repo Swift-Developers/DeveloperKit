@@ -15,26 +15,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         DPClean.config {
             print("task")
         }
         
         DPAppInfo.setup(Provider())
-
-        DPEnvironment.config {
-            return 2
-            
-        } selected: { 
-            return 0
-            
-        } title: {
-            "环境\($0)"
-            
-        } switch: {
-            print("\($0)")
-        }
         
         return true
     }

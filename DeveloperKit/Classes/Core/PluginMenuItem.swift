@@ -51,7 +51,7 @@ open class PluginMenuItem: UIView {
         heightConstraint.isActive = true
         
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.topAnchor.constraint(equalTo: topAnchor, constant: 50).isActive = true
+        imageView.topAnchor.constraint(equalTo: topAnchor, constant: 20).isActive = true
         imageView.heightAnchor.constraint(equalToConstant: 30).isActive = true
         imageView.widthAnchor.constraint(equalToConstant: 30).isActive = true
         imageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 45).isActive = true
@@ -72,9 +72,9 @@ extension PluginMenuItem {
 
 extension PluginMenuItem {
     
-    public func bind(with title: String, image: UIImage) {
+    public func bind(with title: String?, image: UIImage?) {
         titleLabel.text = title
-        imageView.image = image.withRenderingMode(.alwaysTemplate)
+        imageView.image = image?.withRenderingMode(.alwaysTemplate)
     }
 }
 
